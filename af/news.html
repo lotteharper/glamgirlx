@@ -18,8 +18,9 @@
 <meta property="og:image" content="https://i.imgur.com/dAQRaWt.jpeg">
 <meta name="pinterest:image" content="https://i.imgur.com/dAQRaWt.jpeg"/>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6209985848112194"
-         crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
+     crossorigin="anonymous"></script>
+
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XG1SZ2K8S5"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -122,13 +123,13 @@
 <legend>Nuus - <a href="https://lotteh.com/" class="btn btn-outline-info btn-lg">Besoek webwerf</a></legend>
 
 <div class="mx-auto p-1 m-1" style="display: flex; justify-content: space-around;">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6209985848112194"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
      crossorigin="anonymous"></script>
-<!-- Square Ad -->
+<!-- Banner Ad -->
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="ca-pub-6209985848112194"
-     data-ad-slot="2468505458"
+     data-ad-client="ca-pub-8062317950995248"
+     data-ad-slot="1247687739"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
 <script>
@@ -766,8 +767,7 @@ def send_verification_email(user):
         </form>
 {% endblock content %}
  --></code></pre>
-<p>Ons het ook 'n sjabloon om 'n e -pos met 'n eenvoudige vorm, met 'n eenvoudige vorm, in gebruikers/sjablone/gebruikers/wagwoord_reset.html te stuur</p>
-<pre class="language-markup"><code><!-- {% extends 'base.html' %}
+<p>Ons het ook 'n sjabloon om 'n e -pos met 'n eenvoudige vorm, met 'n eenvoudige vorm, in gebruikers/sjablone/gebruikers/wagwoord_reset.html te stuur</p><pre class="language-markup"><code><!-- {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
         <form method="POST">
@@ -858,8 +858,7 @@ AUTH_VALID_MINUTES = 3 # Die aantal minute Die TFA -bladsy is aktief sodra dit g
 <pre class="language-python"><code># ... invoer</code></pre>
 <p>Ons sal ook sjablone benodig vir albei hierdie sienings. Kom ons voeg eers die MFA -sjabloon by.</p>
 <pre class="language-bash"><code>nano users/templates/users/mfa.html
-</code></pre>
-<p>Voeg hierdie HTML -kode by die sjabloon</p>
+</code></pre><p>Voeg hierdie HTML -kode by die sjabloon</p>
 <pre class="language-markup"><code><!-- {% extends 'base.html' %}
 {% block content %}
 {% load app_filters %}
@@ -1009,8 +1008,7 @@ def set_current_exception(exception):
 </code></pre>
 <p>Ons voeg 'n funksie by om die huidige uitsondering te kry deur 'n draad van die draad te gebruik, wat ons help om enige foute in ons kode op te spoor. Wat sjablone betref, het ons slegs een nodig, want ons definieer die titel dinamies in die aansig. Die sjabloon moet net die titel en "spoor", ons foutopsporing vanuit die konteks, weergee.</p>
 <pre class="language-bash"><code>nano errors/templates/errors/error.html
-</code></pre>
-<pre class="language-markup"><code><!-- {% extends 'base.html' %}
+</code></pre><pre class="language-markup"><code><!-- {% extends 'base.html' %}
 {% block content %}
 <h1>{{ pagetitle }}</h1>
 <p>{{ trace }}</p>
@@ -1158,14 +1156,12 @@ def check_verification_code(user, token, code):
     token.expires = timezone.now() + datetime.timedelta(minutes=settings.AUTH_VALID_MINUTES)
     token.save()
     send_html_email(user, "Your verification code for {} is {}".format(settings.SITE_NAME, str(code)), "&lt;p&gt;Dear {},&lt;/p&gt;&lt;p&gt;Your verification code for {} is {}. Thank you for using this code to secure your account.&lt;/p&gt;&lt;h2&gt;{}&lt;/h2&gt;&lt;p&gt;Sincerely, {}&lt;/p&gt;".format(user.profile.name, settings.SITE_NAME, str(code), str(code), settings.SITE_NAME))
-</code></pre>
-<p>Dit werk dus goed, nou het ons 'n multifaktor -verifikasiestelsel wat 'n telefoonnommer of e -pos afhang om aan te meld. Maar ons het ook 'n manier nodig om gebruikers te verwyder of ten minste weg te steek wat nie met ons voorwaardes saamwerk nie. Dit kan spammers, robotte of iemand wees wat nie goed vir ons werk bedoel nie. Kyk na die siening wat ek het om gebruikers op my webwerf te monitor:</p>
+</code></pre><p>Dit werk dus goed, nou het ons 'n multifaktor -verifikasiestelsel wat 'n telefoonnommer of e -pos afhang om aan te meld. Maar ons het ook 'n manier nodig om gebruikers te verwyder of ten minste weg te steek wat nie met ons voorwaardes saamwerk nie. Dit kan spammers, robotte of iemand wees wat nie goed vir ons werk bedoel nie. Kyk na die siening wat ek het om gebruikers op my webwerf te monitor:</p>
 <pre class="language-python"><code># invoer
 from .tests import is_superuser_or_vendor # Ons sal hierdie toets moet opstel
     # Kry 'n lys van gebruikers
     return render(request, 'users/users.html', { # Gebruikers terug in 'n sjabloon</code></pre>
-<p>Let daarop dat hierdie kode 'n toets gebruik, ons moet hierdie toets in 'n toetse.py -lêer verklaar en dit invoer. Redigering van gebruikers/toetse.py, laat ons die toets skep.</p>
-<pre class="language-python"><code>def is_superuser_or_vendor(user):
+<p>Let daarop dat hierdie kode 'n toets gebruik, ons moet hierdie toets in 'n toetse.py -lêer verklaar en dit invoer. Redigering van gebruikers/toetse.py, laat ons die toets skep.</p><pre class="language-python"><code>def is_superuser_or_vendor(user):
     return user.profile.vendor or user.is_superuser
 </code></pre>
 <p>Dit is in samewerking met die gebruikers/gebruikers.html -sjabloon, wat so lyk:</p>
@@ -1555,47 +1551,32 @@ python manage.py check
 <pre class="language-python"><code>                # Voorkom reentrantoproepe om te verhoed dat AppConfig.ready ()
                 # metodes twee keer.
 # self.app_configs = {}</code></pre>
-<p>Mits die bediener aanlyn is, moet ons die volgende opdrag gebruik om die bediener te herlaai as ons verdere veranderinge daaraan aanbring:</p>
-<pre class="language-bash"><code>sudo systemctl reload apache2
+<p>Mits die bediener aanlyn is, moet ons die volgende opdrag gebruik om die bediener te herlaai as ons verdere veranderinge daaraan aanbring:</p><pre class="language-bash"><code>sudo systemctl reload apache2
 </code></pre>
-<p>Awesome! Maar wat van die stuur van e -pos? Om e -pos te stuur, moet ons eers die domeinkonfigurasie opdateer. Dit moet in u DNS -paneel in Squarespace wees, of watter domeinnaamregistrateur u ook al gekies het. Ons sal ook konfigurasie moet installeer en byvoeg en 'n paar opdragte uitvoer.</p>
-<p>Laat ons eers die IPv6 -adres van die bediener kry. Ons sal dan u DNS oopmaak en die rekords byvoeg.</p>
-<p>Gebruik hierdie opdrag om die IPv6 -adres van die bediener te kry:</p>
-<pre class="language-bash"><code>ip -6 addr
-</code></pre>
-<p>Nou kan ons die volgende rekords by die DNS -instellings voeg. My rekords lyk so. Vir u rekords moet u egter die IP -adres met u IP vervang (nie 75.147.182.214, dit is myne). Voeg ook u domein in die plek van femmebabe.com, sowel as u IPv6 -adres wat met die vorige opdrag gevind is (u kan nie myne gebruik nie, Fe80 :: 725A: FFF: FE49: 3E02). Moenie bekommerd wees oor die Domainkey vir nou nie, dit word geskep wanneer ons Postfix, die e -posbediener, met OpenDkim opstel en die sleutel druk. Ons sal dit laaste opstel.</p>
+<p>Awesome! Maar wat van die stuur van e -pos? Om e -pos te stuur, moet ons eers die domeinkonfigurasie opdateer. Dit moet in u DNS -paneel in Squarespace wees, of watter domeinnaamregistrateur u ook al gekies het. Ons sal ook konfigurasie moet installeer en byvoeg en 'n paar opdragte uitvoer.</p><p>Laat ons eers die IPv6 -adres van die bediener kry. Ons sal dan u DNS oopmaak en die rekords byvoeg.</p><p>Gebruik hierdie opdrag om die IPv6 -adres van die bediener te kry:</p><pre class="language-bash"><code>ip -6 addr
+</code></pre><p>Nou kan ons die volgende rekords by die DNS -instellings voeg. My rekords lyk so. Vir u rekords moet u egter die IP -adres met u IP vervang (nie 75.147.182.214, dit is myne). Voeg ook u domein in die plek van femmebabe.com, sowel as u IPv6 -adres wat met die vorige opdrag gevind is (u kan nie myne gebruik nie, Fe80 :: 725A: FFF: FE49: 3E02). Moenie bekommerd wees oor die Domainkey vir nou nie, dit word geskep wanneer ons Postfix, die e -posbediener, met OpenDkim opstel en die sleutel druk. Ons sal dit laaste opstel.</p>
 <p>@
 N
 N/A
-75.147.182.214</p>
-<p>@
+75.147.182.214</p><p>@
 MX
 10
-femmebabe.com</p>
-<p>@
+femmebabe.com</p><p>@
 Ptr
 N/A
-femmebabe.com</p>
-<p>@
+femmebabe.com</p><p>@
 Txt
 N/A
-TXT @ V = SPF1 MX IP75.147.182.214IP6: FE80 :: 725A: FFF: FE49: 3E02 ~ ALL</p>
-<p>DEFAULT._BIMI
+TXT @ V = SPF1 MX IP75.147.182.214IP6: FE80 :: 725A: FFF: FE49: 3E02 ~ ALL</p><p>DEFAULT._BIMI
 Txt
 N/A
-v = bimi1; l = https: //femmebabe.com/media/static/femmebabe.svg</p>
-<p>_dmarc
+v = bimi1; l = https: //femmebabe.com/media/static/femmebabe.svg</p><p>_dmarc
 Txt
 N/A
-v = dmarc1; P = Geen</p>
-<p>sendonly._domainkey
+v = dmarc1; P = Geen</p><p>sendonly._domainkey
 Txt
-N/A<we'll add="" later="" this=""></we'll></p>
-<p>Nou moet ons 'n paar volgehoue ​​konfigurasie vir postfix byvoeg. Al wat ons hoef te doen is om seker te maak dat ons die domeinnaam, femmebabe.com, vervang met die domeinnaam wat u gebruik. Kom ons kyk na al die config -lêers een vir een en installeer dit in 'n gids genaamd Config in ons projek, om op die bedryfstelsel te installeer.</p>
-<pre class="language-bash"><code>nano config/etc_postfix_main.cf
-</code></pre>
-<p>Voeg hierdie teks by die lêer</p>
-<pre class="language-bash"><code># Kyk /usr/share/postfix/main.cf.dist vir 'n kommentaar, meer volledige weergawe
+N/A<we'll add="" later="" this=""></we'll></p><p>Nou moet ons 'n paar volgehoue ​​konfigurasie vir postfix byvoeg. Al wat ons hoef te doen is om seker te maak dat ons die domeinnaam, femmebabe.com, vervang met die domeinnaam wat u gebruik. Kom ons kyk na al die config -lêers een vir een en installeer dit in 'n gids genaamd Config in ons projek, om op die bedryfstelsel te installeer.</p><pre class="language-bash"><code>nano config/etc_postfix_main.cf
+</code></pre><p>Voeg hierdie teks by die lêer</p><pre class="language-bash"><code># Kyk /usr/share/postfix/main.cf.dist vir 'n kommentaar, meer volledige weergawe
 # Debian -spesifiek: Spesifisering van 'n lêernaam sal die eerste veroorsaak
 # reël van die lêer wat as die naam gebruik moet word.  Die Debian standaard
 # is /etc /e -posnaam.
@@ -1606,18 +1587,14 @@ N/A<we'll add="" later="" this=""></we'll></p>
 # Kyk http://www.postfix.org/compatibility_readme.html - standaard tot 3.6 op
 # vars installasies.
 # TLS -parameters
-# Milter konfigurasie</code></pre>
-<p>Volgende konfigurasie!</p>
-<pre class="language-bash"><code>nano config/etc_postfix_master.cf
-</code></pre>
-<p>Voeg hierdie lyne by:</p>
-<pre class="language-bash"><code># 
+# Milter konfigurasie</code></pre><p>Volgende konfigurasie!</p><pre class="language-bash"><code>nano config/etc_postfix_master.cf
+</code></pre><p>Voeg hierdie lyne by:</p><pre class="language-bash"><code>
 # Postfix Master Process Configuration File.  Vir meer inligting oor die formaat
 # van die lêer, sien die Master (5) Handleiding Bladsy (Opdrag: "Man 5 Master" of
 # On-line: http://www.postfix.org/master.5.html).
-# 
+
 # Moenie vergeet om "Postfix Reload" uit te voer nadat u hierdie lêer geredigeer het nie.
-# 
+
 # ======================================================================= ==========================
 # Dienstipe Privaat Unpriv Chroot Wakeup MaxProc Command + Args
 # (ja) (ja) (nee) (nooit) (100)
@@ -1655,27 +1632,27 @@ N/A<we'll add="" later="" this=""></we'll></p>
 # 628 inet n - y - - qmqpd
 # Qmgr unix n - n 300 1 oqmgr
 # -o smtp_helo_timeout = 5 -o smtp_connect_timeout = 5
-# 
+
 # ======================================================================= ===================
 # Koppelvlakke na nie-postfix-sagteware. Ondersoek die handleiding
 # Bladsye van die nie-postfix-sagteware om uit te vind watter opsies hy wil hê.
-# 
+
 # Baie van die volgende dienste gebruik die postfix -pyp (8) aflewering
 # agent.  Raadpleeg die pyp (8) manbladsy vir inligting oor $ {ontvanger}
 # en ander opsies vir die koevert van boodskappe.
 # ======================================================================= ===================
-# 
+
 # MailDrop. Raadpleeg die Postfix MailDrop_Readme -lêer vir meer inligting.
 # Spesifiseer ook in main.cf: MailDrop_Destination_Recipient_limit = 1
-# 
-# 
+
+
 # ======================================================================= ===================
-# 
+
 # Onlangse Cyrus -weergawes kan die bestaande "LMTP" Master.cf -inskrywing gebruik.
-# 
+
 # Spesifiseer in cyrus.conf:
 # lmtp cmd = "lmtpd -a" luister = "localhost: lmtp" proto = tcp4
-# 
+
 # Spesifiseer in Main.cf een of meer van die volgende:
 # mailbox_transport = lmtp: inet: localhost
 # virtuele_transport = lmtp: inet: localhost
@@ -1683,214 +1660,204 @@ N/A<we'll add="" later="" this=""></we'll></p>
 # ======================================================================= ===================
 
 # Cyrus 2.1.5 (Amos Gouaux)
+# Spesifiseer ook in main.cf: cyrus_destination_recipient_limit = 1
 
-# 
 # Cyrus unix - n n - - pyp
-
+# vlae = drx gebruiker = cyrus argv =/cyrus/bin/aflewer -e -r $ {sender} -m $ {uitbreiding} $ {gebruiker}
 
 # ======================================================================= ===================
 # Ou voorbeeld van aflewering via Cyrus.
-# 
-# Old -Cyrus unix - n n - - pyp
 
+# Old -Cyrus unix - n n - - pyp
+# vlae = r gebruiker = cyrus argv =/cyrus/bin/aflewer -e -m $ {uitbreiding} $ {gebruiker}
 
 # ======================================================================= ===================
-# 
+
 # Raadpleeg die postfix uucp_readme -lêer vir konfigurasiebesonderhede.
 
-# 
+
 # Ander eksterne afleweringsmetodes.
-# </code></pre>
-<p>En die Opendkim -konfigurasie. Opendkim identifiseer e -posbedieners met domeinksleutels om hulle veiliger te maak. Daarsonder is e -pos nie onderteken nie en kom dit miskien nie na 'n inkassie nie.</p>
-<pre class="language-bash"><code>nano config/etc_default_opendkim
-</code></pre>
-<p></p>
-<pre class="language-bash"><code># Opmerking: dit is 'n nalatenskapskonfigurasielêer. Dit word nie deur die Opendkim gebruik nie
+</code></pre><p>En die Opendkim -konfigurasie. Opendkim identifiseer e -posbedieners met domeinksleutels om hulle veiliger te maak. Daarsonder is e -pos nie onderteken nie en kom dit miskien nie na 'n inkassie nie.</p><pre class="language-bash"><code>nano config/etc_default_opendkim
+</code></pre><p>Voeg hierdie lyne by:</p><pre class="language-bash"><code># Opmerking: dit is 'n nalatenskapskonfigurasielêer. Dit word nie deur die Opendkim gebruik nie
 # SystemD -diens. Gebruik die ooreenstemmende konfigurasieparameters in
 # /etc/opendkim.conf in plaas daarvan.
-
+# 
 # Voorheen sou 'n mens die standaardinstellings hier wysig en dan uitvoer
-
-
+# /lib/opendkim/opendkim.service.
+# /etc/systemd/system/opendkim.service.d/override.conf en
 # /etc/tmpfiles.d/opendkim.conf. Alhoewel dit nog moontlik is, is dit nou
 # Aanbeveel om die instellings direk aan te pas in /etc/opendkim.conf.
-# 
-# Daemon_opts = ""
 
+# Daemon_opts = ""
+# Verander na/var/spoel/postfix/run/opendkim om 'n unix -sok met
 # Postfix in 'n chroot:
 # Rundir =/var/spoel/postfix/run/opendkim
-# 
+
 # Onkomment om 'n alternatiewe sok te spesifiseer
 # Let daarop dat die instelling daarvan enige sokwaarde in OpenDkim.conf sal ignoreer
 # verstek:
-
-
+# Luister op alle koppelvlakke op poort 54321:
+# Sok = inet: 54321
 # Luister op Loopback op poort 12345:
-
-
-</code></pre>
-<pre class="language-bash"><code>nano config/etc_dovecot_conf.d_10-master.conf
-</code></pre>
-<p></p>
-<pre class="language-bash"><code>
+# Sok = inet: 12345@localhost
+# Luister op 192.0.2.1 op poort 12345:
+# Sok = inet: 12345@192.0.2.1</code></pre><pre class="language-bash"><code>nano config/etc_dovecot_conf.d_10-master.conf
+</code></pre><p>Voeg hierdie lyne by:</p>
+<pre class="language-bash"><code># DEFAULT_PROCESS_LIMIT = 100
 # Default_client_limit = 1000
 # Standaard VSZ (virtuele geheue -grootte) limiet vir diensprosesse. Dit is hoofsaaklik
-
-
-
+# bedoel om prosesse te vang en dood te maak wat die geheue lek voordat hulle eet
+# alles.
+# DEFAULT_VSZ_LIMIT = 256M
 # Aanmeldingsgebruikers word intern gebruik deur aanmeldprosesse. Dit is die mees onbetroubaarste
+# Gebruiker in Dovecot -stelsel. Dit moet glad nie toegang tot iets hê nie.
+# DEFAULTE_LOGIN_USER = DOEVOUDL
+# Interne gebruiker word deur onbevoorregte prosesse gebruik. Dit moet apart van
+# Aanmeldingsgebruiker, sodat aanmeldprosesse nie ander prosesse kan steur nie.
+# DEFAULT_INTERNAL_USER = DOVECOT
+    # Poort = 143
+    # poort = 993
+    # ssl = ja
+  # Aantal verbindings om te hanteer voordat u met 'n nuwe proses begin. Tipies
+  # Die enigste nuttige waardes is 0 (onbeperk) of 1. 1 is veiliger, maar 0
+  # is vinniger. &lt;doc/wiki/loginprocess.txt&gt;
+  # service_count = 1
+
+  # proses_min_avail = 0
+  # As u Service_Count = 0 stel, moet u dit waarskynlik laat groei.
+
+    # poort = 110
+    # poort = 995
+    # ssl = ja
+    # poort = 587
+  # Skep slegs 'n luisteraar as u die bogenoemde Unix -aansluiting nie kan gebruik nie
+  # inet_listener lmtp {
+    # Vermy LMTP sigbaar vir die hele internet
 
 
 
+  # Die meeste van die geheue gaan na mmap () lêers. Miskien moet u dit verhoog
+
+  # vsz_limit = $ default_vsz_limit
+
+  # proses_limit = 1024
+  # Maks. Aantal POP3 -prosesse (verbindings)
+  # proses_limit = 1024
+  # Maks. Aantal SMTP -indieningsprosesse (verbindings)
+  # proses_limit = 1024
+
+  # gebruik deur Dovecot-Lda, Doveadm, moontlik IMAP-proses, ens.
+  # Volledige toestemmings vir hierdie sok kan 'n lys kry van alle gebruikersname en
+  # Kry die resultate van almal se USERDB -op soek.
+
+  # Die standaard 0666 -modus stel iemand in staat om aan die sok te koppel, maar die
+  # UserDB Soeke sal slegs slaag as die USERDB 'n "UID" -veld teruggee
+  # Pas die UID van die oproeperproses. Ook as die UID of GID van die beller ooreenstem met die
+  # SOCKET se UID of GID Die opsoek slaag. Enigiets anders veroorsaak 'n mislukking.
+  # 
+  # Stel die modus op om die oproeper volle toestemmings te gee om alle gebruikers op te soek
 
 
+  # Auth -werkersproses word standaard as wortel uitgevoer, sodat dit toegang kan kry
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</code></pre><p></p><pre class="language-bash"><code>nano config/etc_dovecot_dovecot
-</code></pre><p></p><pre class="language-bash"><code>
-
-
+  # $ default_internal_user.
+  # Gebruiker = wortel
+  # As DICT -instaanbediener gebruik word, moet e -posprosesse toegang tot die sok hê.
+  # Byvoorbeeld: modus = 0660, groep = Vmail en Global Mail_access_Groups = Vmail
+    # modus = 0600
+    # Gebruiker =
+    # groep =</code></pre>
+<p></p>
+<pre class="language-bash"><code>nano config/etc_dovecot_dovecot
+</code></pre><p>En voeg hierdie lyne by</p>
+<pre class="language-bash"><code>## Dovecot -konfigurasielêer
+# As u haastig is, sien http://wiki2.dovecot.org/quickconfiguration
+# "Doveconf -N" -opdrag gee 'n skoon uitset van die veranderde instellings. Gebruik dit
 # In plaas daarvan om lêers te kopieer en te plak wanneer u na die Dovecot -poslys gepos word.
 # '# 'Karakter en alles nadat dit as opmerkings behandel word. Ekstra ruimtes
-
+# en oortjies word geïgnoreer. As u een van hierdie eksplisiete wil gebruik, plaas die
 # value inside quotes, eg.: key = "# char en agterruimte "
-
+# Die meeste (maar nie alle) instellings kan deur verskillende protokolle en/of
 # Bron/bestemming IPS deur die instellings binne gedeeltes te plaas, byvoorbeeld:
-# protokol imap {}, plaaslik 127.0.0.1 {}, afstand 10.0.0.0/8 {}
-
-
-# Of instellings word standaard bygevoeg, dit word slegs as voorbeelde gelys.
-# Paaie is ook net voorbeelde met die regte standaard wat gebaseer is op Configure
-
-# --sysconfdir =/etc--localstatedir =/var
 
 
 
 
-# wysig conf.d/master.conf.
+
+
+
+
+
+
+
+
 # Luister = *, ::
 
 
 
-# kan -i &lt;instance_name&gt; gebruik om te kies watter instansie gebruik word ('n alternatief
-# na -c &lt;config_path&gt;). Die naam van die instansie word ook by Dovecot -prosesse gevoeg
-# in PS -uitset.
-# instansie_name = Dovecot
-# Groetboodskap vir kliënte.
-# login_greeting = Dovecot gereed.
-# Ruimte -geskeide lys van betroubare netwerkreekse. Verbindings hiervan
-# IP's word toegelaat om hul IP -adresse en poorte te ignoreer (vir houtkap en
-# vir verifikasie -tjeks). deaktiveer_plaintext_auth word ook geïgnoreer vir
-# hierdie netwerke. U sal gewoonlik u IMAP Proxy -bedieners hier spesifiseer.
-# login_trusted_networks =
-# Ruimte -geskeide lys van aanmeldtoegangskontrole -voetstukke (bv. TCPWrap)
-# login_access_sockets =
-# Moenie doen met 'n proxy_maybe = ja as proxy -bestemming ooreenstem met een van hierdie IP's nie
-# volmag. Dit is normaalweg nie nodig nie, maar kan nuttig wees as die bestemming
-# IP is bv. 'N Load Balancer se IP.
-# Auth_proxy_self =
-# Toon meer verbose prosesstitels (in PS). Wys tans gebruikersnaam en
-# IP -adres. Nuttig om te sien wie die IMAP -prosesse gebruik
-# (bv. Gedeelde posbusse of as dieselfde UID vir verskeie rekeninge gebruik word).
-# Verbose_proctitle = NEE
-# As alle prosesse doodgemaak word wanneer die Dovecot -meesterproses afskakel.
-# Om dit op "nee" in te stel, beteken dat Dovecot opgegradeer kan word sonder
-# die bestaande kliëntverbindings te dwing om te sluit (hoewel dit ook kan wees
-# 'N Probleem as die opgradering bv. as gevolg van 'n sekuriteitsoplossing).
-# shutdown_clients = ja
-# As dit nie nul is nie, voer e-posopdragte via hierdie vele verbindings na Doveadm Server uit,
-# in plaas daarvan om dit direk in dieselfde proses te laat loop.
-# doveadm_worker_count = 0
-# Unix Socket of Host: Port wat gebruik word om aan Doveadm Server te koppel
-# doveadm_socket_path = doveadm-server
-# Ruimte -geskeide lys van omgewingsveranderlikes wat op Dovecot bewaar word
-# begin en oorgedra na al sy kinderprosesse. Jy kan ook gee
-# Sleutel = waardepare om altyd spesifieke instellings in te stel.
-# Import_en omgewings = tz
-## 
-## Woordeboekbedienerinstellings
-## 
-# Woordeboek kan gebruik word om sleutel = waardeslyste te stoor. Dit word deur verskeie gebruik
-# plugins. Die woordeboek kan direk óf verkry word óf 'n
-# Woordeboekbediener. Die volgende DICT -blokkaarte -woordeboekname aan URI's
-# Wanneer die bediener gebruik word. Daar kan dan verwys word met behulp van URI's in formaat
-# "Proxy :: &lt;naam&gt;".
-  # kwota = mysql: /etc/dovecot/dovecot-dict-sql.conf.ext
-# Hieronder word die meeste van die werklike konfigurasie ingesluit. Die lêernaam is
-# eers volgens hul ASCII -waarde gesorteer en in daardie volgorde ontleed. Die 00-voorvoegsels
-# In lêernaam is bedoel om dit makliker te maak om die bestelling te verstaan.
-# 'N Config -lêer kan ook probeer om ingesluit te word sonder om 'n fout te gee indien
-# Dit word nie gevind nie:
-# Laat Dovecot toe om na alle invoerverbindings te luister (IPv4 / IPv6)</code></pre>
-<p>Voeg 'n wagwoord by vir die Dovecot -gebruiker:</p>
-<pre class="language-bash"><code>nano config/etc_dovecot_passwd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</code></pre><p></p><pre class="language-bash"><code>nano config/etc_dovecot_passwd
+</code></pre><p></p><pre class="language-bash"><code>team:{plain}yourpassword
+</code></pre><p>Vervolgens, die OpenDkim Config</p><pre class="language-bash"><code>nano config/etc_opendkim.conf
 </code></pre>
-<p>Die eerste deel van die lêer, voor die kolon, is die gebruikersnaam. Die laaste deel, "YourPassword", dui die wagwoord aan wat u wil aan u e -posbediener gee.</p>
-<pre class="language-bash"><code>team:{plain}yourpassword
-</code></pre>
-<p>Vervolgens, die OpenDkim Config</p>
-<pre class="language-bash"><code>nano config/etc_opendkim.conf
-</code></pre>
-<p>En voeg hierdie lyne by:</p>
-<pre class="language-bash"><code># Dit is 'n basiese opset vir ondertekening en verifiëring. Dit kan maklik wees
-# aangepas om by 'n basiese installasie te pas. Sien Opendkim.conf (5) en
-# /usr/share/doc/opendkim/examples/opendkim.conf.sample vir volledig
+<p></p><pre class="language-bash"><code># Dit is 'n basiese opset vir ondertekening en verifiëring. Dit kan maklik wees
+
+
 # Dokumentasie van beskikbare konfigurasieparameters.
 # Log, waarom nee
-# Algemene ondertekening en verifikasieparameters. In Debian is die 'van' kop
-# oorgeteken, omdat dit dikwels die identiteitsleutel is wat deur reputasiestelsels gebruik word
-# en dus ietwat sekuriteitsgevoelig.
+
+
+
 # Onderteken domein, selector en sleutel (vereis). Voer byvoorbeeld ondertekening uit
-# vir domein "voorbeeld.com" met selector "2020" (2020._domainkey.example.com),
+
 # Gebruik die privaat sleutel gestoor in /etc/dkimkeys/example.private. Meer korrelvormig
 # Opstellingsopsies kan gevind word in /usr/share/doc/opendkim/readme.opendkim.
 # Domein voorbeeld.com
@@ -1914,25 +1881,23 @@ N/A<we'll add="" later="" this=""></we'll></p>
 # deur die pakket DNS-Root-data.
 # Nameservers 127.0.0.1
 # Kaartdomeine van adresse na sleutels wat gebruik word om boodskappe te onderteken
-# 'N stel interne gashere wie se pos onderteken moet word</code></pre>
-<pre class="language-bash"><code>nano config/etc_default_opendkim
-</code></pre>
-<p>En voeg hierdie lyne by</p>
+# 'N stel interne gashere wie se pos onderteken moet word</code></pre><pre class="language-bash"><code>nano config/etc_default_opendkim
+</code></pre><p>En voeg hierdie lyne by</p>
 <pre class="language-bash"><code># Opmerking: dit is 'n nalatenskapskonfigurasielêer. Dit word nie deur die Opendkim gebruik nie
 # SystemD -diens. Gebruik die ooreenstemmende konfigurasieparameters in
 # /etc/opendkim.conf in plaas daarvan.
-# 
+
 # Voorheen sou 'n mens die standaardinstellings hier wysig en dan uitvoer
 # /lib/opendkim/opendkim.service.
 # /etc/systemd/system/opendkim.service.d/override.conf en
 # /etc/tmpfiles.d/opendkim.conf. Alhoewel dit nog moontlik is, is dit nou
 # Aanbeveel om die instellings direk aan te pas in /etc/opendkim.conf.
-# 
+
 # Daemon_opts = ""
 # Verander na/var/spoel/postfix/run/opendkim om 'n unix -sok met
 # Postfix in 'n chroot:
 # Rundir =/var/spoel/postfix/run/opendkim
-# 
+
 # Onkomment om 'n alternatiewe sok te spesifiseer
 # Let daarop dat die instelling daarvan enige sokwaarde in OpenDkim.conf sal ignoreer
 # verstek:
@@ -1941,61 +1906,32 @@ N/A<we'll add="" later="" this=""></we'll></p>
 # Luister op Loopback op poort 12345:
 # Sok = inet: 12345@localhost
 # Luister op 192.0.2.1 op poort 12345:
-# Sok = inet: 12345@192.0.2.1</code></pre>
-<p>As ons gereed is om ons postfix -bediener op te stel, sal ons die onderstaande kode uitvoer, met die toepaslike domeinnaam ingebed. Begin deur 'n draaiboek te skep</p>
-<pre class="language-bash"><code>touch scripts/postfixsetup
+# Sok = inet: 12345@192.0.2.1</code></pre><p>As ons gereed is om ons postfix -bediener op te stel, sal ons die onderstaande kode uitvoer, met die toepaslike domeinnaam ingebed. Begin deur 'n draaiboek te skep</p><pre class="language-bash"><code>touch scripts/postfixsetup
 sudo chmod a+x scripts/postfixsetup
 nano scripts/postfixsetup
-</code></pre>
-<p>Nou, in Nano, die teksredakteur, wysig hierdie lêer, sodat dit u domeinnaam bevat in plaas van femmebabe.com.</p>
-<pre class="language-bash"><code># !/bin/bash
+</code></pre><p>Nou, in Nano, die teksredakteur, wysig hierdie lêer, sodat dit u domeinnaam bevat in plaas van femmebabe.com.</p><pre class="language-bash"><code># !/bin/bash
 # Stel postfix op</code></pre>
-<p>Begin nou die voltooide skrif om Postfix, Opendkim en Dovecot op te stel.</p>
-<pre class="language-bash"><code>./scripts/postfixsetup
+<p>Begin nou die voltooide skrif om Postfix, Opendkim en Dovecot op te stel.</p><pre class="language-bash"><code>./scripts/postfixsetup
 </code></pre>
-<p>Sodra hierdie skrip uitgevoer is, kopieer die laaste reël wat dit afdruk en plak dit in u DNS -konfigurasie as die waarde vir SendOnly._Domainkey. Dit is die OpenDkim -sleutel wat gebruik word om u domein te identifiseer wanneer u veilige pos stuur.</p>
-<p>Awesome! Binne 'n paar dae moet u e -pos vanaf die bediener kan stuur, mits alles korrek gekonfigureer is.</p>
-<p>As u net die DNS vir u e -posbediener gekonfigureer het, moet dit minder as 72 uur duur voordat die rekords opdateer. Dit is gewoonlik baie vinniger. U kan kyk of u bediener werk deur hierdie opdrag te gebruik, u e -pos voorsien:</p>
-<pre class="language-bash"><code>echo "test" | mail -s "Test Email" youremail@gmail.com
+<p>Sodra hierdie skrip uitgevoer is, kopieer die laaste reël wat dit afdruk en plak dit in u DNS -konfigurasie as die waarde vir SendOnly._Domainkey. Dit is die OpenDkim -sleutel wat gebruik word om u domein te identifiseer wanneer u veilige pos stuur.</p><p>Awesome! Binne 'n paar dae moet u e -pos vanaf die bediener kan stuur, mits alles korrek gekonfigureer is.</p><p>As u net die DNS vir u e -posbediener gekonfigureer het, moet dit minder as 72 uur duur voordat die rekords opdateer. Dit is gewoonlik baie vinniger. U kan kyk of u bediener werk deur hierdie opdrag te gebruik, u e -pos voorsien:</p><pre class="language-bash"><code>echo "test" | mail -s "Test Email" youremail@gmail.com
+</code></pre><p>As alles lyk of dit reg werk, moet u e -pos met u bediener kan stuur. As dit nie werk nie, probeer dan om na die logs te kyk om te sien wat die fout kan wees.</p><pre class="language-bash"><code>tail –lines 150 /var/log/mail.log
+</code></pre><p>Dit sal mondelinge inligting bied oor e -pos wat deur die bediener gestuur word en of dit goed werk. U moet ook die e -pos in u inkassie kan sien, as dit nie daar is nie, kyk na u spammap.</p><p>U moet ook u instellings in u instellings.py opstel, sodat u e -posbediener met u Django -app, die projek, kan praat. Voeg of vervang hierdie lyne in u instellings</p>
+<pre class="language-python"><code>EMAIL_HOST_USER = 'team' # 'Love@mamasheheen.com'</code></pre><p>Let op dat ons 'n config -lêer gebruik om die wagwoord te kry. Kom ons laai hierdie lêer in die instellings soos so, aan die begin van die lêer:</p><pre class="language-python"><code># Oop en laai Config</code></pre><p>Kom ons skep hierdie lêer en voeg 'n geheime sleutel daarby, sowel as die poswagwoord. Om 'n geheime sleutel te genereer, gebruik hierdie opdrag, met watter lengte u aan die einde wil hê:</p><pre class="language-bash"><code>openssl rand -base64 64
 </code></pre>
-<p>As alles lyk of dit reg werk, moet u e -pos met u bediener kan stuur. As dit nie werk nie, probeer dan om na die logs te kyk om te sien wat die fout kan wees.</p>
-<pre class="language-bash"><code>tail –lines 150 /var/log/mail.log
-</code></pre>
-<p>Dit sal mondelinge inligting bied oor e -pos wat deur die bediener gestuur word en of dit goed werk. U moet ook die e -pos in u inkassie kan sien, as dit nie daar is nie, kyk na u spammap.</p>
-<p>U moet ook u instellings in u instellings.py opstel, sodat u e -posbediener met u Django -app, die projek, kan praat. Voeg of vervang hierdie lyne in u instellings</p>
-<pre class="language-python"><code>EMAIL_HOST_USER = 'team' # 'Love@mamasheheen.com'</code></pre>
-<p>Let op dat ons 'n config -lêer gebruik om die wagwoord te kry. Kom ons laai hierdie lêer in die instellings soos so, aan die begin van die lêer:</p>
-<pre class="language-python"><code># Oop en laai Config</code></pre>
-<p>Kom ons skep hierdie lêer en voeg 'n geheime sleutel daarby, sowel as die poswagwoord. Om 'n geheime sleutel te genereer, gebruik hierdie opdrag, met watter lengte u aan die einde wil hê:</p>
-<pre class="language-bash"><code>openssl rand -base64 64
-</code></pre>
-<p>Kopieer nou die teks wat OpenSSL gegenereer en redigeer /etc/config.json</p>
-<pre class="language-bash"><code>sudo nano /etc/config.json
-</code></pre>
-<p>Voeg die volgende reëls by u lêer, met die sleutel wat OpenSSL as die geheime sleutel gegenereer word.</p>
-<pre class="language-bash"><code>{
+<p>Kopieer nou die teks wat OpenSSL gegenereer en redigeer /etc/config.json</p><pre class="language-bash"><code>sudo nano /etc/config.json
+</code></pre><p>Voeg die volgende reëls by u lêer, met die sleutel wat OpenSSL as die geheime sleutel gegenereer word.</p><pre class="language-bash"><code>{
 	"SECRET_KEY": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX-generated-using-openssl)",
 	"EMAIL_HOST_PASSWORD": "yourpassword"
 }
-</code></pre>
-<p>JSON -formaat is eenvoudig en maklik om te gebruik, ons kan ook ander sleutels wat ons in ons projek wil gebruik, ook op hierdie manier verklaar en hulle apart van ons projekgids hou, sodat ander gebruikers nie aan hulle kan skryf nie en dat hulle nie alleen van ons projekgids gelees kan word nie. Dit word aanbevole praktyk vir API -sleutels, waarvan ons meer as 'n paar hier sal gebruik.</p>
-<p>U sal ook u projek wil rugsteun om seker te maak dat alles gestoor is en dat u later u werk kan herstel, selfs as u nie meer 'n bediener wil huur nie.</p>
-<pre class="language-bash"><code>sudo backup
-</code></pre>
-<p>Probeer nou om 'n HTML -e -pos van die webbediener te stuur, mits die stuur van een van die opdragreël werk. Vra u gebruikersinstansie in die dop, en stuur 'n HTML -e -pos aan die gebruiker via django. Verander my naam in die kode, Charlotte, na u gebruikersnaam.</p>
-<pre class="language-bash"><code>python manage.py shell
+</code></pre><p>JSON -formaat is eenvoudig en maklik om te gebruik, ons kan ook ander sleutels wat ons in ons projek wil gebruik, ook op hierdie manier verklaar en hulle apart van ons projekgids hou, sodat ander gebruikers nie aan hulle kan skryf nie en dat hulle nie alleen van ons projekgids gelees kan word nie. Dit word aanbevole praktyk vir API -sleutels, waarvan ons meer as 'n paar hier sal gebruik.</p><p>U sal ook u projek wil rugsteun om seker te maak dat alles gestoor is en dat u later u werk kan herstel, selfs as u nie meer 'n bediener wil huur nie.</p><pre class="language-bash"><code>sudo backup
+</code></pre><p></p><pre class="language-bash"><code>python manage.py shell
 from django.contrib.auth.models import User
 u = User.objects.get(username='Charlotte')
 from users.email import send_welcome_email
 send_welcome_email(u)
 exit()
-</code></pre>
-<p>As die eerste opdrag nie werk nie, maak seker dat u dit gebruik</p>
-<pre class="language-bash"><code>source venv/bin/activate
-</code></pre>
-<p>Mits alles korrek opgestel is, kry u nou 'n welkome e -pos in u posbus wat deur u webprogram gestuur word. Goeie werk! Jy het 'n lang pad gekom.</p>
-<p>Ek wou byvoeg, as u ooit met enige foute sukkel terwyl u aan 'n projek soos hierdie werk, moet u huiwer om antwoorde te soek en hulp te vra. Google, onder andere soekenjins, is wonderlike hulpbronne om na programmeringshulp te soek. Soek eenvoudig na die fout wat u kry, en u kan sien hoe ander mense die probleem oplos. U is ook welkom om my, u opvoeders (onderwysers, professore, tutors), enige eweknieë op die internet wat beskikbaar is vir programmeringshulp, of weer hierdie boek of ander bronne te raadpleeg om oplossings te vind vir die probleme wat u ervaar. Ek verstaan ​​dat dit nie maklik is nie, maar selfs as u in hierdie verre gelees het en geen kode skryf nie, leer u baie oor die bou van 'n webapp van nuuts af. Pat jouself agterop, jy doen 'n goeie werk.</p>
-<p>Dankie dat u die tyd geneem het om hierdie derde uitgawe webontwikkelingsgids te lees. In toekomstige uitgawes sal ek meer van die belangrike voorbeelde wat aan die begin van die dokument bespreek is, insluit, en ons sal baie dieper in die wêreld van sagteware en hardeware -ontwikkeling duik. Bly ingeskakel vir wat gaan kom, en ek sien uit daarna om u te leer hoe om ongelooflike sagteware te bou. Sien jou in die volgende uitgawe!</p>
+</code></pre><p>As die eerste opdrag nie werk nie, maak seker dat u dit gebruik</p><pre class="language-bash"><code>source venv/bin/activate
+</code></pre><p>Mits alles korrek opgestel is, kry u nou 'n welkome e -pos in u posbus wat deur u webprogram gestuur word. Goeie werk! Jy het 'n lang pad gekom.</p><p>Ek wou byvoeg, as u ooit met enige foute sukkel terwyl u aan 'n projek soos hierdie werk, moet u huiwer om antwoorde te soek en hulp te vra. Google, onder andere soekenjins, is wonderlike hulpbronne om na programmeringshulp te soek. Soek eenvoudig na die fout wat u kry, en u kan sien hoe ander mense die probleem oplos. U is ook welkom om my, u opvoeders (onderwysers, professore, tutors), enige eweknieë op die internet wat beskikbaar is vir programmeringshulp, of weer hierdie boek of ander bronne te raadpleeg om oplossings te vind vir die probleme wat u ervaar. Ek verstaan ​​dat dit nie maklik is nie, maar selfs as u in hierdie verre gelees het en geen kode skryf nie, leer u baie oor die bou van 'n webapp van nuuts af. Pat jouself agterop, jy doen 'n goeie werk.</p><p>Dankie dat u die tyd geneem het om hierdie derde uitgawe webontwikkelingsgids te lees. In toekomstige uitgawes sal ek meer van die belangrike voorbeelde wat aan die begin van die dokument bespreek is, insluit, en ons sal baie dieper in die wêreld van sagteware en hardeware -ontwikkeling duik. Bly ingeskakel vir wat gaan kom, en ek sien uit daarna om u te leer hoe om ongelooflike sagteware te bou. Sien jou in die volgende uitgawe!</p>
 
 </p>
 <hr class="m-5 p-5">
@@ -2029,13 +1965,13 @@ exit()
 <div><p>deur Daisy / <a href="/af/practical-web-based-deep-learning-and" title="Bekyk plasing">Uitsig</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=cf8fc969-e02d-4952-a329-e60db51bc1a7" title="Koop aan Lotte Harper">Koop</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=cf8fc969-e02d-4952-a329-e60db51bc1a7&crypto=USDC" title="Koop met cryptocurrency op Lotte Harper">Koop met cryptocurrency</a></p><hr>
 
 <div class="mx-auto p-1 m-1" style="display: flex; justify-content: space-around;">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6209985848112194"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
      crossorigin="anonymous"></script>
-<!-- Square Ad -->
+<!-- Banner Ad -->
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="ca-pub-6209985848112194"
-     data-ad-slot="2468505458"
+     data-ad-client="ca-pub-8062317950995248"
+     data-ad-slot="1247687739"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
 <script>
@@ -2096,13 +2032,13 @@ Speel drie dertien aanlyn aanlyn.<a class="btn btn-info" href="https://lotteh.co
 <div><p>deur Daisy / <a href="/af/how-do-i-write-a-professional-blog" title="Bekyk plasing">Uitsig</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=16e19f30-c141-4768-a6ba-74229673f7f8" title="Koop aan Lotte Harper">Koop</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=16e19f30-c141-4768-a6ba-74229673f7f8&crypto=USDC" title="Koop met cryptocurrency op Lotte Harper">Koop met cryptocurrency</a></p><hr>
 
 <div class="mx-auto p-1 m-1" style="display: flex; justify-content: space-around;">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6209985848112194"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
      crossorigin="anonymous"></script>
-<!-- Square Ad -->
+<!-- Banner Ad -->
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="ca-pub-6209985848112194"
-     data-ad-slot="2468505458"
+     data-ad-client="ca-pub-8062317950995248"
+     data-ad-slot="1247687739"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
 <script>
@@ -2152,13 +2088,13 @@ Speel drie dertien aanlyn aanlyn.<a class="btn btn-info" href="https://lotteh.co
 <div><p>deur Daisy / <a href="/af/how-do-i-build-a-mail-server-with" title="Bekyk plasing">Uitsig</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=f09955f6-55e4-42e0-a575-882dbb7e3917" title="Koop aan Lotte Harper">Koop</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=f09955f6-55e4-42e0-a575-882dbb7e3917&crypto=USDC" title="Koop met cryptocurrency op Lotte Harper">Koop met cryptocurrency</a></p><hr>
 
 <div class="mx-auto p-1 m-1" style="display: flex; justify-content: space-around;">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6209985848112194"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
      crossorigin="anonymous"></script>
-<!-- Square Ad -->
+<!-- Banner Ad -->
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="ca-pub-6209985848112194"
-     data-ad-slot="2468505458"
+     data-ad-client="ca-pub-8062317950995248"
+     data-ad-slot="1247687739"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
 <script>

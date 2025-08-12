@@ -71,7 +71,7 @@
               <a class="nav-link" href="/ar/private" title="انظر الصور الخاصة مع مفتاح">خاص</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://lotteh.com/payments/surrogacy/Daisy/?lang=ar" title="Surrogacy plans">الأم</a>
+              <a class="nav-link" href="https://lotteh.com/pay/surrogacy/Daisy/?lang=ar" title="Surrogacy plans">الأم</a>
             </li>
           </ul>
           <ul class="navbar-nav" style="margin-left: auto;">
@@ -1004,13 +1004,10 @@ AUTH_VALID_MINUTES = 3 # عدد الدقائق التي تكون صفحة TFA ن
 <pre class="language-python"><code># ... الواردات
 # نموذج لدخول رقم هاتفنا
 # نموذج للمصادقة</code></pre>
-<p>بعد ذلك ، دعنا ننشئ طرق العرض في المستخدمين/views.py</p>
-<pre class="language-python"><code># ... الواردات</code></pre>
-<p>سنحتاج أيضًا إلى قوالب لكل من هذه الآراء. دعنا نضيف قالب MFA أولاً.</p>
+<p></p><pre class="language-python"><code># ... الواردات</code></pre>
+<p></p>
 <pre class="language-bash"><code>nano users/templates/users/mfa.html
-</code></pre>
-<p>أضف رمز HTML هذا إلى القالب</p>
-<pre class="language-markup"><code><!-- {% extends 'base.html' %}
+</code></pre><p>أضف رمز HTML هذا إلى القالب</p><pre class="language-markup"><code><!-- {% extends 'base.html' %}
 {% block content %}
 {% load app_filters %}
 {% load crispy_forms_tags %}
@@ -1036,8 +1033,7 @@ AUTH_VALID_MINUTES = 3 # عدد الدقائق التي تكون صفحة TFA ن
  --></code></pre>
 <p>هذا هو توضيح الذات جميلة. يرسل النموذج إما رمز أو رمز فارغ ، وسوف تلاحظ في العرض نرسل الرمز إذا تلقينا رمزًا فارغًا. ثم لدينا فقط زرين إرسال ، وبهذه الطريقة يمكننا إرسال الرمز مع أي من الزر. بعد ذلك ، سنضيف نموذجًا بسيطًا لإضافة رقم هاتف.</p>
 <pre class="language-bash"><code>nano users/templates/users/mfa_onboarding.html
-</code></pre>
-<p>أضف HTML التالي:</p>
+</code></pre><p>أضف HTML التالي:</p>
 <pre class="language-markup"><code><!-- {% extends 'base.html' %}
 {% block content %}
 {% load crispy_forms_tags %}
@@ -1407,14 +1403,14 @@ from .tests import is_superuser_or_vendor # سنحتاج إلى إنشاء هذ�
 # لكي تعمل هذا ، ستحتاج أيضًا
 # HostBasedAuthentication لا
 # تغيير إلى نعم إذا كنت لا تثق
-
-
-
+# HostBasedAuthentication
+# تجاهل المعروف لا
+# لا تقرأ ملفات المستخدم ~/.rhosts و ~/.shosts
 # ignorerhosts نعم
 # لتعطيل كلمات مرور نص واضحة ، قم بالتغيير إلى لا هنا!
-
+# permothempasspasswords لا
 # التغيير إلى نعم لتمكين كلمات مرور التحدي والاستجابة (احذر مشكلات مع
-
+# بعض وحدات PAM وخيوط)
 # خيارات Kerberos
 # Kerberosauthentication لا
 # kerberosorlocalpasswd نعم
@@ -1459,7 +1455,7 @@ from .tests import is_superuser_or_vendor # سنحتاج إلى إنشاء هذ�
 # مطابقة المستخدم anoncvs
 # x11 forwarding لا
 # ALLETTCPFORDRADING NO
-
+# المسمار لا
 # خادم CVS Forcecommand</code></pre>
 <p>تذكر ، ctrl+x و y لحفظ الملف. بعد ذلك ، دعنا نكتب نصًا أساسيًا يسمى التهيئة (كل ذلك في الدليل الرئيسي الافتراضي لمستخدمنا).</p>
 <pre class="language-bash"><code>nano initialize
@@ -1750,13 +1746,13 @@ V = DMARC1 ؛ P = لا شيء</p>
 # سطر من هذا الملف لاستخدامه كاسم.  التخلف عن السداد
 # IS /etc /mailname.
 # myorigin = /etc /mailname
-# الإلحاح .domain هو وظيفة MUA.
+
 # Uncomment هو السطر التالي لإنشاء تحذيرات "البريد المتأخر"
-# تأخير _warning_time = 4h
+
 # راجع http://www.postfix.org/compatibility_readme.html - الافتراضي إلى 3.6 ON
 # تثبيتات جديدة.
-# المعلمات TLS
-# تكوين milter</code></pre>
+
+</code></pre>
 <p>التكوين التالي!</p>
 <pre class="language-bash"><code>nano config/etc_postfix_master.cf
 </code></pre>
@@ -1822,10 +1818,10 @@ V = DMARC1 ؛ P = لا شيء</p>
 # ================================================== ==================
 # 
 # يمكن أن تستخدم إصدارات Cyrus الحديثة إدخال "LMTP" Master.CF الحالي.
-
-
-
-
+# 
+# حدد في cyrus.conf:
+# lmtp cmd = "lmtpd -a" الاستماع = "LocalHost: LMTP" proto = tcp4
+# 
 # حدد في main.cf واحد أو أكثر مما يلي:
 # mailbox_transport = lmtp: inet: localhost
 # virtual_transport = lmtp: inet: localhost
@@ -1856,9 +1852,9 @@ V = DMARC1 ؛ P = لا شيء</p>
 </code></pre>
 <p>أضف هذه الخطوط:</p>
 <pre class="language-bash"><code># ملاحظة: هذا ملف تكوين قديم. لا يستخدمه Opendkim
-
-
-
+# خدمة النظام. يرجى استخدام معلمات التكوين المقابلة في
+# /etc/opendkim.conf بدلاً من ذلك.
+# 
 
 
 
@@ -1886,8 +1882,6 @@ V = DMARC1 ؛ P = لا شيء</p>
 
 
 
-# المستخدم في نظام Dovecot. لا ينبغي أن يكون لديه الوصول إلى أي شيء على الإطلاق.
-# default_login_user = dovenull
 
 
 
@@ -1897,99 +1891,99 @@ V = DMARC1 ؛ P = لا شيء</p>
 
 
 
-  # service_count = 1
-  # عدد العمليات التي تستمر دائمًا في انتظار المزيد من الاتصالات.
-  # process_min_avail = 0
-
-  # vsz_limit = $ default_vsz_limit
-    # منفذ = 110
-    # منفذ = 995
-    # SSL = نعم
-    # منفذ = 587
-  # إنشاء مستمع inet فقط إذا لم تتمكن من استخدام مقبس UNIX أعلاه
 
 
-    # العنوان =
-    # منفذ =
-  # }
-  # معظم الذاكرة تذهب إلى ملفات mmap () جي. قد تحتاج إلى زيادة هذا
-  # الحد إذا كان لديك صناديق بريد ضخمة.
-  # vsz_limit = $ default_vsz_limit
-  # الأعلى. عدد عمليات IMAP (الاتصالات)
-  # Process_Limit = 1024
-  # الأعلى. عدد عمليات pop3 (الاتصالات)
-  # Process_Limit = 1024
-  # الأعلى. عدد عمليات تقديم SMTP (اتصالات)
-  # Process_Limit = 1024
-  # يشير Auth_socket_path إلى مقبس userdb هذا افتراضيًا. عادة
-  # تستخدمها Dovecot-LDA ، و doveadm ، وربما عملية IMAP ، وما إلى ذلك.
-  # الأذونات الكاملة لهذا المقبس قادرة على الحصول على قائمة بجميع أسماء المستخدمين و
-  # احصل على نتائج عمليات البحث عن USERDB للجميع.
-  # 
-  # يسمح وضع 0666 الافتراضي لأي شخص بالاتصال بالمقبس ، ولكن
-  # لن تنجح عمليات البحث عن userdb إلا إذا قام userDB بإرجاع حقل "UID"
-  # يطابق UID لعملية المتصل. أيضا إذا كان المتصل UID أو GID يطابق
-  # مقبس UID أو gid ينجح البحث. أي شيء آخر يسبب الفشل.
-  # 
-  # لمنح المتصل أذونات كاملة للبحث عن جميع المستخدمين ، قم بتعيين الوضع على
-  # شيء آخر غير 0666 و Dovecot يتيح لـ kernel تطبيق
-  # أذونات (على سبيل المثال ، 0777 تسمح للجميع أذونات كاملة).
-  # يتم تشغيل عملية عامل المصادقة كجذر افتراضيًا ، بحيث يمكن الوصول إليها
-  # /إلخ/الظل. إذا لم يكن ذلك ضروريًا ، فيجب تغيير المستخدم إلى
-  # $ default_internal_user.
-  # المستخدم = الجذر
-  # إذا تم استخدام وكيل DICT ، فيجب أن يكون لعمليات البريد إمكانية الوصول إلى المقبس.
-  # على سبيل المثال: الوضع = 0660 ، المجموعة = vmail و global mail_access_groups = vmail
 
 
-    # المجموعة =</code></pre>
-<p>مرة أخرى ، تأكد من استبدال المجال في كل هذه الملفات ، Femmebabe.com ، بالمجال الذي حددته. قم بتحرير الملف التالي ، تكوين Dovecot ،</p><pre class="language-bash"><code>nano config/etc_dovecot_dovecot
-</code></pre><p>وأضف هذه الخطوط</p>
-<pre class="language-bash"><code>
-# إذا كنت في عجلة من أمرك ، راجع http://wiki2.dovecot.org/quickconfiguration
-# يعطي الأمر "DoveConf -N" إخراجًا نظيفًا للإعدادات التي تم تغييرها. استخدمه
 
-# '# 'الشخصية وكل شيء بعد معاملته كتعليقات. مساحات إضافية
-# وتجاهل علامات التبويب. إذا كنت ترغب في استخدام أي من هذه بشكل صريح ، فضع
-# value inside quotes, eg.: key = "# شار والمسافة البيضاء المتأخرة "
-# يمكن تجاوز معظم الإعدادات (وليس كلها) بواسطة بروتوكولات مختلفة و/أو
-# IPS المصدر/الوجهة عن طريق وضع الإعدادات داخل الأقسام ، على سبيل المثال:
-# بروتوكول IMAP {} ، محلي 127.0.0.1 {} ، Remote 10.0.0.0/8 {}
-# يتم عرض القيم الافتراضية لكل إعداد ، فليس من المطلوب عدمه
-# أولئك. هذه استثناءات لهذا: لا توجد أقسام (مثل مساحة الاسم {})
-# أو تتم إضافة إعدادات البرنامج المساعد افتراضيًا ، فهي مدرجة فقط كأمثلة.
-# المسارات هي أيضًا أمثلة فقط مع الإعدادات الافتراضية الحقيقية التي تعتمد على التكوين
-# خيارات. المسارات المدرجة هنا للتكوين -prefix =/usr
-# --sysconfdir =/etc-localstatedir =/var
-# تمكين البروتوكولات المثبتة
-# قائمة مفصولة مفصولة من IPs أو المضيفين حيث للاستماع للاتصالات.
-# يستمع "*" في جميع واجهات IPv4 ، "::" يستمع في جميع واجهات IPv6.
 
-# تحرير conf.d/master.conf.
-# الاستماع = *، ::
-# الدليل الأساسي حيث لتخزين بيانات وقت التشغيل.
-# base_dir =/var/run/dovecot/
-# اسم هذه الحالة. في الإعداد متعدد الثورات DoVeadm والأوامر الأخرى
-# يمكن استخدام -i &lt;alute_name&gt; لتحديد المثيل المستخدم (بديل
-# إلى -c &lt;config_path&gt;). تمت إضافة اسم المثيل أيضًا إلى عمليات Dovecot
-# في الإخراج PS.
-# easule_name = dovecot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</code></pre><p></p><pre class="language-bash"><code>nano config/etc_dovecot_dovecot
+</code></pre><p></p><pre class="language-bash"><code>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # تحية رسالة للعملاء.
 # login_greeting = dovecot جاهز.
 # قائمة مفصولة الفضاء من نطاقات الشبكة الموثوق بها. اتصالات من هذه
-# يُسمح لـ IPs بتجاوز عناوين IP ومنافذها (لتسجيلها و
+
 # لفحص المصادقة). يتم تجاهل disable_plaintext_auth
-# هذه الشبكات. عادةً ما تحدد خوادم الوكيل IMAP هنا.
-# login_trusted_networks =
-# قائمة مفصولة الفضاء من مآخذ الوصول إلى تسجيل الدخول (مثل TCPWRAP)
-# login_access_sockets =
-# مع proxy_maybe = نعم إذا كانت وجهة الوكيل تتطابق مع أي من هذه العنوانات الفكرية ، لا تفعل ذلك
+
+
+
+
+
 # البرامج. هذا ليس ضروريًا بشكل طبيعي ، ولكن قد يكون مفيدًا إذا كانت الوجهة
-# IP على سبيل المثال IP Balancer's IP.
-# Auth_proxy_self =
-# إظهار المزيد من عناوين عملية المطوّل (في PS). يظهر حاليا اسم المستخدم و
-# عنوان IP. مفيد لرؤية من يستخدمون بالفعل عمليات IMAP
-# (على سبيل المثال ، صناديق البريد المشتركة أو إذا تم استخدام نفس UID لحسابات متعددة).
+
+
+
+
+
 # Verbose_proctitle = لا
 # إذا تم قتل جميع العمليات عند إيقاف تشغيل عملية Dovecot Master.
 # إن تعيين هذا إلى "لا" يعني أنه يمكن ترقية DoveCot بدون
@@ -2048,11 +2042,11 @@ V = DMARC1 ؛ P = لا شيء</p>
 # في Debian ، يعمل Opendkim كمستخدم "OpendKim". مطلوب umask من 007 عندما
 # باستخدام مقبس محلي مع MTAs التي تصل إلى المقبس باعتبارها غير محددة
 # المستخدم (على سبيل المثال ، postfix). قد تحتاج إلى إضافة مستخدم "postfix" إلى المجموعة
-# "Opendkim" في هذه الحالة.
-# مقبس لاتصال MTA (مطلوب). إذا كانت MTA داخل سجن chroot ،
+
+
 # يجب التأكد من أن المقبس يمكن الوصول إليه. في دبيان ، يركض postfix في
 # chroot in/var/spool/postfix ، وبالتالي يجب أن يكون مقبس UNIX
-# تم تكوينها كما هو موضح في السطر الأخير أدناه.
+
 # Socket Local: /run/opendkim/opendkim.sock
 # مقبس inet: 8891@localhost
 # مقبس inet: 8891
@@ -2061,7 +2055,7 @@ V = DMARC1 ؛ P = لا شيء</p>
 # Internalhosts 192.168.0.0/16 ، 10.0.0.0/8 ، 172.16.0.0/12
 # مرساة الثقة تتيح DNSSEC. في دبيان ، يتم توفير ملف مرساة الثقة
 # بواسطة الحزمة DNS-ROOT-DATA.
-# خوادم الأسماء 127.0.0.1
+
 # نطاقات الخريطة من العناوين إلى المفاتيح المستخدمة لتوقيع الرسائل
 # مجموعة من المضيفين الداخليين الذين يجب توقيع بريدهم</code></pre>
 <pre class="language-bash"><code>nano config/etc_default_opendkim
@@ -2193,7 +2187,7 @@ exit()
 
 
 
-<p><a href="https://lotteh.com/payments/pay/Daisy/?id=cf8fc969-e02d-4952-a329-e60db51bc1a7" title="Buy on Lotte Harper">يشتري</a> | <a href="https://lotteh.com/payments/pay/crypto/Daisy/?id=cf8fc969-e02d-4952-a329-e60db51bc1a7&crypto=USDC" title="Buy with cryptocurrency on Lotte Harper">شراء مع التشفير</a></p>
+<p><a href="https://lotteh.com/pay/item/Daisy/?id=cf8fc969-e02d-4952-a329-e60db51bc1a7" title="Buy on Lotte Harper">يشتري</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=cf8fc969-e02d-4952-a329-e60db51bc1a7&crypto=USDC" title="Buy with cryptocurrency on Lotte Harper">شراء مع التشفير</a></p>
 
 
 <hr>
