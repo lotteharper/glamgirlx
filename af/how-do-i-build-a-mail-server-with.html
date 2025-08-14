@@ -122,9 +122,9 @@
 
 <h1>Hoe bou ek &#x27;n e -posbediener met postfix?</h1>
 <img src="https://i.imgur.com/dAQRaWt.jpeg" alt="Daisyse profielfoto" width="120" height="120" style="margin-top:5px; margin-right:10px; margin-bottom:10px; border-radius: 50%;">
-<p><i>Deur Daisy</i></p>
+<p><i>Per Daisy</i></p>
 
-<div style="white-space: pre-wrap;"><p>Hoe bou ek 'n posbediener met postfix?</p><p><br></p><p>Volg hierdie stappe om 'n posbediener met Postfix te bou:</p><p>< br></p><p>1. Installeer Postfix: Gebruik jou pakketbestuurder om Postfix op jou bediener te installeer. Byvoorbeeld, op Debian/Ubuntu kan jy `sudo apt-get install postfix` laat loop.</p><p><br></p><p>2. Stel Postfix op: Postfix-konfigurasielêers is geleë in `/etc/postfix/`. Die hoofkonfigurasielêer is `main.cf`. Jy kan hierdie lêer wysig om jou posbediener volgens jou vereistes op te stel. Sommige algemene konfigurasies wat jy dalk moet stel, sluit die domeinnaam, posaflosinstellings, virtuele domeine, ens. in.</p><p><br></p><p>3. Stel DNS-rekords op: Om posaflewering te verseker, moet jy die nodige DNS-rekords (MX- en SPF-rekords) vir jou domein opstel. Kontak jou domeinregistrateur of DNS-verskaffer vir bystand indien nodig.</p><p><br></p><p>4. Stel virtuele domeine en gebruikers op: As jy veelvuldige domeine op jou posbediener wil huisves, sal jy virtuele moet opsteldomeine en gebruikers. Dit kan gedoen word deur die `virtual_alias_maps` en `virtual_mailbox_maps` instellings in die Postfix-konfigurasielêer te gebruik.</p><p><br></p><p>5. Beveilig jou posbediener: Maak seker dat jou posbediener veilig is deur firewall-reëls op te stel, TLS-enkripsie vir inkomende en uitgaande pos te gebruik, en ander sekuriteitsmaatreëls te implementeer wat aanbeveel word vir posbedieners.</p><p><br></p ><p>6. Toets jou posbediener: Sodra alles opgestel is, moet jy jou posbediener toets deur toets-e-posse te stuur en te ontvang. Gebruik nutsgoed soos telnet of Mailx om e-pos met die hand te stuur en te kyk of dit suksesvol ontvang is.</p><p><br></p><p>Onthou om jou e-posbediener periodiek op te dateer en in stand te hou om te verseker dat dit glad verloop en veilig. Dit is ook 'n goeie idee om e-posbedienerlogboeke te monitor vir enige kwessies of verdagte</div>
+<div style="white-space: pre-wrap;"><p>How do I build a mail server with postfix?</p><p><br></p><p>To build a mail server with Postfix, follow these steps:</p><p><br></p><p>1. Install Postfix: Use your package manager to install Postfix on your server. For example, on Debian/Ubuntu, you can run `sudo apt-get install postfix`.</p><p><br></p><p>2. Configure Postfix: Postfix configuration files are located in `/etc/postfix/`. The main configuration file is `main.cf`. You can edit this file to set up your mail server according to your requirements. Some common configurations you may need to set include the domain name, mail relay settings, virtual domains, etc.</p><p><br></p><p>3. Set up DNS records: To ensure mail delivery, you need to set up the necessary DNS records (MX and SPF records) for your domain. Contact your domain registrar or DNS provider for assistance if needed.</p><p><br></p><p>4. Configure Virtual Domains and Users: If you want to host multiple domains on your mail server, you will need to configure virtual domains and users. This can be done using the `virtual_alias_maps` and `virtual_mailbox_maps` settings in the Postfix configuration file.</p><p><br></p><p>5. Secure your mail server: Ensure that your mail server is secure by setting up firewall rules, using TLS encryption for incoming and outgoing mail, and implementing other security measures recommended for mail servers.</p><p><br></p><p>6. Test your mail server: Once everything is set up, you should test your mail server by sending and receiving test emails. Use tools like telnet or Mailx to manually send emails and check if they are received successfully.</p><p><br></p><p>Remember to periodically update and maintain your mail server to ensure it runs smoothly and securely. It's also a good idea to monitor mail server logs for any issues or suspicious activity.</p></div>
 
 
 <div class="mx-auto p-1 m-1" style="display: flex; justify-content: space-around;">
@@ -214,7 +214,7 @@
         
         <a class="dropdown-item" href="/bg/how-do-i-build-a-mail-server-with" title="Lees die webwerf in Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/how-do-i-build-a-mail-server-with" title="Lees die webwerf in calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/how-do-i-build-a-mail-server-with" title="Lees die webwerf in calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/how-do-i-build-a-mail-server-with" title="Lees die webwerf in Cebuano">Cebuano</a>
         
@@ -579,7 +579,7 @@ if(document.getElementById("dynamicClockContainer")) {
 var hrs = ["twaalf", "een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf"];
 var digits = ["","een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf"];
 var teens = ["elf", "twaalf", "dertien", "veertien", "vyftien", "sestien", "sewentien", "agtien", "negentien"];
-var tens = ["o&#x27;","tien","twintig","dertig","veertig","vyftig"];
+var tens = ["o &#x27;","tien","twintig","dertig","veertig","vyftig"];
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
