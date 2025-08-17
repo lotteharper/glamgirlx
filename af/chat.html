@@ -216,7 +216,7 @@
 	    
 
       <legend>Videoklets</legend>
-      <p id="error-message" class="hide" style="text-color: red;">Aktiveer u kamera en mikrofoon in u webblaaier en toestelinstellings om voort te gaan. Herlaai om voort te gaan. <button onclick="window.location.reload();" title="Herlaai bladsy" class="call-button">Herlaai</button></p>
+      <p id="error-message" class="hide" style="text-color: red;">Please enable your camera and microphone in your web browser and device settings to continue. Herlaai om voort te gaan. <button onclick="window.location.reload();" title="Herlaai bladsy" class="call-button">Herlaai</button></p>
       <div id="main-screen">
       <div id="all-div" class="hide">
          <div id="accept-div" class="hide">
@@ -293,6 +293,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/chat" title="Lees die webwerf in english">english</a>
+        
         <a class="dropdown-item" href="/af/chat" title="Lees die webwerf in Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/chat" title="Lees die webwerf in shqip">shqip</a>
@@ -315,7 +317,7 @@
         
         <a class="dropdown-item" href="/bg/chat" title="Lees die webwerf in Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/chat" title="Lees die webwerf in calalana">calalana</a>
+        <a class="dropdown-item" href="/ca/chat" title="Lees die webwerf in calalan">calalan</a>
         
         <a class="dropdown-item" href="/ceb/chat" title="Lees die webwerf in Cebuano">Cebuano</a>
         
@@ -334,8 +336,6 @@
         <a class="dropdown-item" href="/da/chat" title="Lees die webwerf in Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/chat" title="Lees die webwerf in Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/chat" title="Lees die webwerf in english">english</a>
         
         <a class="dropdown-item" href="/eo/chat" title="Lees die webwerf in Esperanto">Esperanto</a>
         
@@ -657,10 +657,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["twaalf", "een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf"];
-var digits = ["","een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf"];
-var teens = ["elf", "twaalf", "dertien", "veertien", "vyftien", "sestien", "sewentien", "agtien", "negentien"];
-var tens = ["o &#x27;","tien","twintig","dertig","veertig","vyftig"];
+
+var hrs = ["Twaalf", "een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf "];
+var digits = ['", "een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf "];
+var teens = ["elf", "twaalf", "dertien", "veertien", "vyftien", "sestien", "sewentien", "agtien", "negentien "];
+var tens = ['O'", "tien", "twintig", "dertig", "veertig", "vyftig "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

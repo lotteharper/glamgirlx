@@ -146,7 +146,7 @@
 </div>
 <div class="row">
 <legend id="contact-message" style="text-color: green; font-color: green; color: green; text-align: center;" class="hide fade-in-fast">Poslana poruka.</legend>
-<p>Mi obično odgovaramo unutar dvanaest sati. Zadnji aktivan Aug. 12, 2025, 11:40 p.m.</p>
+<p>Mi obično odgovaramo unutar dvanaest sati. Zadnji aktivan Aug. 15, 2025, 2:07 a.m.</p>
 <div class="d-flex"><div class="clockContainer" id="clockContainer1">
         <div class="hour" id="hour1"></div> 
         <div class="minute" id="minute1"></div> 
@@ -154,7 +154,7 @@
 </div> 
 
 <div class="clock-script hide">
-    var d = "23:40:40".split(":");
+    var d = "02:07:58".split(":");
     var hr = parseInt(d[0]);
     var min = parseInt(d[1]);
     var sec = parseInt(d[2]);
@@ -218,6 +218,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/contact" title="Pročitajte stranicu u english">english</a>
+        
         <a class="dropdown-item" href="/af/contact" title="Pročitajte stranicu u Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/contact" title="Pročitajte stranicu u shqip">shqip</a>
@@ -240,7 +242,7 @@
         
         <a class="dropdown-item" href="/bg/contact" title="Pročitajte stranicu u Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/contact" title="Pročitajte stranicu u calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/contact" title="Pročitajte stranicu u calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/contact" title="Pročitajte stranicu u Cebuano">Cebuano</a>
         
@@ -259,8 +261,6 @@
         <a class="dropdown-item" href="/da/contact" title="Pročitajte stranicu u Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/contact" title="Pročitajte stranicu u Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/contact" title="Pročitajte stranicu u english">english</a>
         
         <a class="dropdown-item" href="/eo/contact" title="Pročitajte stranicu u Esperanto">Esperanto</a>
         
@@ -584,10 +584,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["dvanaest", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest"];
-var digits = ["","jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest"];
-var teens = ["jedanaest", "dvanaest", "trinaest", "četrnaest", "petnaest", "šesnaest", "sedamnaest", "osamnaest", "devetnaest"];
-var tens = ["o &#x27;","deset","dvadeset","trideset","četrdeset","pedeset"];
+
+var hrs = ["Dvanaest", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest "];
+var digits = ["", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest "];
+var teens = ["Jedanaest", "dvanaest", "trinaest", "četrnaest", "petnaest", "šesnaest", "sedamnaest", "osamnaest", "devetnaest "];
+var tens = ["O"", "deset", "dvadeset", "trideset", "četrdeset", "Pedeset "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

@@ -144,7 +144,7 @@
 
 
 
-<p><a href="https://lotteh.com/pay/item/Daisy/?id=f3f75834-0f4e-476f-8ee4-9969838426a4" title="Buy on Lotte Harper">Koop</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=f3f75834-0f4e-476f-8ee4-9969838426a4&crypto=USDC" title="Buy with cryptocurrency on Lotte Harper">Koop met crypto</a></p>
+<p><a href="https://lotteh.com/pay/item/Daisy/?id=f3f75834-0f4e-476f-8ee4-9969838426a4" title="Buy on Lotte Harper">Koop</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=f3f75834-0f4e-476f-8ee4-9969838426a4&crypto=USDC" title="Buy with cryptocurrency on Lotte Harper">Koop met kripto</a></p>
 
 
 <hr>
@@ -192,6 +192,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/how-do-i-find-customers-for-my-web" title="Lees die webwerf in english">english</a>
+        
         <a class="dropdown-item" href="/af/how-do-i-find-customers-for-my-web" title="Lees die webwerf in Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/how-do-i-find-customers-for-my-web" title="Lees die webwerf in shqip">shqip</a>
@@ -214,7 +216,7 @@
         
         <a class="dropdown-item" href="/bg/how-do-i-find-customers-for-my-web" title="Lees die webwerf in Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/how-do-i-find-customers-for-my-web" title="Lees die webwerf in calalana">calalana</a>
+        <a class="dropdown-item" href="/ca/how-do-i-find-customers-for-my-web" title="Lees die webwerf in calalan">calalan</a>
         
         <a class="dropdown-item" href="/ceb/how-do-i-find-customers-for-my-web" title="Lees die webwerf in Cebuano">Cebuano</a>
         
@@ -233,8 +235,6 @@
         <a class="dropdown-item" href="/da/how-do-i-find-customers-for-my-web" title="Lees die webwerf in Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/how-do-i-find-customers-for-my-web" title="Lees die webwerf in Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/how-do-i-find-customers-for-my-web" title="Lees die webwerf in english">english</a>
         
         <a class="dropdown-item" href="/eo/how-do-i-find-customers-for-my-web" title="Lees die webwerf in Esperanto">Esperanto</a>
         
@@ -576,10 +576,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["twaalf", "een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf"];
-var digits = ["","een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf"];
-var teens = ["elf", "twaalf", "dertien", "veertien", "vyftien", "sestien", "sewentien", "agtien", "negentien"];
-var tens = ["o &#x27;","tien","twintig","dertig","veertig","vyftig"];
+
+var hrs = ["Twaalf", "een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf "];
+var digits = ['", "een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf "];
+var teens = ["elf", "twaalf", "dertien", "veertien", "vyftien", "sestien", "sewentien", "agtien", "negentien "];
+var tens = ['O'", "tien", "twintig", "dertig", "veertig", "vyftig "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

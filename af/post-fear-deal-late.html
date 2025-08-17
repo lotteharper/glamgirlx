@@ -15,8 +15,8 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/static/fonts/bootstrap-icons.css">
     
-<meta property="og:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/3fd3de85-c51b-497f-81ef-8fc9cfc39420.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=ep%2Fq%2BCbRCrpj1mBk7SA7N7hnsVM%3D&amp;Expires=1755681258">
-<meta name="pinterest:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/3fd3de85-c51b-497f-81ef-8fc9cfc39420.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=ep%2Fq%2BCbRCrpj1mBk7SA7N7hnsVM%3D&amp;Expires=1755681258"/>
+<meta property="og:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/3fd3de85-c51b-497f-81ef-8fc9cfc39420.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=0gTV8pIY9BicuJ1BpQDALfIFAKs%3D&amp;Expires=1755865744">
+<meta name="pinterest:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/3fd3de85-c51b-497f-81ef-8fc9cfc39420.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=0gTV8pIY9BicuJ1BpQDALfIFAKs%3D&amp;Expires=1755865744"/>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
      crossorigin="anonymous"></script>
@@ -144,7 +144,7 @@
 
 
 
-<p><a href="https://lotteh.com/pay/item/crypto/Daisy/?id=bf18604d-647f-402f-b083-cd281d7da732&crypto=USDC" title="Buy with cryptocurrency on Lotte Harper">Koop met crypto</a></p>
+<p><a href="https://lotteh.com/pay/item/crypto/Daisy/?id=bf18604d-647f-402f-b083-cd281d7da732&crypto=USDC" title="Buy with cryptocurrency on Lotte Harper">Koop met kripto</a></p>
 
 
 <hr>
@@ -192,6 +192,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/post-fear-deal-late" title="Lees die webwerf in english">english</a>
+        
         <a class="dropdown-item" href="/af/post-fear-deal-late" title="Lees die webwerf in Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/post-fear-deal-late" title="Lees die webwerf in shqip">shqip</a>
@@ -214,7 +216,7 @@
         
         <a class="dropdown-item" href="/bg/post-fear-deal-late" title="Lees die webwerf in Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/post-fear-deal-late" title="Lees die webwerf in calalana">calalana</a>
+        <a class="dropdown-item" href="/ca/post-fear-deal-late" title="Lees die webwerf in calalan">calalan</a>
         
         <a class="dropdown-item" href="/ceb/post-fear-deal-late" title="Lees die webwerf in Cebuano">Cebuano</a>
         
@@ -233,8 +235,6 @@
         <a class="dropdown-item" href="/da/post-fear-deal-late" title="Lees die webwerf in Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/post-fear-deal-late" title="Lees die webwerf in Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/post-fear-deal-late" title="Lees die webwerf in english">english</a>
         
         <a class="dropdown-item" href="/eo/post-fear-deal-late" title="Lees die webwerf in Esperanto">Esperanto</a>
         
@@ -576,10 +576,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["twaalf", "een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf"];
-var digits = ["","een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf"];
-var teens = ["elf", "twaalf", "dertien", "veertien", "vyftien", "sestien", "sewentien", "agtien", "negentien"];
-var tens = ["o &#x27;","tien","twintig","dertig","veertig","vyftig"];
+
+var hrs = ["Twaalf", "een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf "];
+var digits = ['", "een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf "];
+var teens = ["elf", "twaalf", "dertien", "veertien", "vyftien", "sestien", "sewentien", "agtien", "negentien "];
+var tens = ['O'", "tien", "twintig", "dertig", "veertig", "vyftig "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

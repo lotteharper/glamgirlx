@@ -15,8 +15,8 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/static/fonts/bootstrap-icons.css">
     
-<meta property="og:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/3a5da1d0-95d2-4d7a-b103-7c124bb047e2.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=PKCChd6t7FRCnApdFoW%2FPmjdJRg%3D&amp;Expires=1755758351">
-<meta name="pinterest:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/3a5da1d0-95d2-4d7a-b103-7c124bb047e2.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=PKCChd6t7FRCnApdFoW%2FPmjdJRg%3D&amp;Expires=1755758351"/>
+<meta property="og:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/3a5da1d0-95d2-4d7a-b103-7c124bb047e2.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=f6Jb9zd%2Fqg0S%2FLHKDfeX355wvbc%3D&amp;Expires=1755946584">
+<meta name="pinterest:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/3a5da1d0-95d2-4d7a-b103-7c124bb047e2.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=f6Jb9zd%2Fqg0S%2FLHKDfeX355wvbc%3D&amp;Expires=1755946584"/>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
      crossorigin="anonymous"></script>
@@ -194,6 +194,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/the-photo-shows-a-woman-with-curly-south-would-a" title="Pročitajte stranicu u english">english</a>
+        
         <a class="dropdown-item" href="/af/the-photo-shows-a-woman-with-curly-south-would-a" title="Pročitajte stranicu u Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/the-photo-shows-a-woman-with-curly-south-would-a" title="Pročitajte stranicu u shqip">shqip</a>
@@ -235,8 +237,6 @@
         <a class="dropdown-item" href="/da/the-photo-shows-a-woman-with-curly-south-would-a" title="Pročitajte stranicu u Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/the-photo-shows-a-woman-with-curly-south-would-a" title="Pročitajte stranicu u Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/the-photo-shows-a-woman-with-curly-south-would-a" title="Pročitajte stranicu u english">english</a>
         
         <a class="dropdown-item" href="/eo/the-photo-shows-a-woman-with-curly-south-would-a" title="Pročitajte stranicu u Esperanto">Esperanto</a>
         
@@ -578,10 +578,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["dvanaest", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest"];
-var digits = ["","jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest"];
-var teens = ["jedanaest", "dvanaest", "trinaest", "četrnaest", "petnaest", "šesnaest", "sedamnaest", "osamnaest", "devetnaest"];
-var tens = ["o &#x27;","deset","dvadeset","trideset","četrdeset","pedeset"];
+
+var hrs = ["Dvanaest", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest "];
+var digits = ["", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest "];
+var teens = ["Jedanaest", "dvanaest", "trinaest", "četrnaest", "petnaest", "šesnaest", "sedamnaest", "osamnaest", "devetnaest "];
+var tens = ["O"", "deset", "dvadeset", "trideset", "četrdeset", "Pedeset "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

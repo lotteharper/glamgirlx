@@ -15,8 +15,8 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/static/fonts/bootstrap-icons.css">
     
-<meta property="og:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/2921e68d-a771-433d-8067-f5af9536aa08.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=4Ra73%2FYfHGBRAKSX0kLMw%2BZ3yFc%3D&amp;Expires=1755754359">
-<meta name="pinterest:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/2921e68d-a771-433d-8067-f5af9536aa08.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=4Ra73%2FYfHGBRAKSX0kLMw%2BZ3yFc%3D&amp;Expires=1755754359"/>
+<meta property="og:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/2921e68d-a771-433d-8067-f5af9536aa08.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=OKhVi%2Fq5gwfspcdu8wcX4%2Fvv6LA%3D&amp;Expires=1755942591">
+<meta name="pinterest:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/2921e68d-a771-433d-8067-f5af9536aa08.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=OKhVi%2Fq5gwfspcdu8wcX4%2Fvv6LA%3D&amp;Expires=1755942591"/>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
      crossorigin="anonymous"></script>
@@ -194,6 +194,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/the-photo-shows-a-woman-lying-on-a-about-chief-human" title="Pročitajte stranicu u english">english</a>
+        
         <a class="dropdown-item" href="/af/the-photo-shows-a-woman-lying-on-a-about-chief-human" title="Pročitajte stranicu u Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/the-photo-shows-a-woman-lying-on-a-about-chief-human" title="Pročitajte stranicu u shqip">shqip</a>
@@ -235,8 +237,6 @@
         <a class="dropdown-item" href="/da/the-photo-shows-a-woman-lying-on-a-about-chief-human" title="Pročitajte stranicu u Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/the-photo-shows-a-woman-lying-on-a-about-chief-human" title="Pročitajte stranicu u Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/the-photo-shows-a-woman-lying-on-a-about-chief-human" title="Pročitajte stranicu u english">english</a>
         
         <a class="dropdown-item" href="/eo/the-photo-shows-a-woman-lying-on-a-about-chief-human" title="Pročitajte stranicu u Esperanto">Esperanto</a>
         
@@ -578,10 +578,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["dvanaest", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest"];
-var digits = ["","jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest"];
-var teens = ["jedanaest", "dvanaest", "trinaest", "četrnaest", "petnaest", "šesnaest", "sedamnaest", "osamnaest", "devetnaest"];
-var tens = ["o &#x27;","deset","dvadeset","trideset","četrdeset","pedeset"];
+
+var hrs = ["Dvanaest", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest "];
+var digits = ["", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest "];
+var teens = ["Jedanaest", "dvanaest", "trinaest", "četrnaest", "petnaest", "šesnaest", "sedamnaest", "osamnaest", "devetnaest "];
+var tens = ["O"", "deset", "dvadeset", "trideset", "četrdeset", "Pedeset "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

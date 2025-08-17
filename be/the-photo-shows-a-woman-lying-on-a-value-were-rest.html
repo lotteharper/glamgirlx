@@ -194,6 +194,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/the-photo-shows-a-woman-lying-on-a-value-were-rest" title="Прачытайце сайт у english">english</a>
+        
         <a class="dropdown-item" href="/af/the-photo-shows-a-woman-lying-on-a-value-were-rest" title="Прачытайце сайт у Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/the-photo-shows-a-woman-lying-on-a-value-were-rest" title="Прачытайце сайт у shqip">shqip</a>
@@ -216,7 +218,7 @@
         
         <a class="dropdown-item" href="/bg/the-photo-shows-a-woman-lying-on-a-value-were-rest" title="Прачытайце сайт у Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/the-photo-shows-a-woman-lying-on-a-value-were-rest" title="Прачытайце сайт у calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/the-photo-shows-a-woman-lying-on-a-value-were-rest" title="Прачытайце сайт у calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/the-photo-shows-a-woman-lying-on-a-value-were-rest" title="Прачытайце сайт у Cebuano">Cebuano</a>
         
@@ -235,8 +237,6 @@
         <a class="dropdown-item" href="/da/the-photo-shows-a-woman-lying-on-a-value-were-rest" title="Прачытайце сайт у Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/the-photo-shows-a-woman-lying-on-a-value-were-rest" title="Прачытайце сайт у Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/the-photo-shows-a-woman-lying-on-a-value-were-rest" title="Прачытайце сайт у english">english</a>
         
         <a class="dropdown-item" href="/eo/the-photo-shows-a-woman-lying-on-a-value-were-rest" title="Прачытайце сайт у Esperanto">Esperanto</a>
         
@@ -578,10 +578,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["дванаццаць", "адзін", "два", "тры", "чатыры", "пяць", "шэсць", "сем", "восем", "дзевяць", "дзесяць", "адзінаццаць"];
-var digits = ["","адзін", "два", "тры", "чатыры", "пяць", "шэсць", "сем", "восем", "дзевяць", "дзесяць", "адзінаццаць"];
-var teens = ["адзінаццаць", "дванаццаць", "трынаццаць", "чатырнаццаць", "пятнаццаць", "шаснаццаць", "сямнаццаць", "васямнаццаць", "дзевятнаццаць"];
-var tens = ["o &#x27;","дзесяць","дваццаць","трыццаць","сорак","пяцьдзесят"];
+
+var hrs = ["Дванаццаць", "адзін", "два", "тры", "чатыры", "пяць", "шэсць", "сем", "восем", "дзевяць", "дзесяць", "Адзінаццаць "];
+var digits = ["", "адзін", "два", "тры", "чатыры", "пяць", "шэсць", "сем", "восем", "дзевяць", "дзесяць", "Адзінаццаць "];
+var teens = ["Адзінаццаць", "дванаццаць", "трынаццаць", "чатырнаццаць", "пятнаццаць", "шаснаццаць", "сямнаццаць", "васямнаццаць", "дзевятнаццаць "];
+var tens = ["О"", "дзесяць", "дваццаць", "трыццаць", "сорак", "Пяцьдзесят "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

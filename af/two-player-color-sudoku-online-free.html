@@ -150,7 +150,7 @@ play collaborative color sudoku with a friend for free. <a title="Invite a Frien
 
 <img width="100%;" height="auto" src="https://glamgirlx.com/media/images/c820300b-3430-4988-86fd-e77352fca488.png" alt="Two player color sudoku online free - per Daisy">
 
-<p><a href="https://lotteh.com/pay/item/Daisy/?id=c820300b-3430-4988-86fd-e77352fca488" title="Buy on Lotte Harper">Koop</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=c820300b-3430-4988-86fd-e77352fca488&crypto=USDC" title="Buy with cryptocurrency on Lotte Harper">Koop met crypto</a></p>
+<p><a href="https://lotteh.com/pay/item/Daisy/?id=c820300b-3430-4988-86fd-e77352fca488" title="Buy on Lotte Harper">Koop</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=c820300b-3430-4988-86fd-e77352fca488&crypto=USDC" title="Buy with cryptocurrency on Lotte Harper">Koop met kripto</a></p>
 
 
 <hr>
@@ -198,6 +198,8 @@ play collaborative color sudoku with a friend for free. <a title="Invite a Frien
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/two-player-color-sudoku-online-free" title="Lees die webwerf in english">english</a>
+        
         <a class="dropdown-item" href="/af/two-player-color-sudoku-online-free" title="Lees die webwerf in Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/two-player-color-sudoku-online-free" title="Lees die webwerf in shqip">shqip</a>
@@ -220,7 +222,7 @@ play collaborative color sudoku with a friend for free. <a title="Invite a Frien
         
         <a class="dropdown-item" href="/bg/two-player-color-sudoku-online-free" title="Lees die webwerf in Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/two-player-color-sudoku-online-free" title="Lees die webwerf in calalana">calalana</a>
+        <a class="dropdown-item" href="/ca/two-player-color-sudoku-online-free" title="Lees die webwerf in calalan">calalan</a>
         
         <a class="dropdown-item" href="/ceb/two-player-color-sudoku-online-free" title="Lees die webwerf in Cebuano">Cebuano</a>
         
@@ -239,8 +241,6 @@ play collaborative color sudoku with a friend for free. <a title="Invite a Frien
         <a class="dropdown-item" href="/da/two-player-color-sudoku-online-free" title="Lees die webwerf in Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/two-player-color-sudoku-online-free" title="Lees die webwerf in Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/two-player-color-sudoku-online-free" title="Lees die webwerf in english">english</a>
         
         <a class="dropdown-item" href="/eo/two-player-color-sudoku-online-free" title="Lees die webwerf in Esperanto">Esperanto</a>
         
@@ -582,10 +582,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["twaalf", "een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf"];
-var digits = ["","een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf"];
-var teens = ["elf", "twaalf", "dertien", "veertien", "vyftien", "sestien", "sewentien", "agtien", "negentien"];
-var tens = ["o &#x27;","tien","twintig","dertig","veertig","vyftig"];
+
+var hrs = ["Twaalf", "een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf "];
+var digits = ['", "een", "twee", "drie", "vier", "vyf", "ses", "sewe", "agt", "nege", "tien", "elf "];
+var teens = ["elf", "twaalf", "dertien", "veertien", "vyftien", "sestien", "sewentien", "agtien", "negentien "];
+var tens = ['O'", "tien", "twintig", "dertig", "veertig", "vyftig "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

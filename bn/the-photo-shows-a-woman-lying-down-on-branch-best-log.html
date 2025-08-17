@@ -194,6 +194,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/the-photo-shows-a-woman-lying-down-on-branch-best-log" title="সাইটটি পড়ুন english">english</a>
+        
         <a class="dropdown-item" href="/af/the-photo-shows-a-woman-lying-down-on-branch-best-log" title="সাইটটি পড়ুন Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/the-photo-shows-a-woman-lying-down-on-branch-best-log" title="সাইটটি পড়ুন shqip">shqip</a>
@@ -216,7 +218,7 @@
         
         <a class="dropdown-item" href="/bg/the-photo-shows-a-woman-lying-down-on-branch-best-log" title="সাইটটি পড়ুন Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/the-photo-shows-a-woman-lying-down-on-branch-best-log" title="সাইটটি পড়ুন calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/the-photo-shows-a-woman-lying-down-on-branch-best-log" title="সাইটটি পড়ুন calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/the-photo-shows-a-woman-lying-down-on-branch-best-log" title="সাইটটি পড়ুন Cebuano">Cebuano</a>
         
@@ -235,8 +237,6 @@
         <a class="dropdown-item" href="/da/the-photo-shows-a-woman-lying-down-on-branch-best-log" title="সাইটটি পড়ুন Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/the-photo-shows-a-woman-lying-down-on-branch-best-log" title="সাইটটি পড়ুন Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/the-photo-shows-a-woman-lying-down-on-branch-best-log" title="সাইটটি পড়ুন english">english</a>
         
         <a class="dropdown-item" href="/eo/the-photo-shows-a-woman-lying-down-on-branch-best-log" title="সাইটটি পড়ুন Esperanto">Esperanto</a>
         
@@ -578,10 +578,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["বারো", "এক", "দুই", "তিন", "চার", "পাঁচ", "ছয়", "সাত", "আট", "নয়", "দশ", "এগারো"];
-var digits = ["","এক", "দুই", "তিন", "চার", "পাঁচ", "ছয়", "সাত", "আট", "নয়", "দশ", "এগারো"];
-var teens = ["এগারো", "বারো", "তেরো", "চৌদ্দ", "পনেরো", "ষোল", "সতেরো", "আঠারো", "উনিশ"];
-var tens = ["ও &#x27;","দশ","বিশ","ত্রিশ","চল্লিশ","পঞ্চাশ"];
+
+var hrs = ["বারো", "এক", "দুই", "তিন", "চার", "পাঁচ", "ছয়", "সাত", "আট", "নয়", "দশ", "এগারো "];
+var digits = ["", "এক", "দুই", "তিন", "চার", "পাঁচ", "ছয়", "সাত", "আট", "নয়", "দশ", "এগারো "];
+var teens = ["এগারো", "বারো", "তেরো", "চৌদ্দ", "পনেরো", "ষোল", "সতেরো", "আঠারো", "উনিশ "];
+var tens = ["ও '", "দশ", "বিশ", "ত্রিশ", "চল্লিশ", "পঞ্চাশ "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

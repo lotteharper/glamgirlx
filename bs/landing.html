@@ -178,6 +178,8 @@ iframe {
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/landing" title="Pročitajte stranicu u english">english</a>
+        
         <a class="dropdown-item" href="/af/landing" title="Pročitajte stranicu u Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/landing" title="Pročitajte stranicu u shqip">shqip</a>
@@ -200,7 +202,7 @@ iframe {
         
         <a class="dropdown-item" href="/bg/landing" title="Pročitajte stranicu u Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/landing" title="Pročitajte stranicu u calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/landing" title="Pročitajte stranicu u calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/landing" title="Pročitajte stranicu u Cebuano">Cebuano</a>
         
@@ -219,8 +221,6 @@ iframe {
         <a class="dropdown-item" href="/da/landing" title="Pročitajte stranicu u Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/landing" title="Pročitajte stranicu u Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/landing" title="Pročitajte stranicu u english">english</a>
         
         <a class="dropdown-item" href="/eo/landing" title="Pročitajte stranicu u Esperanto">Esperanto</a>
         
@@ -544,10 +544,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["dvanaest", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest"];
-var digits = ["","jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest"];
-var teens = ["jedanaest", "dvanaest", "trinaest", "četrnaest", "petnaest", "šesnaest", "sedamnaest", "osamnaest", "devetnaest"];
-var tens = ["o &#x27;","deset","dvadeset","trideset","četrdeset","pedeset"];
+
+var hrs = ["Dvanaest", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest "];
+var digits = ["", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest "];
+var teens = ["Jedanaest", "dvanaest", "trinaest", "četrnaest", "petnaest", "šesnaest", "sedamnaest", "osamnaest", "devetnaest "];
+var tens = ["O"", "deset", "dvadeset", "trideset", "četrdeset", "Pedeset "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

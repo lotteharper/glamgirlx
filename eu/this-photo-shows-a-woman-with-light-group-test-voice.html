@@ -15,8 +15,8 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/static/fonts/bootstrap-icons.css">
     
-<meta property="og:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/b00f0a6b-676b-4a76-94a4-9b83014fadd5.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=AeVf5Z85S8aMo9xvUTZK4Is8gHk%3D&amp;Expires=1755714451">
-<meta name="pinterest:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/b00f0a6b-676b-4a76-94a4-9b83014fadd5.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=AeVf5Z85S8aMo9xvUTZK4Is8gHk%3D&amp;Expires=1755714451"/>
+<meta property="og:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/b00f0a6b-676b-4a76-94a4-9b83014fadd5.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=mjIRQnWc7c19V0aNNS4fqi796jE%3D&amp;Expires=1755897460">
+<meta name="pinterest:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/b00f0a6b-676b-4a76-94a4-9b83014fadd5.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=mjIRQnWc7c19V0aNNS4fqi796jE%3D&amp;Expires=1755897460"/>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
      crossorigin="anonymous"></script>
@@ -194,6 +194,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/this-photo-shows-a-woman-with-light-group-test-voice" title="Irakurri gunea english">english</a>
+        
         <a class="dropdown-item" href="/af/this-photo-shows-a-woman-with-light-group-test-voice" title="Irakurri gunea Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/this-photo-shows-a-woman-with-light-group-test-voice" title="Irakurri gunea shqip">shqip</a>
@@ -216,7 +218,7 @@
         
         <a class="dropdown-item" href="/bg/this-photo-shows-a-woman-with-light-group-test-voice" title="Irakurri gunea Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/this-photo-shows-a-woman-with-light-group-test-voice" title="Irakurri gunea calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/this-photo-shows-a-woman-with-light-group-test-voice" title="Irakurri gunea calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/this-photo-shows-a-woman-with-light-group-test-voice" title="Irakurri gunea Cebuano">Cebuano</a>
         
@@ -235,8 +237,6 @@
         <a class="dropdown-item" href="/da/this-photo-shows-a-woman-with-light-group-test-voice" title="Irakurri gunea Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/this-photo-shows-a-woman-with-light-group-test-voice" title="Irakurri gunea Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/this-photo-shows-a-woman-with-light-group-test-voice" title="Irakurri gunea english">english</a>
         
         <a class="dropdown-item" href="/eo/this-photo-shows-a-woman-with-light-group-test-voice" title="Irakurri gunea Esperanto">Esperanto</a>
         
@@ -578,10 +578,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["hamabi", "bat", "bi", "hiru", "lau", "bost", "sei", "zazpi", "zortzi", "bederatzi", "hamar", "hamaika"];
-var digits = ["","bat", "bi", "hiru", "lau", "bost", "sei", "zazpi", "zortzi", "bederatzi", "hamar", "hamaika"];
-var teens = ["hamaika", "hamabi", "hamahiru", "hamalau", "hamabost", "hamasei", "hamazazpi", "hamazortzi", "hemeretzi"];
-var tens = ["o","hamar","hogei","hogeita hamar","berrogei","berrogeita hamar"];
+
+var hrs = ["Hamabi", "bat", "bi", "hiru", "lau", "bost", "sei", "zazpi", "zortzi", "bederatzi", "hamar", "hamaika "];
+var digits = ["", "bat", "bi", "hiru", "lau", "bost", "sei", "zazpi", "zortzi", "bederatzi", "hamar", "hamaika "];
+var teens = ["Hamaika", "hamabi", "hamahiru", "hamalau", "hamabost", "hamasei", "hamazazpi", "hamazortzi", "hemeretzi "];
+var tens = ["O '", "hamar", "hogei", "hogeita hamar", "berrogei", "berrogeita hamar "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

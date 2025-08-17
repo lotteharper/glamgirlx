@@ -7,7 +7,7 @@
     <meta name="description" content="请参阅本文|基于Web的实用深度学习和安全性，示例第三版夏洛特·哈珀（Charlotte Harper）2024年7月3日更新/converted ...">
     <meta name="author" content="Charlotte Grace Harper">
     <link rel="icon" href="/media/favicon.ico">
-    <title>实用的基于网络的深度学习和安全示例 - Glam Girl X</title>
+    <title>实用的基于Web的深度学习和安全 - Glam Girl X</title>
     <link rel="canonical" href="https://glamgirlx.com/zh-cn/practical-web-based-deep-learning-and">
     <link href="/static/main.css" rel="stylesheet">
     <link rel="manifest" href="/site.webmanifest">
@@ -18,8 +18,9 @@
 <meta property="og:image" content="/media/static/default.png">
 <meta name="pinterest:image" content="/media/static/default.png"/>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6209985848112194"
-         crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
+     crossorigin="anonymous"></script>
+
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XG1SZ2K8S5"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -59,7 +60,7 @@
               <a class="nav-link" href="/zh-cn/news" title="新文章">消息</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/zh-cn/contact" title="联系我">接触</a>
+              <a class="nav-link" href="/zh-cn/contact" title="与我联系">接触</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/zh-cn/landing" title="访问着陆页">降落</a>
@@ -68,10 +69,10 @@
               <a class="nav-link" href="/zh-cn/chat" title="视频聊天">聊天</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/zh-cn/private" title="用钥匙查看私人照片">私人的</a>
+              <a class="nav-link" href="/zh-cn/private" title="查看带有钥匙的私人照片">私人的</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://lotteh.com/payments/surrogacy/Daisy/?lang=zh-cn" title="Surrogacy plans">代孕</a>
+              <a class="nav-link" href="https://lotteh.com/pay/surrogacy/Daisy/?lang=zh-cn" title="Surrogacy plans">代孕</a>
             </li>
           </ul>
           <ul class="navbar-nav" style="margin-left: auto;">
@@ -119,108 +120,29 @@
 	    
 
 
-<h1>实用的基于网络的深度学习和安全示例</h1>
+<h1>实用的基于Web的深度学习和安全</h1>
 <img src="https://i.imgur.com/dAQRaWt.jpeg" alt="Daisy的个人资料照片" width="120" height="120" style="margin-top:5px; margin-right:10px; margin-bottom:10px; border-radius: 50%;">
 <p><i>经过 Daisy</i></p>
 
-<div style="white-space: pre-wrap;">实用的基于Web的深度学习和安全
-第三版
-夏洛特·哈珀
-2024年7月3日
-2025年6月3日更新/转换
+<div style="white-space: pre-wrap;">Practical Web Based Deep Learning and Security by Example
+Third Edition
+Charlotte Harper
+July 3, 2024
+Updated/Converted June 3, 2025
 
-前言：
+Foreword:
 
-为网络构建软件的安全注意事项是任何Web开发人员计划和执行的重要组成部分，同时设计了可靠，稳定且用于实际目的的原型。 DOM（文档对象标记），其实现HTML，JavaScript和CSS以及后端软件实现Python, C/C++, Java and bash, give web developers the freedom and power to create a wide variety of projects that express creativity, provide ease of use and functionality, portray humility and character, and provide ease of use as well as convenience and important services that are all attractive to the average Joe, the end user looking to kill time or get something done on the internet, usually on a touchscreen smartphone device.大多数人甚至都不知道在他们想要的时候从哪里开始从头开始，他们倾向于从另一个人的网站上开始，并在功能，可靠性，易用性，尤其是创造力上建立一些有限的东西，当他们可以使用所有最新的功能强大的工具，以便为了建立有用的东西而不用浪费时间按按钮，尤其是浪费昂贵的订购，以使其付出昂贵的订阅，以使其限制使用，无论如何都可以使用昂贵的订购，以使其限制使用，以使其易用和灵活地使用。如果你几分钟来阅读这本书，学习我想教您的内容，甚至与我个人谈论您的目标，并在正确的方向上获得一些指导，并有动力学习编码和编写自己的软件，将这本书带回家，并留出一些时间来学习构建下一个有影响力的，功能强大，精简且重要的网络应用程序，并且在您想要的网站上，您想要的是您所想要的，并且可以满足您的需求，并且可以满足您的需求。
+Security considerations in building software for the web are an important part of any web developer's plan and execution while engineering a prototype that is dependable, stable, and useful for practical purposes. The DOM (Document Object Markup), with it's implementation of HTML, JavaScript, and CSS as well as backend software implementing Python, C/C++, Java and bash, give web developers the freedom and power to create a wide variety of projects that express creativity, provide ease of use and functionality, portray humility and character, and provide ease of use as well as convenience and important services that are all attractive to the average Joe, the end user looking to kill time or get something done on the internet, usually on a touchscreen smartphone device. Most people wouldn't even know where to start when they want to build a website from scratch, they would tend to start on another person's website and build something limited in functionality, dependability, ease of use and especially creativity when they could have had all the latest powerful tools at their disposal in order to build something useful without wasting time pressing buttons, and especially wasting money paying for expensive subscriptions to software few people wanted to use anyway given it's limitations in ease of use and flexibility. If you have a few minutes to read through this book and learn what I want to teach you, or even speak with me personally about your goals and get some guidance in the right direction, and are motivated to learn to code and write your own software, take this book home and set aside some time to learn to build the next influential, powerful, streamlined and important web application, a website that is all on you and does exactly what you want and meets the needs of your audience.
 
-关于我：
-我是一个FTware开发人员在C/C ++，Java，Python，HTML，CSS和JavaScript方面具有广泛的经验。我建立了人们想要使用，想要访问的网站，甚至沉迷于仅仅学习，重新创造和杀死时间，最重要的是，我出售软件。如果您有一个想法确切地希望网站的外观和功能，那么您愿意支持我，以便在我见面时我可以满足自己的需求，并且您愿意承担自己运行网站的费用，我会您只能访问下一个YouTube，Tiktok，Twitter，Google，甚至是高科技安全应用程序。我没有试图为您出售我的时间，而是要购买您的时间：我想与您联系，以构建一个已经存在的信息，并教您成为独立软件开发人员所需的内容，以实现您想要的任何领域的成功职业。让我清楚，我给您的教育将是非正式的。你可以去学校曾经很容易，甚至应该成为。您需要尽可能地努力工作，并继续尝试失败并重试，即使您感到沮丧，才能自己学习和构建应用程序。这是代码本身的性质。代码是由旨在给程序员错误消息的编译器运行的，即使您只是将错误复制到搜索引擎并阅读其他人的示例中，这些代码也会教您如何编码。我必须说，你不需要富有的，聪明，成功，甚至是细节的构建应用程序。计算机为您照顾该组织。您只需要在反复试验和错误中坚持不懈，保持专注并努力工作，您将在整个工作中拥有非常成功的职业生涯。
+About me:
+I am a software developer with a wide range of experience in C/C++, Java, Python, HTML, CSS and JavaScript. I build websites people want to use, want to visit, and even get addicted to using just to learn, recreate and kill time, and most importantly, I sell software. If you had an idea as to exactly how you wanted a website to look and function, you were willing to support me so I can meet my own needs while I meet yours, and you are willing to cover the costs of running a website yourself, I would build you the next YouTube, TikTok, Twitter, Google, or even a high-tech security app only you can access. Instead of trying to sell you my time, I'm trying to buy yours: I want to talk you into building an app (website) yourself with the information that already exists, and teach you what you need to be an independent software developer, entrepreneur, leading a successful career in whatever field you desire. And let me be clear, the education I give you will be informal. You could go to school and learn all of this with a formal education, or even read this book in school, complete your assignments, and take away a great deal from your education, but I won't formally put you in the hot seat and ask you to complete assignments. I'm not your professor, you can think of me like a friend who wants to guide you toward a career driven by your own personal success. And I'm not selling you success either, you will need to buy it with your time. Learning to code has a steep learning curve and was never easy, or even supposed to be. You need to work as hard as you possibly can and continue to try and fail and try again even when you are frustrated in order to learn and build apps yourself. That's in the nature of code itself. Code is run by a compiler that is designed to give the programmer error messages, and these will teach you how to code, even if you are simply copying the error into your search engine and reading other people's examples. And I must say, you don't need to be extremely rich, smart, successful, or even detail oriented or organized to build an app. The computer takes care of that organization for you. You just need to persevere through the trial and error, maintain focus and work hard at what you do, and you will have a very successful career in the entirety of what you do.
 
-我是谁：
-我意识到，最后一部分更多是关于学习，而您从这本书中采取了一些方法。我到底是谁？这是一个复杂的问题。我本人不清楚从医疗条件来看，这可能使我很难有时甚至编码或写这本书，同时在社交和身份问题上提出挑战，这使我的生活更加困难。简而言之，如果您正在读这本书，则将其带回家是因为您翻阅了它并认为它很有用，或者即使您只是读了这本书，我还是一个志趣相投的人，希望看到您在您所做的一切中都取得成功。我是一个我自己工程师，一个软件开发人员和一名学生，我正在为其他想要使自己的生活更轻松的学生编写这本书，他们需要使用他们需要的软件手册来使自己的生活更轻松，从而使他们的生活更加轻松，以示例将大型拼图融合在一起，使工作中有效，有用，功能性，凝聚力，凝聚力，凝聚力和引人入胜的应用程序可以使您能够成功获得成功。在很大程度上，这就是我要做的：我构建应用程序来帮助自己和其他人取得成功。我是作家l，尽管这是我打算完成的第一个出版物，以便将我的投资组合放入有用的文档中，而且我也是艺术家。
-我会向你承认，我有点陌生的人。我并不完美，我已经与法律竞选，甚至导致我离开大学，离开州，以便为自己取得更大的成功。我是一个女人出生时，我穿化妆，给自己拍照，穿衣服和其他女装衣服，我留下来自然而然地看着自己是女性。过去，我与其他人遇到了问题，导致写作和构建WebApps挣扎，很抱歉，我无法尽快将这本书掌握在您的手中：您需要这个。您将需要读取和编写看起来像我的代码，就像我一样的工作，但做得更好，因为如果您能够负担得起这本书而不是像我一样为自己创建一本书，而不是捣碎键盘，您拥有一生中成功所需的资源。我在家庭成长，健康状况，医生，媒体和法律方面都有各种各样的问题，而我的守则深深地反映了在一个分裂和沮丧的世界中的女权主义和女性的斗争。但是，这本书是我深切关心的，我的孩子，我的投资组合和我的生计，因此，我感谢您在将文字带回家并仔细地仔细回家以向我学习时的考虑。请保持请注意，我并不完美，这本书将有错误，修订和新版本，您将需要尽可能地考虑自己的逻辑大脑，以便在我的写作上获得成功的经验。另外，请理解，即使您在写作时面对挑战，我也对您来说很好。这样考虑这样的事情：当您只能租用计算机系统来执行您可能想象的任何事情时确立它，您将不可避免地遇到困难，而您正在摄入甚至发布的信息。我告诉你这是因为我遇到同样的困难。使用这本书自身风险，与您的社区和社区一起工作，可以在安全的环境中构建软件，并且在您失败甚至以错误的方式成功时不要将事情带给个人：这就是我的发展方式，以及为什么我可以为您带来本文并帮助您成功而无需脱落而无法摆脱困境。当我遇到每个人在全球范围内遇到的普通问题时，由于我们将在全球范围内遇到的普通问题时，我的疯狂之情被毁了，撕裂和磨损，这要归功于我们将在其上工作的网络范围的全球范围，即互联网。您可能对我只有几句话不是很熟悉的人，但是我鼓励您继续阅读，当您在建立自己的项目以完成工作的同时继续阅读和理解我时，您会认识我。只要您的书，这本书就不会有作业ROFESSORS或"老师都不分配您，但我强烈鼓励您在阅读时自己构建项目组合，以及一个盖帽项目，展示了如何运用您所学到的知识。我的盖石项目是您在本书中阅读的大部分内容的基础，因为它结合了我以前的项目，我创建和学会了手工写作的代码，以及各种各样的想法和技巧，这些想法和技巧帮助我成功了p一个简单的应用程序，其外观和外观和行为就像您可能会看到您的朋友或家人在Internet上使用，向您广告或新闻中使用的流行应用程序。
+Who I am:
+I realize that the last section was more about learning and your take a ways from this book. Who am I exactly? That's a complicated question. I am unclear on that myself, as I suffer from medical conditions that can make it difficult for me to even code or write this book at times, while presenting challenges with socialization and identity issues that make my life more difficult when it comes to introducing myself. In short, if you are reading this book, you brought it home because you flipped through it and thought it was useful, or even if you just read this far in, to you I am a like minded individual who wants to see you succeed in everything that you do. I am an engineer myself, a software developer, and a student, and I am writing this book for other students who want to make their lives easier by having a handbook of the software they need making their lives easier by giving examples to copy that fit together like a big puzzle into a working, useful, large, functional, cohesive, and engaging app that can drive success no matter the line of business. Largely, this is what I do: I build apps to help myself and other people succeed. I am an author as well, though this is my first publication that I intend to complete in order to put my portfolio together into a useful document, and I am an artist as well.
+I'll admit this to you, I'm sort of a strange person. I'm not perfect, I've had run ins with the law even leading me to leave colleges and universities and leave states in order to try to make a name for myself with more success. I am a woman by birth, I wear makeup, take photos of myself, wear dresses and other womens clothing, and I stay conscious of myself as a female by nature. I've had issues with other people in the past that lead to struggles with writing and building webapps, and I apologize that I haven't been able to get this book in your hands sooner: You needed this. You will want to read and write code that looks like mine and works like mine and does the same thing but even better, because if you can afford to buy this book instead of mashing your keyboard like I do just to create a book yourself asking money for it, you have the resources you need to be successful in your life. I had all sorts of issues with family growing up, health conditions, doctors, the media, and the law, and my code deeply reflects the struggle that is feminism and female nature in a divided and frustrated world. However, this book is something I deeply care about, my baby, my portfolio, and my livelihood, so I appreciate your consideration when you take the text home and carefully pore over it in order to learn from me. Please keep in mind I am not perfect, this book will have errors, revisions, and new editions, and you will need to think with your logical brain as best you can in order to have a successful experience with my writing. Also, understand that I mean well for you even when you face challenges when writing. Think about it like this: When you can just rent a computer system to do anything you can possibly imagine in the digital space, store all the information you encounter, analyze and organize it, and come to understand it, you will inevitably encounter difficulties with the information you are ingesting and even publishing. I tell you this because I encounter the same difficulties. Use this book at your own risk, work with your community and communities available to you to build software within a safe setting, and don't take things to personally when you fail or even succeed in the wrong way: That's how I got this far, and why I can bring you this text and help you succeed without diverging off on a path of madness that leaves me ruined, torn and frayed while I encounter the ordinary problems everyone does on a global scale thanks to the paralellistic global scale of the network on which we will work, the internet. You might not be very familiar with who I am with just a few words, but I encourage you to read on, you will get to know me as you continue to read and understand me while building your own projects to complete your work. There will be no homework with this book, as long as your professors or teachers don't assign you any, but I highly encourage you to build a portfolio of projects yourself as you read along, as well as a capstone project showcasing how you can apply what you have learned. My capstone project is the basis for most of what you will read in this book, as it incorporates code from my previous projects, code I have created and learned to write methodically by hand, and a wide range of ideas and tips that have helped me succeed to the point where I can spin up a simple app that is fully featured and looks and behaves like a popular app you might see your friend or family using, on the internet, advertised to you, or in the news.
 
-这本书是什么：
-这本书是一个例子。您可以在此处找到代码，有关如何学习代码的说明，有关调试代码的信息以及修复错误，故障排除步骤，有关如何备份和保存代码的说明，如果有人打破代码，保护您的代码，部署代码，构建代码，构建代码，请重新部署娱乐性，引人入胜且令人上瘾的网站，您将了解我是谁，为什么这很重要，以及如何描绘自己，您的应用程序和公司形象，以及您在绝对最佳的光线下构建的软件，以尽可能成为最终用户的最终用户，网站的访问者。在本书中，我将演示许多软件设计示例，重点是网络作为平台和安全性。我们将开始学习Xperience通过使用Unix Shell构建基本项目，并具有备份和脚本功能。然后，我们将检查一个基本的博客网站，使用照片和视频功能升级我们的博客，并使用这些功能使用免费软件使用安全解决方案，并使用可插入的身份验证模块（PAM）使用安全服务器。然后，我们将查看文件处理和处理，探索视频编辑，语音捐赠，条形码扫描和光学字符识别等在此过程中，我们将检查API，这将帮助我们通过免费和付费选项使我们的软件更有用和安全。在此过程中，我们将探索物理安全和武装工具，例如枪支和弹药设计和制造，包括枪管和中继器设计，炮塔和无人机设计以及其他校长，我们将与我们在现有网络上的软件集成，以保护我们的软件并展示自我防御和自我辩护和夸张性。我们将休息o制作游戏，2D和3D渲染引擎，并在基本维渲染软件的体一示例中使用嵌入式硬件，并分别以硅胶橡胶施放的电子振动按摩器。一路上，我们还将采用已经可用的机器学习解决方案，以更好地保护我们的软件。我们还将采用可用于网络的库存工具，以简化和保护该过程。这本书是您成功建立网络的指南将其与计算机和嵌入式机械系统的专业网络进行拼接，总的来说是构建软件和嵌入式硬件的指南，没有背景知识或以前的经验。 
-
-这本书不是什么：
-如果您真的想拥有一个网站，则可以设置一个简单的商店并出售所需的内容，发布博客，发布照片或视频，或者以其他方式无需编写一行代码。这本书不是那样。这本书将教你如何建造HAT比您已经找到的任何软件更有用，功能齐全，功能性和安全性，因为它部署了仍然是原型的最新软件，在规模较老的公司运营的情况下运行，并且不吸引倒退，令人费解的公司来为那些没有真正做任何事情的人赚钱。如果您密切关注本书，您将需要编写代码，研究代码，构建自己的应用程序，并且您将从自己的工作中赚钱。我会做的ey从这本书中，即使在早期阶段，它都包含人们需要和想要阅读的信息，并且在购买或使用我的应用程序时已经在购买。这本书不会为您构建一个应用程序，但是它将指向您正确的方向，并用所需的工具以及技能和技巧来武装您在为Web构建软件方面成功的技能和技巧，而每一条代码，您都需要编写一个示例，准备将其拼凑成您和支持者，支持者和支持者，您的支持者，您的支持者，ESTS，客户，朋友，家人，访客，承包商以及互联网的人们想要使用和支持。
-
-您将学到什么：
-这本书将教您如何构建和销售软件，真正功能性，有用的软件，媒体记录，诸如面部识别，机器可读区域条形码扫描，Web API等安全功能，以对视频和照片进行身份验证，录制和渲染视频和照片，以及蓝牙和附近Field（NFC）通信等交换消息。这本书将教你如何use a networked computer, focusing on debian linux, how to build bash code to make installing and backing up your software a seamless, automated breeze, how to build python code as a backend to serve dynamic messages, style things nicely using CSS styles with Bootstrap, enable user logins and interactivity through networked devices, build interactive media and network with other websites to offer security features like text messages for verification or other purposes, ID扫描，图像和DEO审核，数据微交易可确保您的软件安全，付款处理，加密货币交易，异步任务等。您将学习如何使用电池，充电器，微控制器，电路，电动机和传感器来构建自己的蓝牙设备，并使用焊料，电线和3D打印以及铸件。我将演示适用于添加剂制造，工具和模具的3D设计主体，因此您可以制造自己的嵌入式硬件设备集成电池，充电器，电子电路和功能输出。并将它们与蓝牙和网络联系。具体来说，我们将检查两个案例研究，一个振动的按摩器和一支由OpenSCAD编程的自制枪支，它们可作为图形接口或命令行实用程序提供，并且可以集成到网络中以较快。
-您将学习如何在没有以前的经验的情况下从头开始构建和部署网站，使其具有功能，安全，美丽，有用，最重要的是实用。您将学习如何使用机器学习和计算机视觉使网站安全，更实用，从您的网站上录制视频和音频，捐赠您的声音，制作音乐并调节音频以创建有用的样本，以及如何通过利用其他网站来建立您可以直接链接到您的所有有用信息的最佳网站来打破噪音，并提供更多的有用信息，并且您必须提供您必须提供的所有有用的信息。将人们带入您的软件和业务。这本书将最重视媒体，安全和机器学习，这是三个主要组成部分，可以通过与合适的用户互动并以现实，实用，动手的方式启用错误的用户来帮助您为Web构建有用的软件，同时自动且既有自动且坚固又坚固。 
-本书教Unix，特别是Debian（Ubuntu），Bash Shell，Python，HTML，CSS，JavaScript，以及许多有用的python的Tware软件包，例如请求，以及有用的bash软件，例如git和ffmpeg。我还将教您如何自动交易加密货币，并从加密货币或常规借记卡中付款，同时，如果您选择这样做，甚至还会向访问者支付收入的份额。我将教您如何通过广告从您的网站上赚钱，如何为搜索引擎准备好您的应用程序，并使其快速地排名在第一个排名中的客户搜索以找到您，并在尽可能多的常见搜索中排名。我将教您如何出售您的软件，宣传它，吸引寻找您服务的客户，并通过已经存在的途径在互联网上为您自己的名字，价格便宜且运作良好。我将教您如何将数据保存在适合您的云计算机上，并廉价地保存数据，如何计划和构建一个可以执行用户想要和想要的内容以及如何保持您的网站用户通过将您的网站轻按到手机上，并使用通知，电子邮件，短信，电话和更多途径将您的网站带到您的网站上，从而使您的网站访问您的网站，从而使您的网站仅在单击"仅保护您的按钮"后，用户可以使用。这本书将重点介绍大量发布和分发媒体的实用性，从文字到照片再到视频再到音频，对最终用户（您的客户）给人留下深刻的印象，并以任何方式出售自己ITE，一个代表您和您的应用程序，并使您，您的软件和公司以最佳方式看起来不错。您还将从我那里学到一些技巧和窍门，从编码技巧，实用的虚荣，化妆和摄影，造型和表演等等，这对于使用所有可用的工具以最佳的方式来描绘自己和您的公司很重要，同时分发尽可能多的内容，同时分发尽可能多的内容，可以在平台的健康平衡范围内进行健康的水平o将您的软件带来不再需要的努力，工作或金钱。
-这本书被称为"基于Web的实用深度学习和安全性"，原因是：它涉及学习编码，特别是针对Web的编码，特别是从实际角度出发，专门针对安全性，其中包括工作代码的示例，这些示例可用于文本中概述的实际目的。本文的学习组成部分还包括机器学习，我将向您展示的代码如何n对于将处理计算机视觉，面部识别，图像和视频适度，图像增强，分辨率增强，图像字幕的n和其他任务（例如来自图像的预测指标）的n，例如图像的性质，例如真实的计算机转换图像或光学副本（图片的照片，图像或打印照片）。在网络安全和软件安全方面，机器学习非常重要，因为它可以预先完成其他方式的任务不可能的。您的计算机可能会使用密码登录您，但是如果它与您的脸登录，则使用它可能会更安全。您可以将服务器计算机制作一个安全的计算机，该计算机通常会要求您使用用户名和密码，并将您登录，也许对每个新登录或新IP地址都有确认令牌，但是如果您要大规模构建大规模，易于使用，从根本上安全且功能强大的软件，那么这可能就足够了。将您的软件与他人的软件太紧密，例如服务或短信服务不足以使您的软件安全或任何人（您使用的任何网站）。
-任何构建无可挑剔的安全软件的人都对这意味着什么有所了解。软件本质上是不安全的，因为我们用来访问它的设备和帐户并不总是可供使用，它们可能掌握在对软件不适的人手中，因此可能会对软件本身构成风险。这是本书的重点。一个网络默认情况下，Omputer是使用长密钥令牌，称为和SSH或SELE SHELL键，否则最好使用Web服务器保护，因为Web服务器提供了开放式访问以及在服务器本身上运行的最先进的安全工具。 Web服务器可以访问用户的Web浏览器，这可以说是用户设备中最强大的部分，因为它是用户可以访问网络软件的地方。此工具包可以渲染文本，您看到的网页以及还可以录制图像，音频和视频（例如面部或状态ID的照片），可以读写到蓝牙无线电设备，并可以读写到近场应答器标签，廉价的钥匙卡，FOB，贴纸，贴纸，戒指，甚至具有具有独特的序列号，并通过数据生成和验证的网络服务器网站读取和验证网站的独特序列号。使用所有可以使用的工具，在这本书中，您将配备自己的知识来建立安全的知识网站，总体上是一个适合您的安全网络计算机系统，可以进行招标，并且看起来和感觉正确。
-
-
-从哪里开始：
-欢迎您跳过我从本书或任何部分开始的部分，转到所需的确切代码，尤其是如果您在本书中要详细描述的上述工具或任何上述工具经验，以及记录用例及其实际示例。如果您没有编写代码的经验，我Hly建议您阅读所有这本书，尤其是建议您阅读以前的部分，以确保本书适合您。如果这本书不适合您，请考虑将其赠送给可能有兴趣自己学习Web开发的朋友或亲戚，甚至考虑借用它并从他们那里学习，以填补我作为老师或其他老师在我之前做过的我使您失败的空白。从您将要从哪里开始，如果您结束构建有用的应用程序，并考虑最终用户构建最佳应用程序：了解您的客户。现在您知道了我，您知道这本书，您已经准备好开始了。首先，抓住一台计算机（即使是盒装商店，亚马逊或旧桌面的最便宜的笔记本电脑，并以适合您的方式进行设置。
-
-如何读这本书：
-文本突出显示，表示文本属于命令提示符，您将在其中编写运行的代码。命令提示很重键盘专注于键盘，几乎不需要单击，加快工作流程并使您的事情更加轻松。
-
-入门：
-让我们潜入。我们将首先在本地机器上构建代码，然后在不建立连接到Internet的网站的情况下开始。从一开始就更安全，不花钱，对您来说很容易。根据您的操作系统，进入bash壳会有所不同。对于Mac OS，我建议您此时安装虚拟机与虚拟机的兼容性最大。诸如VirtualBox和ParaLells之类的各种提供商可以为您运行虚拟机，尽管如果您更喜欢使用建议使用的本机环境来创建快速，简化的体验，则也可以直接在计算机上安装Ubuntu。如果您使用的是Linux或Windows，我建议您很容易创建一个项目。打开终端，调整合适的尺寸，然后开始遵循步骤2。OU正在使用Windows，请关注步骤1。
-
-步骤1： - 仅Windows用户
-在Windows中，打开命令提示符作为管理员和键入 
-WSL –INSTALL
-   
-步骤2： - 继续此处，或跳过步骤1，如果您不使用Windows
-在开放终端（取决于您的OS，Windows中的Ubuntu，Mac或Linux中的终端或类似名称），首先创建一个项目。我们使用MKDIR命令来创建目录。如果您需要创建一个目录来存储您的项目，建议使用CH，使用CD命令更改为目录，并且 
-
-CD/PATH/TO/DIRECTORY-路径是您的目标目录之前的文件夹（文件），默认路径为〜或/home/home/用户名（其中用户名是您的用户名）。要更改为默认目录，键入CD或CD〜
-mkdir示例 - 用目录的名称替换"示例"
-
-现在，您有一个项目目录。如果您需要保存此目录，那么要保存此目录非常重要TCH到另一台机器或部署您编写的代码，以便它可以用于Web，我们将在接下来的几个步骤中构建一个脚本来备份您的目录。但是，构建脚本需要一些代码，并且需要自动化代码以尽可能有用。因此，让我们构建一个脚本以构建脚本。让我们从创建脚本并使其可执行。我们将使用sudo，chmod并为此触摸，并将脚本称为" Ascript"。
-
-``bash
-sudo touch/usr/bin/ascript
-sudo chmod a+xsr/bin/ascript
-sudo nano/usr/bin/ascript
-````````
-
-现在，我们创建了脚本，使其可执行，并准备对其进行编辑。 Nano是一种文本编辑器，可以让您无需单击即可编辑文本，这比使用图形用户界面要容易得多。要使用Nano编辑文件，请使用Nano，然后使用该文件的路径。要制作一个制作脚本的脚本，它与首先制作脚本相似。我们将使用与上述相同的代码，替换脚本的名称" ASCRIPT"参数参数，$ 1。这使我们可以通过简单地键入sudo ascript newscript来调用脚本，这时我们可以通过用您的脚本名称替换" newscript"来创建任何新脚本。 Nano中的代码应该看起来像：
-
-``bash
-sudo touch/usr/bin/$ 1
-sudo chmod a+x/usr/bin/$ 1
-sudo nano/usr/bin/$ 1
-````````
-
-为了关闭纳米，我们可以按住控制键并按x，然后y表示我们保存文件，然后点击返回。现在，而不是键入这三个命令进行编辑脚本，我们将能够键入sudo Acript Acript再次编辑脚本。这有效！并且任何新脚本都可以通过在外壳中调用。让我们立即保存工作：让我们编写一个备份脚本以保存我们的新脚本，然后在项目目录中备份它，同时还备份备份脚本。
-
-``bash
-sudo accript备份
-````````
-
-现在，在纳米：
-
-``bash
-sudo cp/usr/bin/backup/path/to/directory/
-sudo cp/usr/bin/ascript/path/to/directory/
-````````
-
-在哪里路径/到/目录是您使用MKDIR创建的项目的路径。稍后，我们将学习如何使用循环和列表复制这样的重复路径，这是较少的代码，但现在让我们保持简单并有几行。要运行此脚本并备份您的代码，请使用控制+x，y和返回将文件保存在nano中
-
-``bash
-备份
-````````
-
-如果您在阅读本书并跟随外壳时完全提示您输入密码，请输入您的正确地说，您将需要进行三次尝试，然后再重新运行命令。如果需要两次运行任何内容，则可以使用上下箭头来重新运行命令并编辑它们。在用右，左箭头和删除键以及键盘上编辑命令之前，简单地按中间和向上选择一个命令，然后使用返回运行它。
-
-恭喜！您设法创建了一个很棒的备份脚本，该脚本在您的工作中备份了两个重要的外壳脚本ectory。随着项目越来越大，我们可能会稍后将事情移动，但现在可以使用。让我们继续在云中备份，我们将使用GitHub为此（尽管还有许多其他git解决方案用于备份，但它们都是相同的。）Git是一个Verision Control软件，可以使您在将它们备份到服务器上时将其备份到服务器上，同时还可以使您可以在密码或密钥后下载整个软件的整个副本。它有助于保存您的软件，当我们迁移到有时会在一行代码失败时迁移到有时会破裂的安全性linux实例时，如果您没有机会自动备份代码，则可能不会备份您的代码，而您将无法备份，我们将不会自动备份它，我们将介绍。
-
-如果您目前尚未使用Ubuntu虚拟机，那么我目前使用Ubuntu Virtual Machine提出，因为在安装所有必要的软件包以构建工作网站并进行预定时，它将使您的生活更轻松您的计算机上的深度学习操作。我们将在不久的将来将代码移至Web服务器，但是我们要确保我们的Web服务器后面至少有几层安全性可以抵抗网络钓鱼，并采用许多Linux软件包来做到这一点。如果您仍然想使用Mac OS，欢迎您在线搜索并安装必要的软件包，但是本书或系列的每个软件包可能没有其他选择。
-
-让我们加一些命令通过运行命令sudo accript备份来使用备份脚本进行工作。
-
-
-
-``bash
-＃…
-g...</div>
+What this book is:
+This book is a tutorial by example. You can find code here, instructions for how to learn to code, information on debugging code and fixing errors, troubleshooting steps, instructions on how to back up and save your code, re-deploy if anyone breaks your code, secure your code, deploy your code, build interactive websites that are entertaining, engaging, and addictive, and you will get a sense of who I am, why this is important, and how to portray yourself, your app and company image, as well as the software you build in the absolute best light to be the most attractive as possible to your end users, your website's visitors. In this book, I will demonstrate a number of examples of software design with a focus on the web as a platform as well as security. We will initiate the learning experience ...</div>
 
 
 
@@ -228,7 +150,7 @@ g...</div>
 <div style="position: relative;">
 <div id="readertext105" style="width: 100%; height: 80%; overflow: scroll;" class="p-2">
 <div style="height: 15%; width: 100%;"></div>
-<legend class="article-content mt-5 pt-3">实用的基于网络的深度学习和安全示例</legend>
+<legend class="article-content mt-5 pt-3">实用的基于Web的深度学习和安全</legend>
 <p class="article-content mb-5 pb-5">
 
 <p>实用的基于Web的深度学习和安全
@@ -237,24 +159,24 @@ g...</div>
 2024年7月3日
 2025年6月3日更新/转换</p>
 <p>前言：</p>
-<p>为网络构建软件的安全考虑因素是任何Web开发人员计划和执行的重要组成部分，同时设计了可靠，稳定且用于实际目的的原型。 DOM（文档对象标记）及其实施HTML，JavaScript和CSS以及实施Python，C/C ++，Java和Bash的后端软件，为Web开发人员提供了自由和力量，以创造各种各样的项目，这些项目表现出表现力，为使用和功能的均匀性和功能提供了既定性，并提供了既便宜''and Comece and Comece and Come and Come and Come ance exece，又可以享有良好的效果，并且既适合又有既定的，并且可以很好地使用，并且既适当又有范围，并且既适当又有范围，并且既适当又有范围，并且既适当又有范围，并且既适合又有既定的又有范围。希望杀死时间或在互联网上完成某件事，通常是在触摸屏智能手机设备上。大多数人甚至都不知道想从头开始构建网站时从哪里开始，他们倾向于从他人的网站上启动并建立一些有限的功能，可靠性，易用性尤其是创造力时，当他们可以使用所有最新的功能强大工具以构建有用的东西而不会浪费时间按下按钮时，尤其是浪费金钱来支付昂贵的订阅费用，鉴于很少有人想使用昂贵的订阅，鉴于它在易用性和灵活性方面的限制。如果您有几分钟的时间阅读本书并了解我想教您的内容，甚至与我个人谈论您的目标，并朝着正确的方向获得一些指导，并有动力去学习编码和编写自己的软件，将这本书带回家，并预留一些时间来学习下一个有影响力的，强大的，功能强大的，功能强大，精简和重要的网络应用程序，您需要和满足您所有需要的网站，并且您需要您的需求，并且您需要您的需求，并且您需要您的需求。</p>
+<p>为网络构建软件的安全考虑因素是任何Web开发人员计划和执行的重要组成部分，同时设计了可靠，稳定且用于实际目的的原型。 DOM（文档对象标记）及其实施HTML，JavaScript和CSS以及实施Python，C/C ++，Java和Bash的后端软件，为Web开发人员提供了自由和力量，以创造各种各样的项目，这些项目表现出表现力，为使用和功能的均匀性和功能提供了既定性，并提供了既便宜''and Comece and Comece and Come and Come and Come ance exece，又可以享有良好的效果，并且既适合又有既定的，并且可以很好地使用，并且既适当又有范围，并且既适当又有范围，并且既适当又有范围，并且既适当又有范围，并且既适合又有既定的又有范围。希望杀死时间或在互联网上完成某件事，通常是在触摸屏智能手机设备上。大多数人甚至都不知道想从头开始构建网站时从哪里开始，他们会在他人的网站上启动，并在功能，可靠性，易用性，易用性，尤其是创造力方面构建某些东西，可以使用所有最新的功能强大工具，以便为其提供所有有用的有用的东西，以建立一些有用的东西，而不必浪费时间来浪费昂贵的订阅来浪费贵重的用途，以便将其用于使用限制，并且可以使用限制，并且可以使用限制。如果您有几分钟的时间阅读本书并了解我想教您的内容，甚至与我个人谈论您的目标，并以正确的方向获得一些指导，并有动力去学习编码和编写自己的软件，将这本书带回家，并预留一些时间来学习下一个有影响力的，强大的，功能强大的，功能强大，精简和重要的网络应用程序，在您身上和所有需要的网站，可以满足您的需求，并满足您的需求和您的需求。</p>
 <p>关于我：
-我是一名软件开发人员，在C/C ++，Java，Python，HTML，CSS和JavaScript方面具有广泛的经验。我建立了人们想要使用，想要访问的网站，甚至沉迷于仅仅学习，重新创造和杀死时间，最重要的是，我出售软件。如果您有一个想法确切希望您希望网站的外观和功能，那么您愿意支持我，以便我在满足您的网站时可以满足自己的需求，并且您愿意自己承担自己运行网站的成本，我会为您建立下一个YouTube，Tiktok，Twitter，Twitter，Google，甚至只能访问高级技术安全应用程序。我没有试图为您出售我的时间，而是要购买您的时间：我想与您联系，以构建一个已经存在的信息，并教您成为独立软件开发人员所需的内容，以实现您想要的任何领域的成功职业。让我清楚，我给您的教育将是非正式的。你可以上学并通过正规教育来学习所有这些，甚至可以在学校阅读这本书，完成您的作业，并从您的教育中汲取大量作用，但是我不会正式地将您放在热地座位上并要求您完成任务。我不是你的教授，你可以像一个朋友一样想到我，他想指导您从自己的个人成功所驱动的职业。而且我也不会让您成功，您将需要花时间购买它。学习编码具有陡峭的学习曲线，而且从来都不是一件容易的事，甚至应该是。您需要尽可能地努力工作，并继续尝试失败并重试，即使您感到沮丧，才能自己学习和构建应用程序。这是代码本身的性质。代码是由旨在给程序员错误消息的编译器运行的，即使您只是将错误复制到搜索引擎并阅读其他人的示例中，这些代码也会教您如何编码。我必须说，你t需要变得非常富裕，聪明，成功，甚至是细节的构建应用程序。计算机为您照顾该组织。您只需要在反复试验中坚持不懈，保持专注并努力工作，您将在整个工作中拥有非常成功的职业生涯</p>
+我是一名软件开发人员，在C/C ++，Java，Python，HTML，CSS和JavaScript方面具有广泛的经验。我建立了人们想要使用，想要访问的网站，甚至沉迷于仅仅学习，重新创造和杀死时间，最重要的是，我出售软件。如果您有一个想法确切希望您希望网站的外观和功能，那么您愿意支持我，以便我在满足您的网站时可以满足自己的需求，并且您愿意自己承担自己运行网站的成本，我会为您建立下一个YouTube，Tiktok，Twitter，Twitter，Google，甚至只能访问高级技术安全应用程序。我没有试图为您出售我的时间，而是要购买您的时间：我想与您联系，以构建一个已经存在的信息，并教您成为独立软件开发人员所需的内容，以实现您想要的任何领域的成功职业。让我清楚，我给您的教育将是非正式的。您可以上学并通过正规教育学习所有这些，甚至可以在学校阅读这本书，完成任务，并从您的教育中获得很多东西，但是我不会正式地将您放在热地座位上，并要求您完成任务。我不是你的教授，你可以像一个朋友一样想到我，他想指导您从自己的个人成功所驱动的职业。而且我也不会让您成功，您将需要花时间购买它。学习编码具有陡峭的学习曲线，而且从来都不是一件容易的事，甚至应该是。您需要尽可能地努力工作，并继续尝试失败并重试，即使您感到沮丧，才能自己学习和构建应用程序。这是代码本身的性质。代码是由旨在给程序员错误消息的编译器运行的，即使您只是将错误复制到搜索引擎并阅读其他人的示例中，这些代码也会教您如何编码。而且我必须说，您不需要非常富有，聪明，成功，甚至是细节或有组织的来构建应用程序。计算机为您照顾该组织。您只需要在反复试验和错误中坚持不懈，保持专注并努力工作，您将在整个工作中拥有非常成功的职业生涯。</p>
 <p>我是谁：
-我意识到，最后一部分更多是关于学习，而您从这本书中采取了一些方法。我到底是谁？这是一个复杂的问题。我本人还不清楚，因为我患有医疗状况，这可能使我很难进行编码或撰写本书，同时在社交和身份问题上提出挑战，这使我的生活在介绍自己时变得更加困难。简而言之，如果您正在读这本书，则将其带回家是因为您翻阅了它并认为它很有用，或者即使您只是读了这本书，我还是一个志趣相投的人，希望看到您在您所做的一切中都取得成功。我本人是工程师，软件开发人员和一名学生，我正在为其他想要通过提供所需的软件手册来使生活更轻松的学生写这本书，这是通过给出示例来使生活更轻松的示例，就像一个大难题中的典范中，有用，大型，有用，大型，有用无论业务范围如何，功能性，凝聚力和引人入胜的应用都可以推动成功。在很大程度上，这就是我要做的：我构建应用程序来帮助自己和其他人取得成功。我也是作家，尽管这是我打算完成的第一个出版物，以便将我的投资组合放在有用的文档中，而且我也是艺术家。
-我会向你承认，我有点陌生的人。我并不完美，我已经与法律竞选，甚至导致我离开大学，离开州，以便为自己取得更大的成功。我是一个女人，出生时，我穿化妆，给自己拍照，穿衣服和其他女装衣服，并且我天生就会意识到自己是女性。过去，我与其他人遇到了问题，导致写作和构建WebApps挣扎，很抱歉，我无法尽快将这本书掌握在您的手中：您需要这个。您将要读和编写看起来像我的代码像我一样，做同样的事情，但甚至更好，因为如果您能够负担得起这本书而不是像我自己创作一本书那样询问这本书的那样捣碎键盘，那么您就拥有一生所需的资源。我在家庭成长，健康状况，医生，媒体和法律方面都有各种各样的问题，而我的守则深深地反映了在一个分裂和沮丧的世界中的女权主义和女性的斗争。但是，这本书是我深切关心的，我的孩子，我的投资组合和我的生计，因此，我感谢您在将文字带回家并仔细地仔细回家以向我学习时的考虑。请记住，我并不完美，这本书将有错误，修订和新版本，您需要尽力而为，以便在我的写作上获得成功的经验。另外，请理解，即使您在写作时面对挑战，我也对您来说很好。考虑一下e：当您只能租用计算机系统来执行您可能想象的任何事情时，存储遇到的所有信息，分析和组织它并理解它时，您将不可避免地遇到困难，而您正在摄入甚至发布的信息。我告诉你这是因为我遇到同样的困难。使用这本书以自己的风险使用，与您的社区和社区一起在安全的环境中构建软件，并且在您失败甚至以错误的方式取得成功时，请不要将事情带到个人身上：这就是我的发展方式：为什么我能为您带来这个文本并为您带来成功而不会在我的疯狂之路上取得成功的方式，而在我的疯狂之中，我会在我遇到的范围内遇到的范围，这是我在整体上遇到的范围，因为我会遇到整体范围，因为我会遇到整体的范围，而全球范围的范围则是在全球上的范围，这是我的范围，这是一个全球范围的范围。 互联网。您可能对我只有几句话不是很熟悉，但我鼓励您请继续阅读，当您继续阅读和理解我的同时，您会认识我，同时构建自己的项目以完成您的工作。只要您的教授或老师什么都没有分配您，这本书就不会有作业，但是我强烈鼓励您在阅读时自己构建项目组合，以及一个盖帽项目，展示了如何应用您所学的东西。我的Capstone项目是您将在本书中阅读的大多数内容的基础，因为它结合了我以前的项目，我创建和学会的代码，学习并学到了手工编写的代码，以及各种各样的想法和技巧，这些想法和技巧可以帮助我成功，以至于我可以旋转一个简单的应用程序，该应用程序可以完全使用，并且看起来像一个流行的应用程序，您可能会看到您的朋友或家人在互联网上使用，或者在互联网上使用，或者在互联网上使用，或者在互联网上使用，或者在互联网上使用。</p>
+我意识到，最后一部分更多是关于学习，而您从这本书中采取了一些方法。我到底是谁？这是一个复杂的问题。我本人还不清楚，因为我患有医疗状况，这可能使我很难进行编码或撰写本书，同时在社交和身份问题上提出挑战，这使我的生活在介绍自己时变得更加困难。简而言之，如果您正在读这本书，则将其带回家是因为您翻阅了它并认为它很有用，或者即使您只是读了这本书，我还是一个志趣相投的人，希望看到您在您所做的一切中都取得成功。我本人是工程师，软件开发人员和学生，并且我正在为其他想要通过提供所需软件的手册来使自己的生活更轻松的学生写这本书，这是通过给出示例来使生活更轻松的手册，例如将诸如大型难题的示例复制到一个工作，有用的，大型，功能，功能，凝聚力，凝聚力和吸引人的应用程序中，这些应用程序无关紧要。在很大程度上，这就是我要做的：我构建应用程序来帮助自己和其他人取得成功。我也是作家，尽管这是我打算完成的第一个出版物，以便将我的投资组合放在有用的文档中，而且我也是艺术家。
+我会向你承认，我有点陌生的人。我并不完美，我已经与法律竞选，甚至导致我离开大学，离开州，以便为自己取得更大的成功。我是一个女人，出生时，我穿化妆，给自己拍照，穿衣服和其他女装衣服，并且我天生就会意识到自己是女性。过去，我与其他人遇到了问题，导致写作和构建WebApps挣扎，很抱歉，我无法尽快将这本书掌握在您的手中：您需要这个。您将需要读取和编写看起来像我的，像我一样工作的代码，而且做同样的事情，但甚至更好，因为如果您有能力购买这本书而不是像我为自己创建一本书要为此赚钱的那样捣碎您的键盘，那么您就拥有一生中需要成功的资源。我在家庭成长，健康状况，医生，媒体和法律方面都有各种各样的问题，而我的守则深深地反映了在一个分裂和沮丧的世界中的女权主义和女性的斗争。但是，这本书是我深切关心的，我的孩子，我的投资组合和我的生计，因此，我感谢您在将文字带回家并仔细地仔细回家以向我学习时的考虑。请记住，我并不完美，这本书将有错误，修订和新版本，您需要尽力而为，以便在我的写作上获得成功的经验。另外，请理解，即使您在写作时面对挑战，我也对您来说很好。这样考虑这样做：当您只能租用计算机系统来执行您可能想象的任何事情时，存储遇到的所有信息，分析和组织它，并理解它时，您将不可避免地遇到困难，而您正在摄入甚至发布的信息。我告诉你这是因为我遇到同样的困难。使用这本书以自己的风险使用，与您的社区和社区一起在安全的环境中构建软件，并且在您失败甚至以错误的方式取得成功时，请不要将事情带到个人身上：这就是我的发展方式：为什么我能为您带来这个文本并为您带来成功而不会在我的疯狂之路上取得成功的方式，而在我的疯狂之中，我会在我遇到的范围内遇到的范围，这是我在整体上遇到的范围，因为我会遇到整体范围，因为我会遇到整体的范围，而全球范围的范围则是在全球上的范围，这是我的范围，这是一个全球范围的范围。 互联网。您可能对我只有几句话不是很熟悉的人，但是我鼓励您继续阅读，当您在建立自己的项目以完成工作的同时继续阅读和理解我时，您会认识我。只要您的教授或老师什么都没有分配您，这本书就不会有作业，但是我强烈鼓励您在阅读时自己构建项目组合，以及一个盖帽项目，展示了如何应用您所学的东西。我的Capstone项目是您将在本书中阅读的大多数内容的基础，因为它结合了我以前的项目，我创建和学会的代码，学习并学会了手工写的代码，以及各种各样的想法和技巧，这些想法和技巧可以帮助我成功，以至于我可以旋转一个简单的应用程序，该应用程序可以完整地使用，并且看起来像一个流行的应用程序，您可能会看到您的朋友或家人在互联网上使用，或者在互联网上使用，或者在互联网上使用新闻，或者在您的互联网上使用。</p>
 <p>这本书是什么：
-这本书是一个例子。您可以在此处找到代码，有关如何学习代码，有关调试代码的信息以及解决错误的说明，故障排除步骤，有关如何备份和保存代码的说明，如果有人断开代码，保护您的代码，部署代码，构建您的交互式网站，构建娱乐性，吸引人的互动网站以及您的娱乐性，以及您的工作，以及您的工作，以及您如何，以及如何，您可以和您的意识，以及如何，您可以和您的融合，以及如何，以及如何，您会构成您的娱乐性，以及如何，您会构成您的意识，以及如何，您会扮演我的意识，以及如何，您会构成您的意识，以及如何，您会构成您的意识，以及如何，您会扮演的方式，以及如何，您会构成自己的意识，以及如何，您会构成自己的意识，以及如何，您可以和您构成的互动网站，以及如何，以及您如何构成自己的意识。您以绝对最佳的光线建造最终用户，网站的访问者最吸引人。在本书中，我将演示许多软件设计示例，重点是网络作为平台和安全性。我们将使用UNIX Shell建立一个基本项目来启动学习体验，并具有备份和脚本功能。然后，我们将检查一个基本的博客网站，通过照片和视频升级我们的博客功能以及使用这些功能使用免费软件使用安全解决方案，并使用可插入的身份验证模块（PAM）保护我们的服务器。然后，我们将查看文件处理和处理，探索视频编辑，语音捐赠，条形码扫描和光学角色识别等概念。在此过程中，我们将检查API，这将帮助我们通过免费和付费选项使我们的软件更有用和安全。在此过程中，我们将探索物理安全和武装工具，例如枪支和弹药设计和制造，包括枪管和中继器设计，炮塔和无人机设计以及其他校长，我们将与我们在现有网络上的软件集成，以保护我们的软件并展示自我防御和自我辩护和夸张性。我们将在构建游戏，2D和3D渲染引擎的过程中休息一下，并在基本维渲染软件和电子振动的示例中使用嵌入式硬件分别用硅胶橡胶铸造。一路上，我们还将采用已经可用的机器学习解决方案，以更好地保护我们的软件。我们还将采用可用于网络的库存工具，以简化和保护该过程。这本书是您成功构建Web应用程序并将其与专业的计算机和嵌入式机械系统网络集成的指南，总的来说是构建软件和嵌入式硬件的指南，没有背景知识或以前的经验。</p>
+这本书是一个例子。您可以在此处找到代码，有关如何学习代码，有关调试代码的信息以及解决错误的说明，故障排除步骤，有关如何备份和保存代码的说明，如果有人断开代码，保护您的代码，部署代码，构建您的交互式网站，构建娱乐性，吸引人的互动网站以及您的娱乐性，以及您的工作，以及您的工作，以及您如何，以及如何，您可以和您的意识，以及如何，您可以和您的融合，以及如何，以及如何，您会构成您的娱乐性，以及如何，您会构成您的意识，以及如何，您会扮演我的意识，以及如何，您会构成您的意识，以及如何，您会构成您的意识，以及如何，您会扮演的方式，以及如何，您会构成自己的意识，以及如何，您会构成自己的意识，以及如何，您可以和您构成的互动网站，以及如何，以及您如何构成自己的意识。您以绝对最佳的光线建造最终用户，网站的访问者最吸引人。在本书中，我将演示许多软件设计示例，重点是网络作为平台和安全性。我们将使用UNIX Shell建立一个基本项目来启动学习体验，并具有备份和脚本功能。然后，我们将检查一个基本的博客网站，使用照片和视频功能升级我们的博客，并使用这些功能使用免费软件使用安全解决方案，并使用可插入的身份验证模块（PAM）使用安全服务器。然后，我们将查看文件处理和处理，探索视频编辑，语音捐赠，条形码扫描和光学角色识别等概念。在此过程中，我们将检查API，这将帮助我们通过免费和付费选项使我们的软件更有用和安全。在此过程中，我们将探索物理安全和武装工具，例如枪支和弹药设计和制造，包括枪管和中继器设计，炮塔和无人机设计以及其他校长，我们将与我们在现有网络上的软件集成，以保护我们的软件并展示自我防御和自我辩护和夸张性。我们将在构建游戏，2D和3D渲染引擎的过程中休息一下，并在基本维渲染软件的研究示例中与嵌入式硬件一起工作，并分别以硅胶橡胶施放的电子振动按摩器。一路上，我们还将采用已经可用的机器学习解决方案，以更好地保护我们的软件。我们还将采用可用于网络的库存工具，以简化和保护该过程。这本书是您成功构建Web应用程序并将其与专业的计算机和嵌入式机械系统网络集成的指南，总的来说是构建软件和嵌入式硬件的指南，没有背景知识或以前的经验。</p>
 <p>这本书不是什么：
-如果您真的想拥有一个网站，则可以设置一个简单的商店并出售所需的内容，发布博客，发布照片或视频，或者以其他方式无需编写一行代码。这本书不是那样。这本书将教您如何构建比您已经找到的任何软件更有用，功能完整，功能性和安全性的软件，因为它部署了仍然是原型的最新软件，在规模较老的公司运营中运营的最新软件可能很昂贵，并且不吸引倒退，令人费解的是为了为那些没有真正做任何事情的人赚钱而努力的公司。如果您密切关注本书，您将需要编写代码，研究代码，构建自己的应用程序，并且您将从自己的工作中赚钱。即使在早期，我也会从这本书中赚钱，因为它包含人们需要阅读的信息，并且在购买或使用我的应用程序时已经购买了。这本书不会为您构建应用程序，但会指出您朝着正确的方向前进，并用所需的工具以及技能和技巧武装您，这些技能和技巧将有助于您成功地为网络构建软件，每一条代码，您都需要写作的每一行，准备将您和您的支持者，客人，客户，朋友，家人，访客，访客，承包商以及Internet的人拼凑成软件，并需要使用和互联网。</p>
+如果您真的想拥有一个网站，则可以设置一个简单的商店并出售所需的内容，发布博客，发布照片或视频，或者以其他方式无需编写一行代码。这本书不是那样。这本书将教您如何构建比您已经找到的任何软件更有用，功能完整，功能性和安全性的软件，因为它部署了仍然是原型的最新软件，在规模较老的公司运营中运营的最新软件可能很昂贵，并且不吸引倒退，令人费解的是为了为那些没有真正做任何事情的人赚钱而努力的公司。如果您密切关注本书，您将需要编写代码，研究代码，构建自己的应用程序，并且您将从自己的工作中赚钱。即使在早期，我也会从这本书中赚钱，因为它包含人们需要阅读的信息，并且在购买或使用我的应用程序时已经购买了。这本书不会为您构建一个应用程序，但是它将指向您的方向正确，并用所需的工具以及技能和技巧来武装您在为网络构建软件方面成功的技能和技巧，在每一条代码方面，您都需要写作的每一行，准备将其拼凑成您以及您和支持者，支持者，客人，客户，朋友，访客，访客，承包商，承包商，互联网以及互联网和互联网和互联网和互联网和互联网的使用。</p>
 <p>您将学到什么：
-这本书将教您如何构建和销售软件，真正功能性，有用的软件，媒体记录，诸如面部识别，机器可读区域条形码扫描，Web API等安全功能，以对视频和照片进行身份验证，录制和渲染视频和照片，以及蓝牙和附近Field（NFC）通信等交换消息。这本书将教您如何使用网络计算机，重点关注Debian Linux，如何构建bash代码以使安装和备份软件变得无缝，自动化的微风，如何构建Python代码作为后端来提供动态信息，并通过boottrap进行诸如bootstrap的COSSS和网络互动，启用互动的媒体和其他互动的互动式媒体，并构建与其他互动的互动，并启用了互动的媒体，并启用了其他互动媒体，并将其与其他互动互动，并启用其他互动互动，并与其他互动的媒体进行互动，并与其他互动的媒体进行互动，并与其他互动的媒体进行了交互，并与其他互动的媒体进行了交互，并与其他互动的媒体进行了交互式媒体，并且其他目的，ID扫描，图像和视频审核，数据微交易，以确保您的软件安全，付款处理，加密货币交易，异步任务等等。您将学习如何使用电池，充电器，微控制器，电路，电动机和传感器来构建自己的蓝牙设备，并使用焊料，电线和3D打印以及铸件。我将演示适用于增材制造，工具和模具制造的3D设计主体，因此您能够制造自己的嵌入式，具有集成电池，充电器，电子电路和功能输出的嵌入式硬件设备。并将它们与蓝牙和网络联系。具体来说，我们将检查两个案例研究，一个振动的按摩器和一支由OpenSCAD编程的自制枪支，它们可作为图形接口或命令行实用程序提供，并且可以集成到网络中以较快。
-您将学习如何在没有以前的经验的情况下从头开始建立和部署网站，使其功能性，安全，美丽，有用且最重要的是实用。您将学习如何使用机器学习和计算机视觉ITE安全，更实用，从您的网站上录制视频和音频，捐赠您的声音，制作音乐并调节音频以创建有用的示例，以及如何通过利用其他网站来构建可以直接链接到您的网站网络来打破噪音，以共享您必须提供的所有有用信息，甚至更重要的是将您的软件和商业带入您的软件和业务。这本书将最重视媒体，安全和机器学习，这是三个主要组成部分，可以通过与合适的用户互动并以现实，实用，动手的方式启用错误的用户来帮助您为Web构建有用的软件，同时自动且既有自动且坚固又坚固。 
-本书教Unix，特别是Debian（Ubuntu），Bash Shell，Python，HTML，CSS，JavaScript，以及用于Python的许多有用的软件包，例如请求，以及GIT和FFMPEG（例如Git和ffmpeg）。我还会教你如何自动交易加密货币，并从加密货币或常规借记卡中付款，同时，如果您选择这样做，甚至还会向访问者支付收入的份额。我将教您如何通过广告从您的网站上赚钱，如何为搜索引擎准备好应用程序，并使其快速，在客户中排名第一个排名，以找到您的客户以找到您，并在尽可能多的常见搜索中排名。我将教您如何出售您的软件，宣传它，吸引寻找您服务的客户，并通过已经存在的途径在互联网上为您自己的名字，价格便宜且运作良好。我将教您如何将数据保存在适合您的云计算机上，并廉价地保存数据，如何计划和构建一个可以执行用户想要和您想要的内容的网站，以及如何通过将您的网站放在其网站上，并通过通知，电子邮件，短信，电话和电话将您的网站放在其网站上。只需将用户带回您的网站的更多途径，只需单击即可获得您的单击按钮。这本书将重点介绍大量发布和分发媒体的实用性，从文本到照片再到视频再到音频，对最终用户（您的客户群）给人留下深刻印象，并以您所做的任何方式出售自己，以创建一个网站，一个应用程序，一个代表您的应用程序，并且可以使您的软件和您的软件和您的公司和您的公司看起来都很好。您还将从我那里学到一些技巧和技巧，从编码技巧，诸如化妆和摄影，建模和表演等实用的虚荣心等，这对于使用所有可用的工具以最佳的方式来描绘自己和您的公司很重要，同时分发了尽可能多的内容，可以在平台上跨越无需更多的努力，而不是需要努力，或者是不需要的工作。
-这本书叫Practical Web Based Deep Learning and Security by Example" for a reason: It deals with learning to code, specifically for the web, specifically with a focus on security, from a practical standpoint, with examples of working code that serves the practical purposes outlined in the text. The learning component of this text also encompasses machine learning, the code I will show you how to run for the web that will handle computer vision, facial recognition, image and video moderation, image enhancement, resolution增强，图像字幕和其他任务，例如来自图像的预测指标，例如图像的性质，作为真实的，计算机传递的图像或光学副本（图像的照片，或印刷的照片），当涉及到您的计算机上，它可能会使用它，因为它可以使用它，因为它可能是不可能的。您可以将服务器计算机制作一个安全的计算机，该计算机通常会要求您使用用户名和密码，并将您登录，也许对每个新登录或新IP地址都有确认令牌，但是如果您要大规模构建大规模，易于使用，从根本上安全且功能强大的软件，那么这可能就足够了。将您的软件与其他人的软件（例如电子邮件服务或短信服务）紧密联系在一起，不足以使您的软件安全或任何人（您使用的任何网站）。
-任何构建无可挑剔的安全软件的人都对这意味着什么有所了解。软件本质上是不安全的，因为我们用来访问它的设备和帐户并不总是可供使用，它们可能掌握在对软件不适的人手中，因此可能会对软件本身构成风险。这是本书的重点。默认情况下，网络计算机使用长密钥令牌，称为和SSH或安全壳键，否则最好使用Web服务器进行红色，因为Web服务器提供了开放式访问以及在服务器本身上运行的最先进的安全工具。 Web服务器可以访问用户的Web浏览器，这可以说是用户设备中最强大的部分，因为它是用户可以访问网络软件的地方。这个工具包可以渲染文本，您看到的网页，还可以录制图像，音频和视频（例如面部或状态ID的照片），可以读取并写入到蓝牙无线电设备上，并可以读取并写入附近的电视带标签，廉价的钥匙卡，FOB，FOB，贴纸，贴纸，贴纸，响声以及与唯一的网络验证的网站和书面验证的网站和书面验证以及数据生成和写入数据和书面上，并将其读取。使用所有可以使用的工具，在这本书中，您将配备自己的知识来建立一个安全的网站，总的来说是一个安全的网络计算机系统，适合您，进行竞标，外观和感觉</p>
+这本书将教您如何构建和销售软件，真正功能性，有用的软件，媒体记录，诸如面部识别，机器可读区域条形码扫描，Web API等安全功能，以对视频和照片进行身份验证，录制和渲染视频和照片，以及蓝牙和附近Field（NFC）通信等交换消息。这本书将教您如何使用网络计算机，重点关注Debian Linux，如何构建bash代码以使安装和备份软件变得无缝，自动化的微风，如何构建Python代码作为后端来提供动态信息，并通过boottrap进行诸如bootstrap的COSSS和网络互动，启用互动的媒体和其他互动的互动式媒体，并构建与其他互动的互动，并启用了互动的媒体，并启用了其他互动媒体，并将其与其他互动互动，并启用其他互动互动，并与其他互动的媒体进行互动，并与其他互动的媒体进行互动，并与其他互动的媒体进行了交互，并与其他互动的媒体进行了交互，并与其他互动的媒体进行了交互式媒体，并且其他目的，ID扫描，图像和视频审核，数据微交易，以确保您的软件安全，付款处理，加密货币交易，异步任务等。您将学习如何使用电池，充电器，微控制器，电路，电动机和传感器来构建自己的蓝牙设备，并使用焊料，电线和3D打印以及铸件。我将演示适用于增材制造，工具和模具制造的3D设计主体，因此您能够制造自己的嵌入式，具有集成电池，充电器，电子电路和功能输出的嵌入式硬件设备。并将它们与蓝牙和网络联系。具体来说，我们将检查两个案例研究，一个振动的按摩器和一支由OpenSCAD编程的自制枪支，它们可作为图形接口或命令行实用程序提供，并且可以集成到网络中以较快。
+您将学习如何在没有以前的经验的情况下从头开始建立和部署网站，使其功能性，安全，美丽，有用且最重要的是实用。您将学习如何使用机器学习和计算机视觉使网站安全，更实用，从您的网站上录制视频和音频，捐赠您的声音，制作音乐并调节音频以创建有用的示例，以及如何通过利用其他网站来构建可以直接链接到您的网站的最佳网站来打破噪音，以便您可以分享所有有用的有用信息，以分享您必须提供更重要的软件，并使您提供更重要的业务和您的业务。这本书将最重视媒体，安全和机器学习，这是三个主要组成部分，可以通过与合适的用户互动并以现实，实用，动手的方式启用错误的用户来帮助您为Web构建有用的软件，同时自动且既有自动且坚固又坚固。 
+本书教Unix，特别是Debian（Ubuntu），Bash Shell，Python，HTML，CSS，JavaScript，以及用于Python的许多有用的软件包，例如请求，以及GIT和FFMPEG（例如Git和ffmpeg）。我还将教您如何自动交易加密货币，并从加密货币或常规借记卡中付款，同时，如果您选择这样做，甚至还会向访问者支付收入的份额。我将教您如何通过广告从您的网站上赚钱，如何为搜索引擎准备好应用程序，并使其快速，在客户中排名第一个排名，以找到您的客户以找到您，并在尽可能多的常见搜索中排名。我将教您如何出售您的软件，宣传它，吸引寻找您服务的客户，并通过已经存在的途径在互联网上为您自己的名字，价格便宜且运作良好。我将教您如何将数据保存在适合您的云计算机上，并廉价地保存数据，如何计划和构建一个网站，以执行用户想要的内容和想要的内容，以及如何通过将您的网站放在网站上，将您的网站放在电脑上，并用通知，短信，短信，打电话，电话，将用户带到您的网站上，以将您的网站带到您的网站上，将您的网站带到您的点击率上，只需单击即可单击您的单击。这本书将重点介绍大量发布和分发媒体的实用性，从文本到照片再到视频再到音频，对最终用户（您的客户群）给人留下深刻印象，并以您所做的任何方式出售自己，以创建一个网站，一个应用程序，一个代表您的应用程序，并且只能代表您，并且使您，您的软件和公司看起来都很好。您还将从我那里学到一些技巧和技巧，从编码技巧，诸如化妆和摄影，建模和表演等实用的虚荣心等，这对于使用所有可用的工具以最佳的方式来描绘自己和您的公司很重要，同时分发了尽可能多的内容，可以在平台上跨越无需更多的努力，而不是需要努力，或者是不需要的工作。
+这本书叫做"实用Web Based Deep Learning and Security by Example" for a reason: It deals with learning to code, specifically for the web, specifically with a focus on security, from a practical standpoint, with examples of working code that serves the practical purposes outlined in the text. The learning component of this text also encompasses machine learning, the code I will show you how to run for the web that will handle computer vision, facial recognition, image and video moderation, image enhancement, resolution enhancement,图像字幕和其他任务，例如来自图像的预测指标，例如图像的本质，作为计算机传递的图像或光学副本（图像的照片或打印的照片，都非常重要可以使您的计算机（通常要求您使用用户名和密码）制作服务器计算机，并为每个新的登录或新IP地址提供确认令牌，但是，如果您构建大规模的，易于使用，从根本上使用，功能强大的软件，这可能与其他人的软件相关联（您都可以使用您的软件，或者您可以使用任何网站，否则您就可以使用任何网站。
+任何构建无可挑剔的安全软件的人都对这意味着什么有所了解。软件本质上是不安全的，因为我们用来访问它的设备和帐户并不总是可供使用，它们可能掌握在对软件不适的人手中，因此可能会对软件本身构成风险。这是本书的重点。默认情况下，网络计算机使用长密钥令牌，称为和ssh或Secur shell键，否则最好使用Web服务器保护，因为Web服务器提供了开放式访问以及在服务器本身上运行的最先进的安全工具。 Web服务器可以访问用户的Web浏览器，这可以说是用户设备中最强大的部分，因为它是用户可以访问网络软件的地方。这个工具包可以渲染文本，您看到的网页，还可以录制图像，音频和视频（例如面部或状态ID的照片），可以读取并写入到蓝牙无线电设备上，并可以读取并写入附近的电视带标签，廉价的钥匙卡，FOB，FOB，贴纸，贴纸，贴纸，响声以及与唯一的网络验证的网站和书面验证的网站和书面验证以及数据生成和写入数据和书面上，并将其读取。使用所有可以使用的工具，在这本书中，您将配备自己的知识来建立一个安全的网站，总的来说是一个安全的网络计算机系统，适合您，进行竞标，外观和感觉</p>
 <p>从哪里开始：
-欢迎您跳过我从本书或任何部分开始的部分，转到所需的确切代码，尤其是如果您在本书中要详细描述的上述工具或任何上述工具经验，以及记录用例及其实际示例。如果您没有编写代码的经验，我强烈建议您阅读所有本书，尤其是建议您阅读以前的部分，以确保本书适合您。如果这本书不适合您，请考虑将其赠送给可能有兴趣自己学习Web开发的朋友或亲戚，甚至考虑借用它并从他们那里学习，以填补我作为老师或其他老师在我之前做过的我使您失败的空白。从您开始的位置开始，如果您打算构建有用的应用程序，本书的每个部分都将很有用，并考虑最终用户构建最佳应用程序：了解您的客户。现在轮到你认识我，您知道这本书，您已经准备好开始了。首先，抓住一台计算机（甚至是盒装商店，亚马逊或旧桌面的最便宜的笔记本电脑，并以适用于</p>
+欢迎您跳过我从本书或任何部分开始的部分，转到所需的确切代码，尤其是如果您在本书中要详细描述的上述工具或任何上述工具经验，以及记录用例及其实际示例。如果您没有编写代码的经验，我强烈建议您阅读所有本书，尤其是建议您阅读以前的部分，以确保本书适合您。如果这本书不适合您，请考虑将其赠送给可能有兴趣自己学习Web开发的朋友或亲戚，甚至考虑借用它并从他们那里学习，以填补我作为老师或其他老师在我之前做过的我使您失败的空白。从您开始的位置开始，如果您打算构建有用的应用程序，本书的每个部分都将很有用，并考虑最终用户构建最佳应用程序：了解您的客户。现在您知道了我，您知道这本书，您已经准备好开始了。首先，抓住一台计算机（即使是盒装商店，亚马逊或旧桌面的最便宜的笔记本电脑，并以适合您的方式进行设置。</p>
 <p>如何读这本书：
 文本突出显示，表示文本属于命令提示符，您将在其中编写运行的代码。命令提示符非常注重键盘，几乎不需要单击，加快了您的工作流程并使您更容易。</p>
 <p>入门：
@@ -308,7 +230,7 @@ cat .ssh/id_rsa.pub
 <p>现在，您可以使用CD回到存储库，您将熟悉此。立即尝试使用备份的备份脚本</p>
 <p>伟大的！现在我们真的可以进行编码。现在，让我们安装Django，因为我们对bash和git有很好的掌握。 Django将让我们自动备份我们的软件，Bash也可以做到这一点，但是Django应该具有更简单的实现（可以更轻松地禁用和配置）。</p>
 <p>要在Ubuntu中安装软件，我们将使用sudo apt-get命令。首先，让我们更新和升级我们已经拥有的软件。这可以通过sudo apt-get update和sudo apt-get升级-y来完成。接下来，让我们安装python和我们的虚拟环境，即代码的故乡，并使用以下命令：sudo apt-get install python-is python3 python3-venv</p>
-<p>就ubuntu实例中的软件安装而言，这就是您需要使用Django的全部。对于Windows和Linux，这应该非常简单，但是对于MAC，您可能需要使用免费或付费的虚拟环境（例如VirtualBox或Paralells桌面）在其上安装虚拟机和Linux，并重新创建上述步骤以设置Ub​​untu环境。在这种情况下，Ubuntu至关重要，因为它是网站运行的软件，它使他们能够托管所有上述软件的网站。</p>
+<p>就ubuntu实例中的软件安装而言，这就是您需要使用Django的全部。对于Windows和Linux，这应该非常简单，但是对于MAC，您可能需要使用免费或付费的虚拟环境（例如VirtualBox或Paralells桌面）在其上安装虚拟机和Linux，并重新创建上述步骤以设置Ubuntu环境。在这种情况下，Ubuntu至关重要，因为它是网站运行的软件，它使他们能够托管所有上述软件的网站。</p>
 <p>让我们挖掘django。</p>
 <p>在我们的目录中再次使用CD：</p>
 <pre class="language-bash"><code>python -m venv venv # 创建存储代码的虚拟环境
@@ -356,7 +278,7 @@ def hello(request):
 <p>在app/urls.py中，在开始导入我们刚创建的视图之后的导入语句之后添加一行。</p>
 <pre class="language-python"><code>from feed import views as feed_views
 </code></pre>
-<p>现在，让我们定义视图模式。视图模式具有三个组件，即路径组件，该组件告诉服务器在服务器内的视图所在（用户输入到导航栏中输入网页的URL路径），即指定视图的视图组件，以及视图的友好名称，以便在使用模板上更改和更新的命名，以便更改和更新的命名，以便更改和更新。以这种方式做事并保持灵活是有意义的，因为您的代码库将是一个不断变化的环境，需要灵活性和即兴创作才能有价值且易于使用。这是您的视图，您可以将其添加到urlpatterns = [app/urls.py的部分。视图模式由上述三个组件定义，并称为路径。您的URL模式是列表，因此请确保用一个逗号，因为这将每个分开。每个项目也应在新线路上再次使用四个空间，就像settings.py中的应用一样。我们将使用空字符串函数定义视图的第一个组件，以创建在Web服务器的根目录上运行的视图。您的urls.py现在应该看起来像</p>
+<p>现在，让我们定义视图模式。视图模式具有三个组件，即路径组件，该组件告诉服务器在服务器内的视图所在（用户输入到导航栏中输入网页的URL路径），即指定视图的视图组件，以及视图的友好名称，以便在使用模板上更改和更新的命名，以便更改和更新的命名，以便更改和更新。以这种方式做事并保持灵活是有意义的，因为您的代码库将是一个不断变化的环境，需要灵活性和即兴创作才能有价值且易于使用。这是您的视图，您可以将其添加到urlpatterns = [app/urls.py的部分。视图模式由上述三个组件定义，并称为路径。您的URL模式是列表，因此请确保始终用逗号结束每个项目，因为这将每个项目分开。每个项目也应在新线路上再次使用四个空间，就像settings.py中的应用一样。我们将使用空字符串函数定义视图的第一个组件，以创建在Web服务器的根目录上运行的视图。您的urls.py现在应该看起来像这样：</p>
 <pre class="language-python"><code>from feed import views as feed_views
 
 urlpatterns = [
@@ -879,7 +801,7 @@ def send_verification_email(user):
 <p>现在，我们需要这些观点的URL模式。在用户/urls.py中，添加以下URL模式：</p>
 <pre class="language-python"><code>    # ...以前的URL在这里</code></pre>
 <p>四个模板，很多！但是现在，我们一定能够从Web浏览器中随时随地重置用户的密码。</p>
-<p>我了解这是很多代码。如果您的头部似乎有点远，那没关系。您将有所改善，理解将有所改善，并且您很快就会变得更加能够使用代码。如果您完全迷失了，我建议您在在线学习以学习为课程的自定进度后，稍后再回到此软件。这些通常可以免费入门，并会指导您回到这个项目时取得成功所需的一切。如果您觉得自己准备继续，请继续阅读，接下来，我们将介绍将代码部署到远程服务器并设置邮件服务器，并使用bash自动部署，以便您始终使用一些简单的命令来设置一个新项目。</p>
+<p>我了解这是很多代码。如果您的头部似乎有点远，那没关系。您将有所改善，理解将有所改善，并且您很快就会变得更加能够使用代码。如果您完全迷失了，我建议您在在线学习以学习为课程的自定进度后，稍后再回到此软件。这些通常可以免费入门，并会指导您回到这个项目时获得成功所需的一切。如果您觉得自己准备继续，请继续阅读，接下来，我们将介绍将代码部署到远程服务器并设置邮件服务器，并使用bash自动部署，以便您始终使用一些简单的命令来设置一个新项目。</p>
 <p>在部署到远程服务器之前，我们需要做的最后一件事是使我们的网站更加安全。您会注意到登录视图仅采用用户名和密码，并且没有多因素身份验证或一个时间代码。这是一个简单的修复，并且使用相同的代码，我们可以使我们的网站发送短信，甚至可以响应发送给服务器的短信。首先，我们将返回用户模型，并添加一个将表示每个登录的时间戳签名者。我们还将在用户模型中添加一个唯一的旋转标识符，该标识符将用于为我们的登录添加额外的安全性。编辑用户模型，用户/型号。py，添加以下代码：</p>
 <pre class="language-python"><code># 确保导入UUID，时间戳签名器和URL发电机（反向）
     # 在这里添加此代码
@@ -1300,18 +1222,18 @@ from .tests import is_superuser_or_vendor # 我们需要创建此测试
 # 听听0.0.0.0
 # 听听::
 # hostkey/etc/ssh/ssh_host_rsa_key
-
-
+# hostkey/etc/ssh/ssh_host_ecdsa_key
+# HOSTKEY/ETC/SSH/SSH_HOST_ED25519_KEY
 # 密码和关键
 # rekeylimit默认没有
 # 记录
 # syslogfacity auth
 # loglevel信息
-
-
+# 验证：
+# LogingRaceTime 2m
 # 允许Rootlogin禁止使用
 # 严格模具是
-
+# Maxauthtries 6
 # 最大值10
 # 期望.ssh/授权_keys2将来默认情况下会被忽略。
 # 授权principalsfile无
@@ -1679,18 +1601,18 @@ N/A。<we'll add="" later="" this=""></we'll></p>
 # 在文件中，请参阅主（5）手册页（命令：" Man 5 Master"或
 # 在线：http：//www.postfix.org/master.5.html）。
 # 
-
-
-# =============================================== ======================
-
+# 编辑此文件后，不要忘记执行" Postfix Reload"。
+# 
+# ====================================================================================
+# 服务类型私人UNPRIV CHROOT WAKEUP MAXPROC命令 + ARGS
 # （是）（是）（否）（从不）（100）
-# =============================================== ======================
+# ====================================================================================
 # smtp inet n -y -1后屏幕
-
+# SMTPD PASS  -  Y-- SMTPD
 # DNSBlog Unix-- Y -0 DNSBlog
 # tlsproxy unix-- y -0 tlsproxy
 # 选择一个：仅对环回客户端或任何客户端启用提交。
-
+# 127.0.0.1:ubmission inet n -y-- smtpd
 # -O syslog_name = PostFix/提交
 # -o smtpd_tls_security_level = gentrypt
 # -o smtpd_sasl_auth_enable = yes
@@ -1719,61 +1641,62 @@ N/A。<we'll add="" later="" this=""></we'll></p>
 # QMGR UNIX N -N 300 1 OQMGR
 # -o smtp_helo_timeout = 5 -o smtp_connect_timeout = 5
 # 
-# =============================================== ===================
+# =================================================================
 # 与非PostFix软件的接口。确保检查手册
 # 非postFix软件的页面以查找所需的选项。
 # 
 # 以下许多服务都使用后四个管道（8）交付
 # 代理人。  有关$ {收件人}的信息，请参见管道（8）人页面
 # 和其他消息信封选项。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# =================================================================
+# 
+# MailDrop。有关详细信息，请参见《 Postfix MailDrop_readme文件》。
+# 也在main.cf中指定：maildrop_destination_recipient_limit = 1
+# 
+# 
+# =================================================================
+# 
+# 最近的Cyrus版本可以使用现有的" LMTP" Master.CF条目。
+# 
+# 在cyrus.conf中指定：
+# lmtp cmd =" lmtpd -a"听=" localhost：lmtp" proto = tcp4
+# 
+# 在main.cf中指定以下一个或多个：
+# Mailbox_transport = LMTP：INET：localhost
+# virtual_transport = lmtp：inet：localhost
+# 
+# =================================================================
 # 
 # Cyrus 2.1.5（Amos Gouaux）
-
+# 也在main.cf中指定：cyrus_destination_recipient_limit = 1
 # 
-
-
-
-
-
-
-
+# Cyrus unix -n n--管道
+# flags = drx user = cyrus argv =/cyrus/bin/deliver -e -r $ {sender} -m $ {extension} $ {user}
+# 
+# =================================================================
+# 通过Cyrus交付的旧例子。
+# 
+# 旧卡鲁斯unix -n n--管道
 # flags = r用户= cyrus argv =/cyrus/bin/deliver -e -m $ {extension} $ {user}
 # 
-# =============================================== ===================
+# =================================================================
 # 
 # 有关配置详细信息，请参见Postfix Uucp_readme文件。
-
-
-
+# 
+# 
+# 其他外部交付方法。
 # </code></pre>
-<p></p>
+<p>和OpendKim配置。 OpendKim使用域键标识电子邮件服务器，以使其更安全。没有它，邮件没有签名，也可能无法进入收件箱。</p>
 <pre class="language-bash"><code>nano config/etc_default_opendkim
-</code></pre><p>添加以下行：</p>
+</code></pre>
+<p>添加以下行：</p>
 <pre class="language-bash"><code># 注意：这是一个旧版配置文件。 Opendkim不使用它
 # SystemD服务。请使用相应的配置参数
 # /etc/opendkim.conf而不是。
 # 
 # 以前，有人会在此处编辑默认设置，然后执行
 # /lib/opendkim/opendkim.service.generate以生成Systemd替代文件
-
+# /etc/systemd/system/opendkim.service.d/override.conf和
 # /etc/tmpfiles.d/opendkim.conf。虽然这仍然是可能的，但现在是
 # 建议直接在/etc/opendkim.conf中调整设置。
 # 
@@ -1781,12 +1704,12 @@ N/A。<we'll add="" later="" this=""></we'll></p>
 # 更改为/var/spool/postfix/run/opendkim以使用unix插座
 # Chroot中的后缀：
 # rundir =/var/spool/postfix/run/opendkim
-
+# 
 # 注释以指定替代套接字
-
+# 请注意，设置此设置将覆盖opendkim.conf中的任何插座值
 # 默认：
-
-
+# 在端口54321上的所有接口上聆听：
+# 插座= INET：54321
 # 在端口12345上收听回环：
 # 套接字= inet：12345@localhost
 # 在港口12345上的192.0.2.1听：
@@ -1801,12 +1724,12 @@ N/A。<we'll add="" later="" this=""></we'll></p>
 # 一切。
 # DEFAULT_VSZ_LIMIT = 256m
 # 登录用户内部通过登录过程使用。这是最不信任的
-
+# Dovecot系统中的用户。它根本不应该访问任何东西。
 # default_login_user = dovenull
 # 内部用户被无特权的过程使用。它应该与
 # 登录用户，以免登录过程无法打扰其他过程。
 # default_internal_user = dovecot
-
+    # 端口= 143
     # 端口= 993
     # SSL =是
   # 在开始新过程之前，要处理的连接数量。通常
@@ -2094,13 +2017,13 @@ exit()
 
 
 <div class="mx-auto p-1 m-1" style="display: flex; justify-content: space-around;">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6209985848112194"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
      crossorigin="anonymous"></script>
-<!-- Square Ad -->
+<!-- Banner Ad -->
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="ca-pub-6209985848112194"
-     data-ad-slot="2468505458"
+     data-ad-client="ca-pub-8062317950995248"
+     data-ad-slot="1247687739"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
 <script>
@@ -2110,7 +2033,7 @@ exit()
 
 
 
-<p><a href="https://lotteh.com/payments/pay/Daisy/?id=cf8fc969-e02d-4952-a329-e60db51bc1a7" title="Buy on Lotte Harper">买</a> | <a href="https://lotteh.com/payments/pay/crypto/Daisy/?id=cf8fc969-e02d-4952-a329-e60db51bc1a7&crypto=USDC" title="Buy with cryptocurrency on Lotte Harper">用加密货币购买</a></p>
+<p><a href="https://lotteh.com/pay/item/Daisy/?id=cf8fc969-e02d-4952-a329-e60db51bc1a7" title="Buy on Lotte Harper">买</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=cf8fc969-e02d-4952-a329-e60db51bc1a7&crypto=USDC" title="Buy with cryptocurrency on Lotte Harper">用加密货币购买</a></p>
 
 
 <hr>
@@ -2158,6 +2081,8 @@ exit()
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/practical-web-based-deep-learning-and" title="阅读网站 english">english</a>
+        
         <a class="dropdown-item" href="/af/practical-web-based-deep-learning-and" title="阅读网站 Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/practical-web-based-deep-learning-and" title="阅读网站 shqip">shqip</a>
@@ -2180,7 +2105,7 @@ exit()
         
         <a class="dropdown-item" href="/bg/practical-web-based-deep-learning-and" title="阅读网站 Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/practical-web-based-deep-learning-and" title="阅读网站 calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/practical-web-based-deep-learning-and" title="阅读网站 calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/practical-web-based-deep-learning-and" title="阅读网站 Cebuano">Cebuano</a>
         
@@ -2199,8 +2124,6 @@ exit()
         <a class="dropdown-item" href="/da/practical-web-based-deep-learning-and" title="阅读网站 Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/practical-web-based-deep-learning-and" title="阅读网站 Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/practical-web-based-deep-learning-and" title="阅读网站 english">english</a>
         
         <a class="dropdown-item" href="/eo/practical-web-based-deep-learning-and" title="阅读网站 Esperanto">Esperanto</a>
         
@@ -2376,7 +2299,7 @@ exit()
   </div>
 </div>
 
-        <p><i>使用以下地址给我留下比特币提示：</i> <b id="btc-wallet">3KhDWoSve2N627RiW8grj6XrsoPT7d6qyE</b> <button class="btn btn-sm btn-info" title="复制地址" onclick="copyToClipboard('btc-wallet');">复制</button></p>
+        <p><i>使用此地址给我留言比特币中的小费：</i> <b id="btc-wallet">3KhDWoSve2N627RiW8grj6XrsoPT7d6qyE</b> <button class="btn btn-sm btn-info" title="复制地址" onclick="copyToClipboard('btc-wallet');">复制</button></p>
         <div id="javascript-console"></div>
 	    <div class="d-flex justify-content-between p-2">
 	        <div style="float:left;">
@@ -2542,10 +2465,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["十二", "一", "二", "三", "四个", "五", "六", "七", "八", "九", "十", "十一"];
-var digits = ["","一", "二", "三", "四个", "五", "六", "七", "八", "九", "十", "十一"];
-var teens = ["十一", "十二", "十三", "十四", "十五", "十六", "十七", "十八", "十九"];
-var tens = ["哦","十","二十","三十","四十","五十"];
+
+var hrs = [“十二", "一", "二", "三", "四个", "五", "六", "七", "八", "九", "十", "十一”];
+var digits = [“", "一", "二", "三", "四个", "五", "六", "七", "八", "九", "十", "十一”];
+var teens = [“十一", "十二", "十三", "十四", "十五", "十六", "十七", "十八", "十九”];
+var tens = [“ O'", "十", "二十", "三十", "四十", "五十”];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

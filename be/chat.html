@@ -226,7 +226,7 @@
          <p id="the-link" style="visibility: 0; display: none;" class="hide"></p>
          <p id="members"></p>
          <p id="call-div">Імя карыстальніка ёсць <b id="thename" style="font-size: 26px;"></b> <button id="update-username" class="btn update-button">Абнаўленне</button> <button class="call-button" style="font-size: 20px;" onclick="copyToClipboard('thename');" class="btn btn-outline-primary">Капіяваць код</button> <button class="call-button" style="font-size: 20px;" onclick="copyToClipboard('the-link');" class="btn btn-outline-primary">Скапіруйце спасылку</button></p>
-         <button id="call-button" class="call-button">Патэлефануйце каму -небудзь</button>
+         <button id="call-button" class="call-button">Патэлефануйце камусьці</button>
          <div>
             <div id="video-container" class="centered hide">
                <button id="fullscreenToggle" class="btn btn-sm btn-outline-secondary" title="Пераключыць поўнаэкранны экран"><i class="bi bi-arrows-fullscreen"></i></button>
@@ -237,7 +237,7 @@
             </div>
          </div>
       </div>
-      <div style="display: inline-block;"><button id="end-button" class="call-button hide">Канец званка</button><button id="mute" class="btn btn-outline-light hide" style="border: 1px solid black !important; text-color: black !important; color: black !important;">Нямы</button><button id="still" class="btn btn-outline-info hide" style="color: black;">Спампаваць яшчэ</button><button onclick="$('#main-screen').toggleClass('fullscreen-vid');" class="btn btn-outline-success" style="color: black;">Пераключыць поўнаэкранны экран</button></div>
+      <div style="display: inline-block;"><button id="end-button" class="call-button hide">Канец выкліку</button><button id="mute" class="btn btn-outline-light hide" style="border: 1px solid black !important; text-color: black !important; color: black !important;">Нямы</button><button id="still" class="btn btn-outline-info hide" style="color: black;">Спампаваць яшчэ</button><button onclick="$('#main-screen').toggleClass('fullscreen-vid');" class="btn btn-outline-success" style="color: black;">Пераключыць поўнаэкранны экран</button></div>
       </div>
       <button class="btn btn-lg btn-outline-primary" id="please-interact">Далучайцеся да сустрэчы</button>
       <div style="height: 50px;"></div>
@@ -293,6 +293,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/chat" title="Прачытайце сайт у english">english</a>
+        
         <a class="dropdown-item" href="/af/chat" title="Прачытайце сайт у Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/chat" title="Прачытайце сайт у shqip">shqip</a>
@@ -315,7 +317,7 @@
         
         <a class="dropdown-item" href="/bg/chat" title="Прачытайце сайт у Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/chat" title="Прачытайце сайт у calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/chat" title="Прачытайце сайт у calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/chat" title="Прачытайце сайт у Cebuano">Cebuano</a>
         
@@ -334,8 +336,6 @@
         <a class="dropdown-item" href="/da/chat" title="Прачытайце сайт у Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/chat" title="Прачытайце сайт у Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/chat" title="Прачытайце сайт у english">english</a>
         
         <a class="dropdown-item" href="/eo/chat" title="Прачытайце сайт у Esperanto">Esperanto</a>
         
@@ -657,10 +657,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["дванаццаць", "адзін", "два", "тры", "чатыры", "пяць", "шэсць", "сем", "восем", "дзевяць", "дзесяць", "адзінаццаць"];
-var digits = ["","адзін", "два", "тры", "чатыры", "пяць", "шэсць", "сем", "восем", "дзевяць", "дзесяць", "адзінаццаць"];
-var teens = ["адзінаццаць", "дванаццаць", "трынаццаць", "чатырнаццаць", "пятнаццаць", "шаснаццаць", "сямнаццаць", "васямнаццаць", "дзевятнаццаць"];
-var tens = ["o &#x27;","дзесяць","дваццаць","трыццаць","сорак","пяцьдзесят"];
+
+var hrs = ["Дванаццаць", "адзін", "два", "тры", "чатыры", "пяць", "шэсць", "сем", "восем", "дзевяць", "дзесяць", "Адзінаццаць "];
+var digits = ["", "адзін", "два", "тры", "чатыры", "пяць", "шэсць", "сем", "восем", "дзевяць", "дзесяць", "Адзінаццаць "];
+var teens = ["Адзінаццаць", "дванаццаць", "трынаццаць", "чатырнаццаць", "пятнаццаць", "шаснаццаць", "сямнаццаць", "васямнаццаць", "дзевятнаццаць "];
+var tens = ["О"", "дзесяць", "дваццаць", "трыццаць", "сорак", "Пяцьдзесят "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

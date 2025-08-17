@@ -195,10 +195,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["on iki", "bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir"];
-var digits = ["","bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir"];
-var teens = ["on bir", "on iki", "on üç", "on dörd", "on beş", "on altı", "on yeddi", "on səkkiz", "on doqquz"];
-var tens = ["o","on","iyirmi","otuz","qırx","əlli"];
+
+var hrs = ["On iki", "bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir "];
+var digits = ["", "bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir "];
+var teens = ["On bir", "on iki", "on üç", "on dörd", "on beş", "on altı", "on yeddi", "on səkkiz", "on doqquz "];
+var tens = ["O '", "on", "iyirmi", "otuz", "qırx", "əlli "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

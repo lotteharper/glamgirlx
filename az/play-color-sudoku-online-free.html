@@ -197,6 +197,8 @@ this is a free to play color sudoku (colordoku) game. ***
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/play-color-sudoku-online-free" title="Saytı oxuyun english">english</a>
+        
         <a class="dropdown-item" href="/af/play-color-sudoku-online-free" title="Saytı oxuyun Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/play-color-sudoku-online-free" title="Saytı oxuyun shqip">shqip</a>
@@ -219,7 +221,7 @@ this is a free to play color sudoku (colordoku) game. ***
         
         <a class="dropdown-item" href="/bg/play-color-sudoku-online-free" title="Saytı oxuyun Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/play-color-sudoku-online-free" title="Saytı oxuyun calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/play-color-sudoku-online-free" title="Saytı oxuyun calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/play-color-sudoku-online-free" title="Saytı oxuyun Cebuano">Cebuano</a>
         
@@ -238,8 +240,6 @@ this is a free to play color sudoku (colordoku) game. ***
         <a class="dropdown-item" href="/da/play-color-sudoku-online-free" title="Saytı oxuyun Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/play-color-sudoku-online-free" title="Saytı oxuyun Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/play-color-sudoku-online-free" title="Saytı oxuyun english">english</a>
         
         <a class="dropdown-item" href="/eo/play-color-sudoku-online-free" title="Saytı oxuyun Esperanto">Esperanto</a>
         
@@ -581,10 +581,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["on iki", "bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir"];
-var digits = ["","bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir"];
-var teens = ["on bir", "on iki", "on üç", "on dörd", "on beş", "on altı", "on yeddi", "on səkkiz", "on doqquz"];
-var tens = ["o","on","iyirmi","otuz","qırx","əlli"];
+
+var hrs = ["On iki", "bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir "];
+var digits = ["", "bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir "];
+var teens = ["On bir", "on iki", "on üç", "on dörd", "on beş", "on altı", "on yeddi", "on səkkiz", "on doqquz "];
+var tens = ["O '", "on", "iyirmi", "otuz", "qırx", "əlli "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

@@ -194,6 +194,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/the-photo-shows-a-woman-with-curly-cat-did-until" title="Saytı oxuyun english">english</a>
+        
         <a class="dropdown-item" href="/af/the-photo-shows-a-woman-with-curly-cat-did-until" title="Saytı oxuyun Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/the-photo-shows-a-woman-with-curly-cat-did-until" title="Saytı oxuyun shqip">shqip</a>
@@ -216,7 +218,7 @@
         
         <a class="dropdown-item" href="/bg/the-photo-shows-a-woman-with-curly-cat-did-until" title="Saytı oxuyun Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/the-photo-shows-a-woman-with-curly-cat-did-until" title="Saytı oxuyun calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/the-photo-shows-a-woman-with-curly-cat-did-until" title="Saytı oxuyun calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/the-photo-shows-a-woman-with-curly-cat-did-until" title="Saytı oxuyun Cebuano">Cebuano</a>
         
@@ -235,8 +237,6 @@
         <a class="dropdown-item" href="/da/the-photo-shows-a-woman-with-curly-cat-did-until" title="Saytı oxuyun Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/the-photo-shows-a-woman-with-curly-cat-did-until" title="Saytı oxuyun Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/the-photo-shows-a-woman-with-curly-cat-did-until" title="Saytı oxuyun english">english</a>
         
         <a class="dropdown-item" href="/eo/the-photo-shows-a-woman-with-curly-cat-did-until" title="Saytı oxuyun Esperanto">Esperanto</a>
         
@@ -578,10 +578,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["on iki", "bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir"];
-var digits = ["","bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir"];
-var teens = ["on bir", "on iki", "on üç", "on dörd", "on beş", "on altı", "on yeddi", "on səkkiz", "on doqquz"];
-var tens = ["o","on","iyirmi","otuz","qırx","əlli"];
+
+var hrs = ["On iki", "bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir "];
+var digits = ["", "bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir "];
+var teens = ["On bir", "on iki", "on üç", "on dörd", "on beş", "on altı", "on yeddi", "on səkkiz", "on doqquz "];
+var tens = ["O '", "on", "iyirmi", "otuz", "qırx", "əlli "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

@@ -198,6 +198,8 @@ Play three thirteen online for free.
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/three-thirteen-online-free" title="Կարդացեք կայքը in english">english</a>
+        
         <a class="dropdown-item" href="/af/three-thirteen-online-free" title="Կարդացեք կայքը in Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/three-thirteen-online-free" title="Կարդացեք կայքը in shqip">shqip</a>
@@ -220,7 +222,7 @@ Play three thirteen online for free.
         
         <a class="dropdown-item" href="/bg/three-thirteen-online-free" title="Կարդացեք կայքը in Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/three-thirteen-online-free" title="Կարդացեք կայքը in calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/three-thirteen-online-free" title="Կարդացեք կայքը in calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/three-thirteen-online-free" title="Կարդացեք կայքը in Cebuano">Cebuano</a>
         
@@ -239,8 +241,6 @@ Play three thirteen online for free.
         <a class="dropdown-item" href="/da/three-thirteen-online-free" title="Կարդացեք կայքը in Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/three-thirteen-online-free" title="Կարդացեք կայքը in Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/three-thirteen-online-free" title="Կարդացեք կայքը in english">english</a>
         
         <a class="dropdown-item" href="/eo/three-thirteen-online-free" title="Կարդացեք կայքը in Esperanto">Esperanto</a>
         
@@ -582,10 +582,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["տասներկու", "մեկ", "երկու", "երեք", "չորս", "հինգ", "վեց", "յոթը", "ութ", "ինը", "տասնյակ", "տասնմեկ"];
-var digits = ["","մեկ", "երկու", "երեք", "չորս", "հինգ", "վեց", "յոթը", "ութ", "ինը", "տասնյակ", "տասնմեկ"];
-var teens = ["տասնմեկ", "տասներկու", "տասներորդ", "տասնչորս", "տասնհինգ", "տասնվեց", "տասնյոթ", "տասնութ", "իննսուն"];
-var tens = ["o &#x27;","տասնյակ","քսան","երեսուն","քառասուն","հիսուն"];
+
+var hrs = [«Տասներկու", "մեկ", "երկու", "երեք", "չորս", "հինգ", "վեց", "յոթը", "ութ", "ինը", "տասնյակ", "տասնմեկ »];
+var digits = [Թեժ", "մեկ", "երկու", "երեք", "չորս", "հինգ", "վեց", "յոթը", "ութ", "ինը", "տասնյակ", "տասնմեկ »];
+var teens = [«տասնմեկ", "տասներկու", "տասներորդ", "տասնչորս", "տասնհինգ", "տասնվեց", "տասնյոթ", "տասնութ", "իննսուն "];
+var tens = [«O»", "տասնյակ", "քսան", "երեսուն", "քառասուն", "հիսուն "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

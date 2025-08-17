@@ -15,8 +15,8 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/static/fonts/bootstrap-icons.css">
     
-<meta property="og:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/7663d6aa-b6ee-492b-9ef5-64f2220a4968.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=I%2FNLKLFQWK4SgWgFGp5Y2YjstOo%3D&amp;Expires=1755708276">
-<meta name="pinterest:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/7663d6aa-b6ee-492b-9ef5-64f2220a4968.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=I%2FNLKLFQWK4SgWgFGp5Y2YjstOo%3D&amp;Expires=1755708276"/>
+<meta property="og:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/7663d6aa-b6ee-492b-9ef5-64f2220a4968.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=jiGwKDGIVVB%2FaTYviBriSrDt51k%3D&amp;Expires=1755891717">
+<meta name="pinterest:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/7663d6aa-b6ee-492b-9ef5-64f2220a4968.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=jiGwKDGIVVB%2FaTYviBriSrDt51k%3D&amp;Expires=1755891717"/>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
      crossorigin="anonymous"></script>
@@ -124,7 +124,7 @@
 <img src="https://i.imgur.com/dAQRaWt.jpeg" alt="Daisy&#x27;profil şəkli" width="120" height="120" style="margin-top:5px; margin-right:10px; margin-bottom:10px; border-radius: 50%;">
 <p><i>Tərəfindən Daisy</i></p>
 
-<div style="white-space: pre-wrap;">Ağ köynək və qara şalvarda bir qadın.</div>
+<div style="white-space: pre-wrap;">A woman in a white shirt and black pants.</div>
 
 
 <div class="mx-auto p-1 m-1" style="display: flex; justify-content: space-around;">
@@ -194,6 +194,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/a-woman-in-a-white-shirt-and-black-near-star-thank" title="Saytı oxuyun english">english</a>
+        
         <a class="dropdown-item" href="/af/a-woman-in-a-white-shirt-and-black-near-star-thank" title="Saytı oxuyun Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/a-woman-in-a-white-shirt-and-black-near-star-thank" title="Saytı oxuyun shqip">shqip</a>
@@ -216,7 +218,7 @@
         
         <a class="dropdown-item" href="/bg/a-woman-in-a-white-shirt-and-black-near-star-thank" title="Saytı oxuyun Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/a-woman-in-a-white-shirt-and-black-near-star-thank" title="Saytı oxuyun calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/a-woman-in-a-white-shirt-and-black-near-star-thank" title="Saytı oxuyun calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/a-woman-in-a-white-shirt-and-black-near-star-thank" title="Saytı oxuyun Cebuano">Cebuano</a>
         
@@ -235,8 +237,6 @@
         <a class="dropdown-item" href="/da/a-woman-in-a-white-shirt-and-black-near-star-thank" title="Saytı oxuyun Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/a-woman-in-a-white-shirt-and-black-near-star-thank" title="Saytı oxuyun Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/a-woman-in-a-white-shirt-and-black-near-star-thank" title="Saytı oxuyun english">english</a>
         
         <a class="dropdown-item" href="/eo/a-woman-in-a-white-shirt-and-black-near-star-thank" title="Saytı oxuyun Esperanto">Esperanto</a>
         
@@ -578,10 +578,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["on iki", "bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir"];
-var digits = ["","bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir"];
-var teens = ["on bir", "on iki", "on üç", "on dörd", "on beş", "on altı", "on yeddi", "on səkkiz", "on doqquz"];
-var tens = ["o","on","iyirmi","otuz","qırx","əlli"];
+
+var hrs = ["On iki", "bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir "];
+var digits = ["", "bir", "iki", "üçqat", "dördlük", "beş", "altıca", "yeddi", "səkkiz", "doqquz", "on", "on bir "];
+var teens = ["On bir", "on iki", "on üç", "on dörd", "on beş", "on altı", "on yeddi", "on səkkiz", "on doqquz "];
+var tens = ["O '", "on", "iyirmi", "otuz", "qırx", "əlli "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

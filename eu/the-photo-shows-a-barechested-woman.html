@@ -15,8 +15,8 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/static/fonts/bootstrap-icons.css">
     
-<meta property="og:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/b2d7114f-b681-485e-88d6-bf9871ab5b03.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=kfW5pvgxLMRJPUVqD3ldptPZhAY%3D&amp;Expires=1755714404">
-<meta name="pinterest:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/b2d7114f-b681-485e-88d6-bf9871ab5b03.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=kfW5pvgxLMRJPUVqD3ldptPZhAY%3D&amp;Expires=1755714404"/>
+<meta property="og:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/b2d7114f-b681-485e-88d6-bf9871ab5b03.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=Q%2FMlSJIBzmy4pvr2rR1xBb9iSQo%3D&amp;Expires=1755897393">
+<meta name="pinterest:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/b2d7114f-b681-485e-88d6-bf9871ab5b03.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=Q%2FMlSJIBzmy4pvr2rR1xBb9iSQo%3D&amp;Expires=1755897393"/>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
      crossorigin="anonymous"></script>
@@ -194,6 +194,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/the-photo-shows-a-barechested-woman" title="Irakurri gunea english">english</a>
+        
         <a class="dropdown-item" href="/af/the-photo-shows-a-barechested-woman" title="Irakurri gunea Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/the-photo-shows-a-barechested-woman" title="Irakurri gunea shqip">shqip</a>
@@ -216,7 +218,7 @@
         
         <a class="dropdown-item" href="/bg/the-photo-shows-a-barechested-woman" title="Irakurri gunea Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/the-photo-shows-a-barechested-woman" title="Irakurri gunea calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/the-photo-shows-a-barechested-woman" title="Irakurri gunea calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/the-photo-shows-a-barechested-woman" title="Irakurri gunea Cebuano">Cebuano</a>
         
@@ -235,8 +237,6 @@
         <a class="dropdown-item" href="/da/the-photo-shows-a-barechested-woman" title="Irakurri gunea Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/the-photo-shows-a-barechested-woman" title="Irakurri gunea Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/the-photo-shows-a-barechested-woman" title="Irakurri gunea english">english</a>
         
         <a class="dropdown-item" href="/eo/the-photo-shows-a-barechested-woman" title="Irakurri gunea Esperanto">Esperanto</a>
         
@@ -578,10 +578,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["hamabi", "bat", "bi", "hiru", "lau", "bost", "sei", "zazpi", "zortzi", "bederatzi", "hamar", "hamaika"];
-var digits = ["","bat", "bi", "hiru", "lau", "bost", "sei", "zazpi", "zortzi", "bederatzi", "hamar", "hamaika"];
-var teens = ["hamaika", "hamabi", "hamahiru", "hamalau", "hamabost", "hamasei", "hamazazpi", "hamazortzi", "hemeretzi"];
-var tens = ["o","hamar","hogei","hogeita hamar","berrogei","berrogeita hamar"];
+
+var hrs = ["Hamabi", "bat", "bi", "hiru", "lau", "bost", "sei", "zazpi", "zortzi", "bederatzi", "hamar", "hamaika "];
+var digits = ["", "bat", "bi", "hiru", "lau", "bost", "sei", "zazpi", "zortzi", "bederatzi", "hamar", "hamaika "];
+var teens = ["Hamaika", "hamabi", "hamahiru", "hamalau", "hamabost", "hamasei", "hamazazpi", "hamazortzi", "hemeretzi "];
+var tens = ["O '", "hamar", "hogei", "hogeita hamar", "berrogei", "berrogeita hamar "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

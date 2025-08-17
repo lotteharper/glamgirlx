@@ -198,6 +198,8 @@ play collaborative color sudoku with a friend for free. <a title="Invite a Frien
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/two-player-color-sudoku-online-free" title="Pročitajte stranicu u english">english</a>
+        
         <a class="dropdown-item" href="/af/two-player-color-sudoku-online-free" title="Pročitajte stranicu u Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/two-player-color-sudoku-online-free" title="Pročitajte stranicu u shqip">shqip</a>
@@ -239,8 +241,6 @@ play collaborative color sudoku with a friend for free. <a title="Invite a Frien
         <a class="dropdown-item" href="/da/two-player-color-sudoku-online-free" title="Pročitajte stranicu u Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/two-player-color-sudoku-online-free" title="Pročitajte stranicu u Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/two-player-color-sudoku-online-free" title="Pročitajte stranicu u english">english</a>
         
         <a class="dropdown-item" href="/eo/two-player-color-sudoku-online-free" title="Pročitajte stranicu u Esperanto">Esperanto</a>
         
@@ -582,10 +582,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["dvanaest", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest"];
-var digits = ["","jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest"];
-var teens = ["jedanaest", "dvanaest", "trinaest", "četrnaest", "petnaest", "šesnaest", "sedamnaest", "osamnaest", "devetnaest"];
-var tens = ["o &#x27;","deset","dvadeset","trideset","četrdeset","pedeset"];
+
+var hrs = ["Dvanaest", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest "];
+var digits = ["", "jedan", "dvoje", "tri", "četvoro", "pet", "šest", "sedam", "osam", "devet", "deset", "jedanaest "];
+var teens = ["Jedanaest", "dvanaest", "trinaest", "četrnaest", "petnaest", "šesnaest", "sedamnaest", "osamnaest", "devetnaest "];
+var tens = ["O"", "deset", "dvadeset", "trideset", "četrdeset", "Pedeset "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

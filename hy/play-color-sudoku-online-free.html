@@ -197,6 +197,8 @@ this is a free to play color sudoku (colordoku) game. ***
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/play-color-sudoku-online-free" title="Կարդացեք կայքը in english">english</a>
+        
         <a class="dropdown-item" href="/af/play-color-sudoku-online-free" title="Կարդացեք կայքը in Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/play-color-sudoku-online-free" title="Կարդացեք կայքը in shqip">shqip</a>
@@ -219,7 +221,7 @@ this is a free to play color sudoku (colordoku) game. ***
         
         <a class="dropdown-item" href="/bg/play-color-sudoku-online-free" title="Կարդացեք կայքը in Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/play-color-sudoku-online-free" title="Կարդացեք կայքը in calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/play-color-sudoku-online-free" title="Կարդացեք կայքը in calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/play-color-sudoku-online-free" title="Կարդացեք կայքը in Cebuano">Cebuano</a>
         
@@ -238,8 +240,6 @@ this is a free to play color sudoku (colordoku) game. ***
         <a class="dropdown-item" href="/da/play-color-sudoku-online-free" title="Կարդացեք կայքը in Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/play-color-sudoku-online-free" title="Կարդացեք կայքը in Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/play-color-sudoku-online-free" title="Կարդացեք կայքը in english">english</a>
         
         <a class="dropdown-item" href="/eo/play-color-sudoku-online-free" title="Կարդացեք կայքը in Esperanto">Esperanto</a>
         
@@ -581,10 +581,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["տասներկու", "մեկ", "երկու", "երեք", "չորս", "հինգ", "վեց", "յոթը", "ութ", "ինը", "տասնյակ", "տասնմեկ"];
-var digits = ["","մեկ", "երկու", "երեք", "չորս", "հինգ", "վեց", "յոթը", "ութ", "ինը", "տասնյակ", "տասնմեկ"];
-var teens = ["տասնմեկ", "տասներկու", "տասներորդ", "տասնչորս", "տասնհինգ", "տասնվեց", "տասնյոթ", "տասնութ", "իննսուն"];
-var tens = ["o &#x27;","տասնյակ","քսան","երեսուն","քառասուն","հիսուն"];
+
+var hrs = [«Տասներկու", "մեկ", "երկու", "երեք", "չորս", "հինգ", "վեց", "յոթը", "ութ", "ինը", "տասնյակ", "տասնմեկ »];
+var digits = [Թեժ", "մեկ", "երկու", "երեք", "չորս", "հինգ", "վեց", "յոթը", "ութ", "ինը", "տասնյակ", "տասնմեկ »];
+var teens = [«տասնմեկ", "տասներկու", "տասներորդ", "տասնչորս", "տասնհինգ", "տասնվեց", "տասնյոթ", "տասնութ", "իննսուն "];
+var tens = [«O»", "տասնյակ", "քսան", "երեսուն", "քառասուն", "հիսուն "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

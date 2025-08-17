@@ -15,8 +15,8 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/static/fonts/bootstrap-icons.css">
     
-<meta property="og:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/5a231c41-dcf9-4d92-8657-31ad1fbb6db8.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=Y9YuU768%2B0xRcEPG7d5Xkc%2BhAys%3D&amp;Expires=1755702643">
-<meta name="pinterest:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/5a231c41-dcf9-4d92-8657-31ad1fbb6db8.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=Y9YuU768%2B0xRcEPG7d5Xkc%2BhAys%3D&amp;Expires=1755702643"/>
+<meta property="og:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/5a231c41-dcf9-4d92-8657-31ad1fbb6db8.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=ke%2B4ky8j0voPvNO9l2aGjJyaIAE%3D&amp;Expires=1755886273">
+<meta name="pinterest:image" content="https://charlotteharper.s3.amazonaws.com/home/team/lotteh/media/images/5a231c41-dcf9-4d92-8657-31ad1fbb6db8.png?AWSAccessKeyId=AKIA5A2IYPTJFQQ6WHXN&amp;Signature=ke%2B4ky8j0voPvNO9l2aGjJyaIAE%3D&amp;Expires=1755886273"/>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
      crossorigin="anonymous"></script>
@@ -194,6 +194,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/the-photo-shows-a-shirtless-woman-develop-mean-letter" title="Կարդացեք կայքը in english">english</a>
+        
         <a class="dropdown-item" href="/af/the-photo-shows-a-shirtless-woman-develop-mean-letter" title="Կարդացեք կայքը in Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/the-photo-shows-a-shirtless-woman-develop-mean-letter" title="Կարդացեք կայքը in shqip">shqip</a>
@@ -216,7 +218,7 @@
         
         <a class="dropdown-item" href="/bg/the-photo-shows-a-shirtless-woman-develop-mean-letter" title="Կարդացեք կայքը in Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/the-photo-shows-a-shirtless-woman-develop-mean-letter" title="Կարդացեք կայքը in calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/the-photo-shows-a-shirtless-woman-develop-mean-letter" title="Կարդացեք կայքը in calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/the-photo-shows-a-shirtless-woman-develop-mean-letter" title="Կարդացեք կայքը in Cebuano">Cebuano</a>
         
@@ -235,8 +237,6 @@
         <a class="dropdown-item" href="/da/the-photo-shows-a-shirtless-woman-develop-mean-letter" title="Կարդացեք կայքը in Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/the-photo-shows-a-shirtless-woman-develop-mean-letter" title="Կարդացեք կայքը in Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/the-photo-shows-a-shirtless-woman-develop-mean-letter" title="Կարդացեք կայքը in english">english</a>
         
         <a class="dropdown-item" href="/eo/the-photo-shows-a-shirtless-woman-develop-mean-letter" title="Կարդացեք կայքը in Esperanto">Esperanto</a>
         
@@ -578,10 +578,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["տասներկու", "մեկ", "երկու", "երեք", "չորս", "հինգ", "վեց", "յոթը", "ութ", "ինը", "տասնյակ", "տասնմեկ"];
-var digits = ["","մեկ", "երկու", "երեք", "չորս", "հինգ", "վեց", "յոթը", "ութ", "ինը", "տասնյակ", "տասնմեկ"];
-var teens = ["տասնմեկ", "տասներկու", "տասներորդ", "տասնչորս", "տասնհինգ", "տասնվեց", "տասնյոթ", "տասնութ", "իննսուն"];
-var tens = ["o &#x27;","տասնյակ","քսան","երեսուն","քառասուն","հիսուն"];
+
+var hrs = [«Տասներկու", "մեկ", "երկու", "երեք", "չորս", "հինգ", "վեց", "յոթը", "ութ", "ինը", "տասնյակ", "տասնմեկ »];
+var digits = [Թեժ", "մեկ", "երկու", "երեք", "չորս", "հինգ", "վեց", "յոթը", "ութ", "ինը", "տասնյակ", "տասնմեկ »];
+var teens = [«տասնմեկ", "տասներկու", "տասներորդ", "տասնչորս", "տասնհինգ", "տասնվեց", "տասնյոթ", "տասնութ", "իննսուն "];
+var tens = [«O»", "տասնյակ", "քսան", "երեսուն", "քառասուն", "հիսուն "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }

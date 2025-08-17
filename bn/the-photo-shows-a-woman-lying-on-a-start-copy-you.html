@@ -7,7 +7,7 @@
     <meta name="description" content="এই নিবন্ধটি দেখুন | ছবিতে দেখানো হয়েছে যে একজন মহিলা বিছানায় শুয়ে আছেন, একটি সাদা ফসলের শীর্ষ এবং ক্রোশেট-স্টাইলের সাদা শর্টস পরেছেন। তার কোঁকড়ানো চুল এবং ...">
     <meta name="author" content="Charlotte Grace Harper">
     <link rel="icon" href="/media/favicon.ico">
-    <title>ছবিতে দেখানো হয়েছে যে একজন মহিলা বিছানায় শুয়ে আছে, সাদা ফসলের শীর্ষে ... - Glam Girl X</title>
+    <title>ছবিতে দেখানো হয়েছে একজন মহিলা বিছানায় শুয়ে আছে, সাদা ফসলের শীর্ষে ... - Glam Girl X</title>
     <link rel="canonical" href="https://glamgirlx.com/bn/the-photo-shows-a-woman-lying-on-a-start-copy-you">
     <link href="/static/main.css" rel="stylesheet">
     <link rel="manifest" href="/site.webmanifest">
@@ -194,6 +194,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/the-photo-shows-a-woman-lying-on-a-start-copy-you" title="সাইটটি পড়ুন english">english</a>
+        
         <a class="dropdown-item" href="/af/the-photo-shows-a-woman-lying-on-a-start-copy-you" title="সাইটটি পড়ুন Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/the-photo-shows-a-woman-lying-on-a-start-copy-you" title="সাইটটি পড়ুন shqip">shqip</a>
@@ -216,7 +218,7 @@
         
         <a class="dropdown-item" href="/bg/the-photo-shows-a-woman-lying-on-a-start-copy-you" title="সাইটটি পড়ুন Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/the-photo-shows-a-woman-lying-on-a-start-copy-you" title="সাইটটি পড়ুন calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/the-photo-shows-a-woman-lying-on-a-start-copy-you" title="সাইটটি পড়ুন calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/the-photo-shows-a-woman-lying-on-a-start-copy-you" title="সাইটটি পড়ুন Cebuano">Cebuano</a>
         
@@ -235,8 +237,6 @@
         <a class="dropdown-item" href="/da/the-photo-shows-a-woman-lying-on-a-start-copy-you" title="সাইটটি পড়ুন Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/the-photo-shows-a-woman-lying-on-a-start-copy-you" title="সাইটটি পড়ুন Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/the-photo-shows-a-woman-lying-on-a-start-copy-you" title="সাইটটি পড়ুন english">english</a>
         
         <a class="dropdown-item" href="/eo/the-photo-shows-a-woman-lying-on-a-start-copy-you" title="সাইটটি পড়ুন Esperanto">Esperanto</a>
         
@@ -578,10 +578,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["বারো", "এক", "দুই", "তিন", "চার", "পাঁচ", "ছয়", "সাত", "আট", "নয়", "দশ", "এগারো"];
-var digits = ["","এক", "দুই", "তিন", "চার", "পাঁচ", "ছয়", "সাত", "আট", "নয়", "দশ", "এগারো"];
-var teens = ["এগারো", "বারো", "তেরো", "চৌদ্দ", "পনেরো", "ষোল", "সতেরো", "আঠারো", "উনিশ"];
-var tens = ["ও &#x27;","দশ","বিশ","ত্রিশ","চল্লিশ","পঞ্চাশ"];
+
+var hrs = ["বারো", "এক", "দুই", "তিন", "চার", "পাঁচ", "ছয়", "সাত", "আট", "নয়", "দশ", "এগারো "];
+var digits = ["", "এক", "দুই", "তিন", "চার", "পাঁচ", "ছয়", "সাত", "আট", "নয়", "দশ", "এগারো "];
+var teens = ["এগারো", "বারো", "তেরো", "চৌদ্দ", "পনেরো", "ষোল", "সতেরো", "আঠারো", "উনিশ "];
+var tens = ["ও '", "দশ", "বিশ", "ত্রিশ", "চল্লিশ", "পঞ্চাশ "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
