@@ -114,8 +114,9 @@
 }
       </style>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6209985848112194"
-         crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062317950995248"
+     crossorigin="anonymous"></script>
+
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XG1SZ2K8S5"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -167,7 +168,7 @@
               <a class="nav-link" href="/et/private" title="Vaadake võtmega privaatfotosid">Era-</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://lotteh.com/payments/surrogacy/Daisy/?lang=et" title="Surrogacy plans">Surrogaatia</a>
+              <a class="nav-link" href="https://lotteh.com/pay/surrogacy/Daisy/?lang=et" title="Surrogacy plans">Surrogaatia</a>
             </li>
           </ul>
           <ul class="navbar-nav" style="margin-left: auto;">
@@ -224,11 +225,11 @@
          </div>
          <p id="the-link" style="visibility: 0; display: none;" class="hide"></p>
          <p id="members"></p>
-         <p id="call-div">Teie kasutajanimi on <b id="thename" style="font-size: 26px;"></b> <button id="update-username" class="btn update-button">Värskendama</button> <button class="call-button" style="font-size: 20px;" onclick="copyToClipboard('thename');" class="btn btn-outline-primary">Koopiakood</button> <button class="call-button" style="font-size: 20px;" onclick="copyToClipboard('the-link');" class="btn btn-outline-primary">Koopia link</button></p>
+         <p id="call-div">Teie kasutajanimi on <b id="thename" style="font-size: 26px;"></b> <button id="update-username" class="btn update-button">Värskendama</button> <button class="call-button" style="font-size: 20px;" onclick="copyToClipboard('thename');" class="btn btn-outline-primary">Koodi kood</button> <button class="call-button" style="font-size: 20px;" onclick="copyToClipboard('the-link');" class="btn btn-outline-primary">Koopia link</button></p>
          <button id="call-button" class="call-button">Helistage kellelegi</button>
          <div>
             <div id="video-container" class="centered hide">
-               <button id="fullscreenToggle" class="btn btn-sm btn-outline-secondary" title="Lülitage täisekraani"><i class="bi bi-arrows-fullscreen"></i></button>
+               <button id="fullscreenToggle" class="btn btn-sm btn-outline-secondary" title="Lülitage täisekraaniga"><i class="bi bi-arrows-fullscreen"></i></button>
                <div id="videos">
                   <video id="local-video" autoplay="autoplay" muted></video>
                   <video id="remote-video" autoplay="autoplay"></video>
@@ -236,7 +237,7 @@
             </div>
          </div>
       </div>
-      <div style="display: inline-block;"><button id="end-button" class="call-button hide">Lõppkõne</button><button id="mute" class="btn btn-outline-light hide" style="border: 1px solid black !important; text-color: black !important; color: black !important;">Vaigistama</button><button id="still" class="btn btn-outline-info hide" style="color: black;">Laadige alla</button><button onclick="$('#main-screen').toggleClass('fullscreen-vid');" class="btn btn-outline-success" style="color: black;">Lülitage täisekraani</button></div>
+      <div style="display: inline-block;"><button id="end-button" class="call-button hide">Lõppkõne</button><button id="mute" class="btn btn-outline-light hide" style="border: 1px solid black !important; text-color: black !important; color: black !important;">Vaigistama</button><button id="still" class="btn btn-outline-info hide" style="color: black;">Laadige alla</button><button onclick="$('#main-screen').toggleClass('fullscreen-vid');" class="btn btn-outline-success" style="color: black;">Lülitage täisekraaniga</button></div>
       </div>
       <button class="btn btn-lg btn-outline-primary" id="please-interact">Liituma koosolekuga</button>
       <div style="height: 50px;"></div>
@@ -292,6 +293,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
     <div style="max-height: 50vh; overflow: scroll;">
         
+        <a class="dropdown-item" href="/en/chat" title="Lugege saiti aastas english">english</a>
+        
         <a class="dropdown-item" href="/af/chat" title="Lugege saiti aastas Afrikaans">Afrikaans</a>
         
         <a class="dropdown-item" href="/sq/chat" title="Lugege saiti aastas shqip">shqip</a>
@@ -333,8 +336,6 @@
         <a class="dropdown-item" href="/da/chat" title="Lugege saiti aastas Dansk">Dansk</a>
         
         <a class="dropdown-item" href="/nl/chat" title="Lugege saiti aastas Nederlands">Nederlands</a>
-        
-        <a class="dropdown-item" href="/en/chat" title="Lugege saiti aastas english">english</a>
         
         <a class="dropdown-item" href="/eo/chat" title="Lugege saiti aastas Esperanto">Esperanto</a>
         
@@ -656,10 +657,12 @@ if(document.getElementById("dynamicClockContainer")) {
 		updateClock();
 	}, 1000);
 }
-var hrs = ["kaksteist", "üks", "teine", "kolm", "neljas", "viis", "kuus", "seitse", "kaheksa", "üheksa", "kümme", "üksteist"];
-var digits = ["","üks", "teine", "kolm", "neljas", "viis", "kuus", "seitse", "kaheksa", "üheksa", "kümme", "üksteist"];
-var teens = ["üksteist", "kaksteist", "kolmteist", "neliteist", "viisteist", "kuusteist", "seitseteist", "kaheksateist", "üheksateist"];
-var tens = ["o &#x27;","kümme","kakskümmend","kolmkümmend","nelikümmend","viiskümmend"];
+
+var hrs = ["Kaksteist", "üks", "teine", "kolm", "neljas", "viis", "kuus", "seitse", "kaheksa", "üheksa", "kümme", "üksteist "];
+var digits = ["", "üks", "teine", "kolm", "neljas", "viis", "kuus", "seitse", "kaheksa", "üheksa", "kümme", "üksteist "];
+var teens = ["Üheteistkümne", "kaksteist", "kolmteist", "neliteist", "viisteist", "kuusteist", "seitseteist", "kaheksateist", "üheksateist ""];
+var tens = ["Oo"", "kümme", "kakskümmend", "kolmkümmend", "nelikümmend", "Viiskümmend "];
+
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -843,7 +846,7 @@ function playVideos() {
 muteButton.addEventListener("click", function (event) {
    remoteVideo.muted = !remoteVideo.muted;
    if (remoteVideo.muted) {
-      muteButton.innerHTML = 'Vaigistuse rikkumine';
+      muteButton.innerHTML = 'Vaigistamata jätmine';
    } else {
       muteButton.innerHTML = 'Vaigistama';
 

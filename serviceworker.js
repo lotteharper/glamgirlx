@@ -5,7 +5,7 @@ var APP_PREFIX = 'glamgirlx_';
 // you need to change this version (version_01, version_02…). 
 // If you don't change the version, the service worker will give your
 // users the old files!
-var VERSION = 'version_01754822727.3714125';
+var VERSION = 'version_01756433361.1935136';
 // The files to make available for offline use. make sure to add 
 // others to this list
 var URLS = [
@@ -38,318 +38,318 @@ var URLS = [
 
   `${GHPATH}/links`,
 
-  `${GHPATH}/the-photo-appears-to-show-part-of-a`,
-
-  `${GHPATH}/spend-an-evening-with`,
+  `${GHPATH}/practical-web-based-deep-learning-and`,
 
   `${GHPATH}/two-player-color-sudoku-online-free`,
 
-  `${GHPATH}/this-photo-shows-a-person-with-curly`,
-
-  `${GHPATH}/practical-web-based-deep-learning-and`,
-
-  `${GHPATH}/a-woman-is-laying-on-a-red`,
+  `${GHPATH}/spend-an-evening-with`,
 
   `${GHPATH}/play-color-sudoku-online-free`,
 
-  `${GHPATH}/3d-printed-22lr-subcompact`,
+  `${GHPATH}/3d-printed-22lr-subcompact-pistol-cad`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-short`,
+  `${GHPATH}/three-thirteen-online-free`,
 
-  `${GHPATH}/the-photo-shows-a-young-person-with`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-wife-like-term`,
 
-  `${GHPATH}/how-do-i-build-a-full-stack-web`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-coat-final-heavy`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-with-curly-stead-hair-get`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-curly`,
+  `${GHPATH}/the-image-shows-a-woman-lying-down-on`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-fill-time-dead`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/post-very-feet-else`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-features-a-woman-with-curly`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-her-body-am-beauty`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-short`,
+  `${GHPATH}/the-image-shows-a-woman-with-light`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-color-his-tiny`,
 
-  `${GHPATH}/whats-the-best-way-to-boil`,
+  `${GHPATH}/how-do-i-host-a-web-server-from-my`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-curly`,
+  `${GHPATH}/the-photo-shows-a-woman-with-short-your-jump-triangle`,
 
-  `${GHPATH}/a+woman+with+a+red+hair+and+a+red`,
+  `${GHPATH}/the-photo-shows-a-woman-with-curly-rail-property-provide`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-short`,
+  `${GHPATH}/the-photo-features-a-woman-lying-on-a-huge-fast-quart`,
 
-  `${GHPATH}/post`,
+  `${GHPATH}/a-woman-in-a-white-shirt-and-black`,
 
-  `${GHPATH}/what-causes-migraine-and-how`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-dress-self-win`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-over-next-least`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-short`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-value-were-rest`,
 
-  `${GHPATH}/this-photo-shows-a-person-sitting-on`,
+  `${GHPATH}/this-photo-shows-a-woman-with-curly-long-system-often`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/this-photo-shows-a-woman-sitting-on-a-possible-thought-insect`,
 
-  `${GHPATH}/how-do-i-find-customers-for-my`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-about-heavy-rather`,
 
-  `${GHPATH}/this-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/post-crop-chief-both`,
 
-  `${GHPATH}/a-woman-in-a-white-shirt-and-map-table-floor`,
+  `${GHPATH}/this-photo-shows-a-woman-lying-on-a-with-row-cotton`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on`,
-
-  `${GHPATH}/the-photo-shows-a-person-sitting-on-a`,
-
-  `${GHPATH}/how-do-i-build-a-mail-server`,
-
-  `${GHPATH}/this-photo-shows-a-person-with-short`,
-
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/how-do-i-write-a-professional-blog`,
 
   `${GHPATH}/a-woman-is-laying-on-a-bed-with-a`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
-
-  `${GHPATH}/this-photo-shows-a-person-lying-on-a`,
-
-  `${GHPATH}/the-photo-shows-a-person-with-curly`,
-
-  `${GHPATH}/a-woman-in-a-white-shirt-and-front-strong-depend`,
-
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-father-sense-populate`,
 
   `${GHPATH}/how-do-i-write-a-good`,
 
-  `${GHPATH}/the-image-shows-a-person-lying-down`,
+  `${GHPATH}/this-photo-shows-a-woman-with-short-mix-skin-organ`,
 
-  `${GHPATH}/a-woman-laying-on-a-bed-with-a-condition-live-fair`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-engine-wall-major`,
 
-  `${GHPATH}/this-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-image-shows-a-woman-lying-on-a-card-grand-wild`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-curly`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-pass-success-dictionary`,
 
-  `${GHPATH}/post`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-said-heard-why`,
 
-  `${GHPATH}/the-image-shows-a-person-with-light`,
+  `${GHPATH}/the-photo-shows-a-woman-with-curly-property-same-war`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-sitting-on-a-cover-ever-represent`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-with-curly-center-select-fact`,
 
-  `${GHPATH}/post`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-enemy-hole-hand`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-sitting-on-a-can-iron-pound`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-sat-well-tall`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
-
-  `${GHPATH}/post`,
-
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
-
-  `${GHPATH}/the-image-shows-a-person-lying-down`,
-
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-with-curly-thought-she-ease`,
 
   `${GHPATH}/the-photo-is-a-closeup-selfie-of-a`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-light`,
+  `${GHPATH}/the-photo-shows-a-woman-with-short-minute-grow-took`,
 
-  `${GHPATH}/makeup-tips-and-guidelines-for`,
+  `${GHPATH}/the-photo-shows-a-woman-with-curly-horse-country-until`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-apple-insect-smile`,
 
-  `${GHPATH}/the-photo-shows-a-person-taking-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-stood-though-on`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-start-copy-you`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/is-sugar-really-unhealth`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/post-radio-bell-sea`,
 
-  `${GHPATH}/this-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-animal-been-division`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-with-curly`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-curly`,
+  `${GHPATH}/the-photo-shows-a-woman-with-curly-keep-big-foot`,
 
-  `${GHPATH}/post`,
+  `${GHPATH}/this-photo-shows-a-woman-lying-down-picture-plain-busy`,
 
-  `${GHPATH}/this-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/this-photo-shows-a-woman-lying-on-a-mind-strange-rest`,
 
-  `${GHPATH}/this-photo-shows-a-person-with-curly`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-sight-go-mix`,
 
-  `${GHPATH}/this-photo-shows-a-person-with-curly`,
+  `${GHPATH}/the-photo-shows-a-woman-with-short-cook-human-flat`,
 
-  `${GHPATH}/this-photo-shows-a-person-sitting-on`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-like-body-together`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/why-should-i-use-an-apple-l-out-at`,
 
-  `${GHPATH}/how-do-i-wear-deadlock`,
+  `${GHPATH}/a-woman-is-laying-on-a-red`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-crease-third-fraction`,
 
-  `${GHPATH}/why-is-it-safer-to-wear-a-mask`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-thin-neck-young`,
+
+  `${GHPATH}/a-woman-in-a-white-shirt-and-black-front-strong-depend`,
+
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on`,
+
+  `${GHPATH}/this-photo-shows-a-woman-with-curly-turn-most-eight`,
+
+  `${GHPATH}/how-do-i-find-customers-for-my-web`,
+
+  `${GHPATH}/the-photo-shows-a-woman-with-curly-cat-did-until`,
+
+  `${GHPATH}/the-photo-features-a-woman-lying-on-a`,
+
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-time-climb-small`,
+
+  `${GHPATH}/whats-the-best-way-to-boil`,
+
+  `${GHPATH}/the-photo-shows-a-woman-with-curly-in-fear-broke`,
+
+  `${GHPATH}/i-just-started-taking-birth-control`,
+
+  `${GHPATH}/this-photo-shows-a-woman-with-curly-whether-oh-machine`,
+
+  `${GHPATH}/the-photo-is-a-closeup-selfie-of-a-case-stop-push`,
+
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-save-search-dead`,
+
+  `${GHPATH}/post-have-five-room`,
+
+  `${GHPATH}/why-is-it-safer-to-wear-a-mask-in`,
+
+  `${GHPATH}/this-photo-shows-a-woman-lying-on-a-hunt-pose-dance`,
+
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-I-phrase-know`,
+
+  `${GHPATH}/post-slave-both-ran`,
+
+  `${GHPATH}/how-do-i-build-a-mail-server-with`,
+
+  `${GHPATH}/this-photo-shows-a-woman-lying-down-fair-develop-has`,
 
   `${GHPATH}/a-woman-is-holding-a-pink-teddy`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-curly`,
+  `${GHPATH}/this-photo-shows-a-woman-lying-down-sentence-blood-play`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/post-know-when-bird`,
 
-  `${GHPATH}/post`,
+  `${GHPATH}/the-photo-shows-a-woman-with-curly-lift-with-raise`,
 
-  `${GHPATH}/this-photo-shows-a-person-with-curly`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-season-laugh-leave`,
+
+  `${GHPATH}/makeup-tips-and-guidelines-for`,
+
+  `${GHPATH}/this-photo-shows-a-woman-lying-on-a-wing-work-age`,
+
+  `${GHPATH}/the-photo-shows-a-woman-with-light-spell-instant-person`,
+
+  `${GHPATH}/this-photo-shows-a-woman-with-short-stone-decide-point`,
+
+  `${GHPATH}/how-do-i-send-email-with-a-compliant`,
+
+  `${GHPATH}/the-image-shows-a-woman-with-curly`,
 
   `${GHPATH}/why-do-people-implant-nfc-implants-in`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-curly`,
+  `${GHPATH}/the-image-shows-a-woman-lying-down-on-put-stretch-yellow`,
 
-  `${GHPATH}/how-do-i-write-a-professional`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-science-start-camp`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/how-is-the-crypto-market-growing-so`,
 
-  `${GHPATH}/this-photo-shows-a-person-with-short`,
+  `${GHPATH}/a-woman-laying-on-a-bed-with-a-pink`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-with-short-total-shore-begin`,
 
-  `${GHPATH}/how-do-i-send-email-with-a`,
+  `${GHPATH}/the-photo-shows-a-woman-taking-a`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-and-lift-double`,
 
-  `${GHPATH}/post`,
+  `${GHPATH}/a-woman-laying-on-a-bed-with-a-pink-condition-live-fair`,
 
-  `${GHPATH}/a-woman-laying-on-a-bed-with-a-danger-pull-some`,
+  `${GHPATH}/this-photo-shows-a-woman-with-curly-show-own-event`,
 
-  `${GHPATH}/a-young-girl-laying-on-a-bed-who-even-method`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-form-try-week`,
 
-  `${GHPATH}/post`,
+  `${GHPATH}/this-photo-shows-a-woman-with-curly-result-seat-age`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-fair`,
+  `${GHPATH}/how-do-i-build-a-full-stack-web-app`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-curly`,
+  `${GHPATH}/what-causes-migraine-and-how-are-they`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-curly`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-lift-dog-any`,
 
-  `${GHPATH}/what-are-some-of-the-risks-associated`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-number-machine-felt`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/how-do-i-wear-deadloc`,
 
-  `${GHPATH}/the-photo-shows-a-person-sitting-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-six-unit-help`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-with-curly-trade-dance-lie`,
 
-  `${GHPATH}/the-photo-features-a-person-lying-on`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-bank-total-fish`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-pound-match-ready`,
 
-  `${GHPATH}/what-are-the-benefits-to-having`,
+  `${GHPATH}/post-division-stop-team`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-with-short-end-at-station`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-curly`,
-
-  `${GHPATH}/how-is-the-crypto-market`,
-
-  `${GHPATH}/the-photo-shows-a-person-with-short`,
+  `${GHPATH}/a-woman-with-a-red-hair-and-a-red`,
 
   `${GHPATH}/an-excerpt-from-my-book-on-amazon-at`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/a-girl-laying-on-a-bed-with-a-pink`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-engine-full-fair`,
 
-  `${GHPATH}/a-girl-laying-on-a-bed-with-a`,
+  `${GHPATH}/what-are-the-benefits-to-having-a`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-branch-best-log`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-black-sun-single`,
 
-  `${GHPATH}/this-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-her`,
 
-  `${GHPATH}/the-photo-shows-a-person-sitting-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-nothing-answer-ten`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-deal-where-island`,
 
-  `${GHPATH}/why-should-i-use-an-apple-l-out`,
+  `${GHPATH}/the-photo-shows-a-woman-with-fair`,
 
-  `${GHPATH}/the-image-shows-a-person-with-curly`,
+  `${GHPATH}/this-photo-shows-a-woman-wearing-a`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-her-bread-gray-claim`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-eight-women-whose`,
+
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-plant-gun-final`,
+
+  `${GHPATH}/post-cat-post-liquid`,
+
+  `${GHPATH}/the-photo-shows-a-woman-with-curly-area-than-include`,
+
+  `${GHPATH}/the-photo-shows-a-young-woman-with`,
 
   `${GHPATH}/a-young-woman-is-smiling-while`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/this-photo-shows-a-woman-sitting-on-a`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-join-change-these`,
 
-  `${GHPATH}/i-just-started-taking-birth`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-art-come-music`,
 
-  `${GHPATH}/the-photo-is-a-closeup-selfie-of-a`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-lead-chick-trouble`,
 
-  `${GHPATH}/how-do-i-host-a-web-server-from`,
+  `${GHPATH}/the-photo-shows-a-woman-with-curly-three-draw-subject`,
 
-  `${GHPATH}/how-do-i-get-publicity-and`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-leg-course-smile`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-curly`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-group-sense-depend`,
 
-  `${GHPATH}/the-photo-features-a-person-lying-on`,
+  `${GHPATH}/post-thought-life-found`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-on`,
+  `${GHPATH}/post-shell-nothing-story`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-fast-night-record`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/what-are-some-of-the-risks-associated`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-curly`,
+  `${GHPATH}/this-photo-shows-a-woman-lying-on-a-old-written-land`,
 
-  `${GHPATH}/the-photo-features-a-person-with`,
+  `${GHPATH}/the-photo-shows-a-woman-with-short-farm-mine-ice`,
 
-  `${GHPATH}/the-photo-shows-a-person-with-curly`,
+  `${GHPATH}/the-photo-shows-a-woman-sitting-on-a-skill-lift-this`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-rub-group-verb`,
 
-  `${GHPATH}/post`,
+  `${GHPATH}/this-photo-shows-a-woman-lying-down-sugar-arrange-speak`,
 
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-on-a-port-liquid-follow`,
 
-  `${GHPATH}/this-photo-shows-a-person-lying-down`,
+  `${GHPATH}/the-photo-shows-a-woman-lying-down-on-you-nine-favor`,
 
-  `${GHPATH}/this-photo-shows-a-person-lying-down`,
-
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
-
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
-
-  `${GHPATH}/this-photo-shows-a-person-lying-down`,
-
-  `${GHPATH}/is-sugar-really-unhealthy`,
-
-  `${GHPATH}/the-photo-shows-a-person-with-curly`,
-
-  `${GHPATH}/this-photo-shows-a-person-wearing-a`,
-
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
-
-  `${GHPATH}/the-photo-shows-a-person-with-short`,
-
-  `${GHPATH}/the-image-shows-a-person-lying-on-a`,
-
-  `${GHPATH}/this-photo-shows-a-person-with-curly`,
-
-  `${GHPATH}/the-photo-shows-a-person-lying-on`,
-
-  `${GHPATH}/the-photo-shows-a-person-lying-down`,
-
-  `${GHPATH}/the-photo-shows-a-person-lying-on-a`,
+  `${GHPATH}/how-do-i-get-publicity-and-organic`,
 
 ]
