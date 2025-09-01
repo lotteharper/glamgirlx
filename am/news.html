@@ -485,7 +485,7 @@ mkdir users/templates/users
 </form>
 {% endblock %}
  --></code></pre>
-<p>አሁን, የተጠቃሚ ምዝገባችን እና ለተጠቃሚው ሎጂባችንን ከአቅራቢ ጋር ከማሻሻያችን በፊት ወደ እይታዎች እንገንባለን. ለወደፊቱ እንደ ስምምነቶች እና CAPCቻ ያሉ ተጨማሪ ዝርዝሮችን እና የደህንነት ባህሪያትን ለማካተት ይህንን ቅፅ እናስባለን. ቅጾቹን ከናኖ ተጠቃሚዎች / ቅጾች ጋር ያርትዑ, የሚከተሉትን ኮዶች ያክሉ.</p>
+<p>አሁን, የተጠቃሚ ምዝገባችን እና ለተጠቃሚው ሎጂባችንን ከአቅራቢ ጋር ከማሻሻያችን በፊት ወደ እይታዎች እንገንባለን. ለወደፊቱ እንደ ስምምነቶች እና CAPCቻ ያሉ ተጨማሪ ዝርዝሮችን እና የደህንነት ባህሪያትን ለማካተት ይህንን ቅፅ እናስባለን. ቅጾቹን ከናኖ ተጠቃሚዎች / ቅጾች ጋር ​​ያርትዑ, የሚከተሉትን ኮዶች ያክሉ.</p>
 <pre class="language-python"><code>from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
@@ -537,7 +537,7 @@ class Profile(models.Model):
 <p>ቀደም ሲል ለናኖ ምርጫ ከሌለዎት, የቀን ቁልፎችን በመጠቀም የጽሑፍ አርታ edity ት, እና የቀስት ቁልፎችን በመጠቀም ወደ ፋይሉ ታች ወደ ታችኛው ክፍል ይሸብሉ. የሚከተለው መስመር ያክሉ</p>
 <pre class="language-bash"><code>0 * * * * sudo backup
 </code></pre>
-<p>ክሮን ትዕዛዙን መቼ እንደሚሮጡ የሚያወክሩ ከሆነ አንድ * ወይም አንድ ቁጥር የሚወክልበትን የቃላት ደቂቃ, ሰዓት, የወር ቀን, የወር ቀን, የወር, የወር ቀን, የወር ቀን ይጠቀማል. ለተቀሩት አማራጮች ለ ደቂቃ እና * ውስጥ 0 ን በመጠቀም, በደቂቃው መጀመሪያ ላይ በእያንዳንዱ ሰዓት የመጀመሪያ ደቂቃ ላይ ትእዛዝ መስጠታችን እንችላለን. ይህ ኮዱን በራስ-ሰር እንድንመለስ ያስችልናል. ከሱዶ ጋር ሲገደል ሁሉም የ Crose ሥራዎች ሁሉ እንደ, ስለሆነም በየሰዓቱ የይለፍ ቃል ውስጥ መፃፍ አያስፈልገንም.</p>
+<p>ክሮን ትዕዛዙን መቼ እንደሚሮጡ የሚያወክሩ ከሆነ አንድ * ወይም አንድ ቁጥር የሚወክልበትን የቃላት ደቂቃ, ሰዓት, ​​የወር ቀን, የወር ቀን, የወር, የወር ቀን, የወር ቀን ይጠቀማል. ለተቀሩት አማራጮች ለ ደቂቃ እና * ውስጥ 0 ን በመጠቀም, በደቂቃው መጀመሪያ ላይ በእያንዳንዱ ሰዓት የመጀመሪያ ደቂቃ ላይ ትእዛዝ መስጠታችን እንችላለን. ይህ ኮዱን በራስ-ሰር እንድንመለስ ያስችልናል. ከሱዶ ጋር ሲገደል ሁሉም የ Crose ሥራዎች ሁሉ እንደ, ስለሆነም በየሰዓቱ የይለፍ ቃል ውስጥ መፃፍ አያስፈልገንም.</p>
 <p>የይለፍ ቃል ሳይጠቀሙ ኮዱን ለማግኘት ቀላል ለማድረግ, የመጠባበቂያ ቅጂ መመሪያችን የይለፍ ቃል እናሰናከል. ይህንን ትእዛዝ በመፈፀም እና የይለፍ ቃል ለማስገባት ይህንን እናደርጋለን-</p>
 <pre class="language-bash"><code>sudo visudo
 </code></pre>
@@ -793,7 +793,7 @@ def send_verification_email(user):
 <p>Thanks for joining us,</p>
 <p>Daisy</p>
  --></code></pre>
-<p>እኛ ደግሞ ሁለት ተጨማሪ አብነቶች እንፈልጋለን. የመጀመሪያው ኢሜሉ እንደተላከ ማረጋገጥ ነው. ለእነዚህ ለእነዚህ ያሉ እይታዎች ቀድሞውኑ በ Djangogo ውስጥ ናቸው, ስለሆነም እኛ በዩ.አር.ኤል.ኤል. ውስጥ እነሱን መፍታት አለብን. ይህ አብነት በተጠቃሚዎች / አብነቶች / ተጠቃሚዎች / ተጠቃሚዎች / ተጠቃሚዎች / ተጠቃሚዎች / ይለፍ ቃል / ይለፍ /ERTE_DOL.html ይገኛል</p>
+<p>እኛ ደግሞ ሁለት ተጨማሪ አብነቶች እንፈልጋለን. የመጀመሪያው ኢሜሉ እንደተላከ ማረጋገጥ ነው. ለእነዚህ ለእነዚህ ያሉ እይታዎች ቀድሞውኑ በ Djangogo ውስጥ ናቸው, ስለሆነም እኛ በዩ.አር.ኤል.ኤል. ውስጥ እነሱን መፍታት አለብን. ይህ አብነት በተጠቃሚዎች / አብነቶች / ተጠቃሚዎች / ተጠቃሚዎች / ተጠቃሚዎች / ተጠቃሚዎች / ይለፍ ቃል / ይለፍ /ERTE_DOL.html ነው</p>
 <pre class="language-markup"><code><!-- {% extends 'base.html' %}
 {% block content %}
   <div class="media-body">
@@ -1407,7 +1407,7 @@ pip3 install --upgrade opencv-contrib-python # == 4.5.4.60
 <p>@ Xx.xx.xx.xx</p>
 <p>አስተናጋጅ እንደመሆኑ አስተናጋጁ ከ &lt;ኦፕሬተር&gt; ጋር በዚህ ጎራ ስር ያሉ ሁሉንም ንዑስ ዓይነቶች እና የስራ ጎራ ከአገልጋዩ አቅጣጫ ያዙሩ. ለማወጅ የበለጠ መዝገቦች አሉ, ነገር ግን ደብዳቤ ለመላክ ዝግጁ ከሆንን በኋላ ወደ እነዚህ መንቀሳቀስ እንችላለን. ያስታውሱ ከአገልጋዩ በተሳካ ሁኔታ ለመላክ ከመቻልዎ በፊት ብዙ ቀናት ሊወስድ ይችላል. እኛ የምንቀራረቡ የዲን ሪኮርዶች ለማሰራጨት ጊዜ እንወስዳለን.</p>
 <p>የሆነ ሆኖ መጀመር የምንፈልገው ብቸኛው መዝገብ መዝገብ ነው. ስለዚህ አሁን በፕሮጀክታችን መሠረት ከዚህ በታች ያለውን ስክሪፕት መሙላት እና አሮጫለን.</p>
-<p>ለመሰረታዊ እድገት ምን እንደምንፈልግ ለመጫን በቀላሉ በትንሽ ማዋቀር ስክሪፕት እንጀምር. እኛ ብዙ ጥገኛዎችን ወይም ድህረ-ልግጎችን አንጠቀምም, መሰረታዊ የኤች ቲ ቲ ፒ አገልጋዩን እንጀምራለን እና ያ ሲያደርግ ስለ እሱ ማረጋገጫ ስለእሱ ማረጋገጫ እንጨነቃለሁ. ያስታውሱ, የኤችቲቲፒኤስ ሰርቲፊኬት ለማግኘት እና አገልጋዩን ደህንነቱ በተጠበቀ ሁኔታ ያሂዱ, ከአገልጋዩ ኪራይ ጋር አንድ ጎራ መግዛት አለብን. አሁን በዚህ ፋይል ውስጥ "ቡድና" በፕሮጄክትዎ ማውጫ ካለው "DIR" ስም ጋር, እና በኢሜልዎ እና ጎራዎን በ &lt;መለያዎች&gt; ስም ያቅርቡ.</p>
+<p>ለመሰረታዊ እድገት ምን እንደምንፈልግ ለመጫን በቀላሉ በትንሽ ማዋቀር ስክሪፕት እንጀምር. እኛ ብዙ ጥገኛዎችን ወይም ድህረ-ልግጎችን አንጠቀምም, መሰረታዊ የኤች ቲ ቲ ፒ አገልጋዩን እንጀምራለን እና ያ ሲያደርግ ስለ እሱ ማረጋገጫ ስለእሱ ማረጋገጫ እንጨነቃለሁ. ያስታውሱ, የኤችቲቲፒኤስ ሰርቲፊኬት ለማግኘት እና አገልጋዩን ደህንነቱ በተጠበቀ ሁኔታ ያሂዱ, ከአገልጋዩ ኪራይ ጋር አንድ ጎራ መግዛት አለብን. አሁን በዚህ ፋይል ውስጥ "ቡድና" በፕሮጄክትዎ ማውጫ ካለው "DIR" ስም ጋር, እና በኢሜልዎ እና ጎራዎን በ &lt;መለያዎች&gt; ስም ​​ያቅርቡ.</p>
 <p>በተጨማሪም, ይህንን ኮድ ከመሮጥዎ በፊት ቅንብሮቹን ወደ ፋየርዎል አቅራቢ አቅራቢ ደጋፊ ድጋፎችን መለወጥ አለብን, ካለ. ብዙውን ጊዜ ይህ በአስተናጋጅዎ አቅራቢዎ አቅራቢዎ አቅራቢዎ ውስጥ ነው, ወይም ራስ ወዳድነት ማስተናገድ ከሆንክ በ &lt;Work ማስተላለፍ&gt; ክፍል ውስጥ ነው. እንዲሁም የራስን ማስተናገድ የሚጠቀሙ ከሆኑ ከአገልጋይ ማሽንዎ አድራሻ ጋር ወደ ራውተር ማሽንዎ ጋር ለማዋቀር ይፈልጋሉ. የመነሻ / የፃፉትን መድረሻ የሚከተሉትን ወደቦች መክፈት ያስፈልግዎታል.</p>
 <p>22 (ssh)
 25 (ሜይል)
@@ -1578,15 +1578,15 @@ PTR
 N / a
 Femmebabe.com</p>
 <p>@
-Txt
+TXT
 N / a
 TXT @ v = SPF1 MX IP75.147.182.214IN6: FE80 ::75A: FFF: FF4: 3: 3E02 ~ ሁሉም</p>
 <p>ነባሪ ._ቢሚ
-Txt
+TXT
 N / a
 v = BIII1; l = htmmmebabe.com/femmmabe.com/mabia/steatic/femmbmabe.svg</p>
 <p>_darmac
-Txt
+TXT
 N / a
 v = dararc1; p = የለም</p>
 <p>ላክሎ__ሚዚዚክስ
@@ -1726,7 +1726,7 @@ N / a<we'll add="" later="" this=""></we'll></p>
 # ነባሪ
 # በፖርት 54321 ላይ ሁሉንም በይነገጽዎች ላይ ያዳምጡ-
 # ሶኬት = Inet: 54321
-# በፖርት 12344 ላይ LOPBack ላይ ያዳምጡ
+# በፖርት 12344 ላይ LOPBack ላይ አድምጡ
 # ሶኬት = Inet: 12345 @ አካባቢያዊ
 # በ 192.0.2.1 ላይ አድምጡ
 # ሶኬት = Inet: 12345@192.1.1</code></pre>
@@ -1804,7 +1804,7 @@ N / a<we'll add="" later="" this=""></we'll></p>
 <pre class="language-bash"><code>## የቤት ውስጥ ውቅር ፋይል
 # በችኮላ ውስጥ ከሆኑ http://wiki2.dove.org.org/kickconcongreation ይመልከቱ
 # "Doveconf-n" ትዕዛዝ የተለወጠ ቅንብሮች ንጹህ ውፅዓት ይሰጣል. ተጠቀሙበት
-# ወደ DEVECOT የደብዳቤ መላኪያ ዝርዝር ውስጥ በሚለጠፉበት ጊዜ ፋይሎችን ከመግዛት ይልቅ ፋይሎችን እና ማገዶዎችን ከመቅዳት ይልቅ.
+# ወደ DEVECOT የደብዳቤ መላኪያ ዝርዝር ውስጥ በሚለጠፉበት ጊዜ ፋይሎችን ከመግዛት ይልቅ ፋይሎችን እና ማገዶዎችን ከመግዛት ይልቅ.
 # '# እንደ አስተያየቶች ከተያዙ በኋላ "ቁምፊ እና ሁሉም ነገር. ተጨማሪ ቦታዎች
 # እና ትሮች ችላ ተብለዋል. ከእነዚህ ውስጥ አንዱን በግልፅ ለመጠቀም ከፈለጉ, ያስገቡት
 # value inside quotes, eg.: key = "# ቻር እና ነጠብጣብ ነጩነት "
@@ -1943,7 +1943,7 @@ N / a<we'll add="" later="" this=""></we'll></p>
 # ነባሪ
 # በፖርት 54321 ላይ ሁሉንም በይነገጽዎች ላይ ያዳምጡ-
 # ሶኬት = Inet: 54321
-# በፖርት 12344 ላይ LOPBack ላይ ያዳምጡ
+# በፖርት 12344 ላይ LOPBack ላይ አድምጡ
 # ሶኬት = Inet: 12345 @ አካባቢያዊ
 # በ 192.0.2.1 ላይ አድምጡ
 # ሶኬት = Inet: 12345@192.1.1</code></pre>
@@ -2050,13 +2050,13 @@ exit()
 
 <hr></div>
 
-<div id="1" style="white-space: pre-wrap;">Two player color sudoku online free
-play collaborative color sudoku with a friend for free. <a title="Invite a Friend" class="btn btn-info" href="https://lotteh.com/games/two-player-color-sudoku-online/">Invite a Friend</a>
-<a title="Join a Game" class="btn btn-success" href="https://lotteh. Com/games/">Join a Game</a>
-<script src="https://lotteh.com/static/games/colordokugames2.js"></script>
-<script src="https://lotteh.com/static/games/twoplayercolordoku.js"></script>***.</div>
+<div id="1" style="white-space: pre-wrap;">Three Thirteen Online Free
+Play three thirteen online for free.
+<a title="Invite a Friend" class="btn btn-info" href="https://lotteh.com/games/three-thirteen/">Invite a Friend</a>
+<a title="Join a Game" class="btn btn-success" href="https://lotteh.com/games/">Join a Game</a>
+<script src="https://lotteh.com/static/games/threethirteen.js"></script>***.</div>
 
-<div><img width="100%" height="auto" src="https://glamgirlx.com/media/images/c820300b-3430-4988-86fd-e77352fca488.png" id="img1" alt="አሪፍ"/><p>በ Daisy / <a href="/am/two-player-color-sudoku-online-free" title="ልጥፉን ይመልከቱ">እይታ</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=c820300b-3430-4988-86fd-e77352fca488" title="ይግዙ Lotte Harper">ግዛ</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=c820300b-3430-4988-86fd-e77352fca488&crypto=USDC" title="በ Cryptocupercement ላይ ይግዙ Lotte Harper">ከ Cryptocuycupery ጋር ይግዙ</a></p><hr>
+<div><img width="100%" height="auto" src="https://i.imgur.com/8I5qWNu.png" id="img1" alt="አሪፍ"/><p>በ Daisy / <a href="/am/three-thirteen-online-free" title="ልጥፉን ይመልከቱ">እይታ</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=dd9c654e-2b32-41f1-b4ac-8799e7cfe226" title="ይግዙ Lotte Harper">ግዛ</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=dd9c654e-2b32-41f1-b4ac-8799e7cfe226&crypto=USDC" title="በ Cryptocupercement ላይ ይግዙ Lotte Harper">ከ Cryptocuycupery ጋር ይግዙ</a></p><hr>
 </div>
 
 <div id="2" style="white-space: pre-wrap;">Play color sudoku online - free colordoku game
@@ -2069,18 +2069,18 @@ this is a free to play color sudoku (colordoku) game. ***
 <div><p>በ Daisy / <a href="/am/play-color-sudoku-online-free" title="ልጥፉን ይመልከቱ">እይታ</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=aa66ebbc-2b2c-49f6-afd4-f2b9ad948f8a" title="ይግዙ Lotte Harper">ግዛ</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=aa66ebbc-2b2c-49f6-afd4-f2b9ad948f8a&crypto=USDC" title="በ Cryptocupercement ላይ ይግዙ Lotte Harper">ከ Cryptocuycupery ጋር ይግዙ</a></p><hr>
 </div>
 
-<div id="3" style="white-space: pre-wrap;">Three Thirteen Online Free
-Play three thirteen online for free.
-<a title="Invite a Friend" class="btn btn-info" href="https://lotteh.com/games/three-thirteen/">Invite a Friend</a>
-<a title="Join a Game" class="btn btn-success" href="https://lotteh.com/games/">Join a Game</a>
-<script src="https://lotteh.com/static/games/threethirteen.js"></script>***.</div>
+<div id="3" style="white-space: pre-wrap;">Two player color sudoku online free
+play collaborative color sudoku with a friend for free. <a title="Invite a Friend" class="btn btn-info" href="https://lotteh.com/games/two-player-color-sudoku-online/">Invite a Friend</a>
+<a title="Join a Game" class="btn btn-success" href="https://lotteh. Com/games/">Join a Game</a>
+<script src="https://lotteh.com/static/games/colordokugames2.js"></script>
+<script src="https://lotteh.com/static/games/twoplayercolordoku.js"></script>***.</div>
 
-<div><img width="100%" height="auto" src="https://i.imgur.com/8I5qWNu.png" id="img3" alt="አሪፍ"/><p>በ Daisy / <a href="/am/three-thirteen-online-free" title="ልጥፉን ይመልከቱ">እይታ</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=dd9c654e-2b32-41f1-b4ac-8799e7cfe226" title="ይግዙ Lotte Harper">ግዛ</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=dd9c654e-2b32-41f1-b4ac-8799e7cfe226&crypto=USDC" title="በ Cryptocupercement ላይ ይግዙ Lotte Harper">ከ Cryptocuycupery ጋር ይግዙ</a></p><hr>
+<div><img width="100%" height="auto" src="https://glamgirlx.com/media/images/c820300b-3430-4988-86fd-e77352fca488.png" id="img3" alt="አሪፍ"/><p>በ Daisy / <a href="/am/two-player-color-sudoku-online-free" title="ልጥፉን ይመልከቱ">እይታ</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=c820300b-3430-4988-86fd-e77352fca488" title="ይግዙ Lotte Harper">ግዛ</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=c820300b-3430-4988-86fd-e77352fca488&crypto=USDC" title="በ Cryptocupercement ላይ ይግዙ Lotte Harper">ከ Cryptocuycupery ጋር ይግዙ</a></p><hr>
 </div>
 
-<div id="4" style="white-space: pre-wrap;"><p>How is the crypto market growing so quickly?</p><p><br></p><p>There are several factors contributing to the rapid growth of the cryptocurrency market.&nbsp;</p><p><br></p><p>1. Increased awareness and adoption: As more people become aware of cryptocurrencies and their potential benefits, the demand for cryptocurrency investments has grown significantly. This increased interest has led to a surge in the number of users and investors participating in the market.</p><p><br></p><p>2. Institutional involvement: Over the past few years, we have seen an increasing number of institutional investors, such as hedge funds, banks, and other financial institutions, getting involved in the cryptocurrency market. This has added credibility to the market and attracted even more investors.</p><p><br></p><p>3. Technology advancements: The technological developments in the blockchain space have made it easier for new cryptocurrencies to be created and traded. Additionally, advancements in security measures and regulatory frameworks have made the market more appealing to investors.</p><p><br></p><p>4. Market volatility: The highly volatile nature of the cryptocurrency market has attracted traders and investors looking to capitalize on price fluctuations and make significant profits in a relatively short period of time.</p><p><br></p><p>5. Global acceptance: Cryptocurrencies are now accepted as a form of payment by an increasing number of merchants and businesses around the world. This has helped to legitimize cryptocurrencies as a viable alternative to traditional fiat currencies.</p><p><br></p><p>Overall, these factors have contributed to the rapid growth of the cryptocurrency market and are likely to continue driving its expansion in the future.</p><div><br></div></div>
+<div id="4" style="white-space: pre-wrap;"><p>How do i find customers for my web development small business?</p><p><br></p><p>Here are some strategies you can use to attract customers for your web development business:</p><p><br></p><p>1. Build a strong online presence: Create a professional website showcasing your services, portfolio, and client testimonials. Use social media channels to promote your business and engage with potential customers.</p><p><br></p><p>2. Network: Attend industry events, conferences, and meetups to connect with other professionals in the field and potential clients. Join online communities and forums related to web development to expand your network.</p><p><br></p><p>3. Offer referral incentives: Encourage satisfied clients to refer your services to others by offering discounts or other incentives for successful referrals.</p><p><br></p><p>4. Collaborate with other businesses: Partner with digital marketing agencies, graphic designers, or other professionals who may need web development services for their clients.</p><p><br></p><p>5. Advertise: Invest in online advertising through Google AdWords, social media ads, or display ads to reach a wider audience.</p><p><br></p><p>6. Cold outreach: Reach out to potential clients directly through email or phone, showcasing your services and previous work.</p><p><br></p><p>7. Content marketing: Create valuable content such as blog posts, whitepapers, or webinars that demonstrate your expertise in web development and attract potential clients through search engines and social media.</p><p><br></p><p>8. Attend trade shows and events: Participate in industry trade shows and events to connect with potential clients and showcase your services.</p><p><br></p><p>9. Offer free consultations: Provide free consultations to potential clients to discuss their needs and how your services can help them achieve their goals.</p><p><br></p><p>10. Ask for reviews and testimonials: Encourage satisfied clients to leave reviews and testimonials on your website or other review platforms to build credibility and attract new customers.</p><div><br></div></div>
 
-<div><p>በ Daisy / <a href="/am/how-is-the-crypto-market-growing-so" title="ልጥፉን ይመልከቱ">እይታ</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=1aaa0f98-077a-4947-99dd-e44d31779be2" title="ይግዙ Lotte Harper">ግዛ</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=1aaa0f98-077a-4947-99dd-e44d31779be2&crypto=USDC" title="በ Cryptocupercement ላይ ይግዙ Lotte Harper">ከ Cryptocuycupery ጋር ይግዙ</a></p><hr>
+<div><p>በ Daisy / <a href="/am/how-do-i-find-customers-for-my-web" title="ልጥፉን ይመልከቱ">እይታ</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=f3f75834-0f4e-476f-8ee4-9969838426a4" title="ይግዙ Lotte Harper">ግዛ</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=f3f75834-0f4e-476f-8ee4-9969838426a4&crypto=USDC" title="በ Cryptocupercement ላይ ይግዙ Lotte Harper">ከ Cryptocuycupery ጋር ይግዙ</a></p><hr>
 </div>
 
 <div id="5" style="white-space: pre-wrap;"><p>what's the best way to boil eggs?</p><p><br></p><p>here is a simple method to boil eggs:</p><p><br></p><p>1. Place the eggs in a saucepan and cover her with cold water. </p><p>2. Bring the water to a boil over high heat. </p><p>3. Once the water is boiling, reduce the heat to low and let the eggs simmer for 9-12 minutes, depending on how well done you want ****><p>4. Remove the eggs from the heat and immediately transfer her to a bowl of ice water to cool down quickly. </p><p>5. Once cooled, you can peel and enjoy your perfectly boiled eggs. </p><div><br></div>.</div>
@@ -2129,14 +2129,14 @@ Play three thirteen online for free.
 <div><p>በ Daisy / <a href="/am/what-are-the-benefits-to-having-a" title="ልጥፉን ይመልከቱ">እይታ</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=5ea08b12-a085-4b4e-b52f-04f8d3e6821c" title="ይግዙ Lotte Harper">ግዛ</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=5ea08b12-a085-4b4e-b52f-04f8d3e6821c&crypto=USDC" title="በ Cryptocupercement ላይ ይግዙ Lotte Harper">ከ Cryptocuycupery ጋር ይግዙ</a></p><hr>
 </div>
 
-<div id="11" style="white-space: pre-wrap;"><p>is sugar really unhealthy?</p><p><br></p><p>excessive consumption of sugar can lead to various health issues, such as weight gain, obesity, diabetes, heart disease, and dental problems. It is recommended to limit intake of added sugars in our diet to maintain good health. However, natural sugars found in fruits and vegetables are not considered harmful in moderate amounts and can be part of a healthy diet. Moderation is key when it comes to sugar consumption. </p><div><br></div>.</div>
-
-<div><p>በ Daisy / <a href="/am/is-sugar-really-unhealth" title="ልጥፉን ይመልከቱ">እይታ</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=6d9e9b96-31a2-4ba7-96c7-5e4f29dc3eb5" title="ይግዙ Lotte Harper">ግዛ</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=6d9e9b96-31a2-4ba7-96c7-5e4f29dc3eb5&crypto=USDC" title="በ Cryptocupercement ላይ ይግዙ Lotte Harper">ከ Cryptocuycupery ጋር ይግዙ</a></p><hr>
-</div>
-
-<div id="12" style="white-space: pre-wrap;"><p>why is it safer to wear a mask in public?</p><p><br></p><p>wearing a mask in public is safer because it helps to prevent the spread of respiratory droplets that contain viruses, such as covid-19. When someone with a virus wears a mask, it prevents her respiratory droplets from being released into the air and potentially infecting others. Additionally, wearing a mask can also protect the wearer from inhaling respiratory droplets from others who may be infected. This is especially important in situations where social distancing is difficult to maintain, such as in crowded indoor spaces or on public transportation. Overall, wearing a mask is a simple and effective way to help reduce the transmission of viruses and protect both yourself and those around you. </p><div><br></div>.</div>
+<div id="11" style="white-space: pre-wrap;"><p>why is it safer to wear a mask in public?</p><p><br></p><p>wearing a mask in public is safer because it helps to prevent the spread of respiratory droplets that contain viruses, such as covid-19. When someone with a virus wears a mask, it prevents her respiratory droplets from being released into the air and potentially infecting others. Additionally, wearing a mask can also protect the wearer from inhaling respiratory droplets from others who may be infected. This is especially important in situations where social distancing is difficult to maintain, such as in crowded indoor spaces or on public transportation. Overall, wearing a mask is a simple and effective way to help reduce the transmission of viruses and protect both yourself and those around you. </p><div><br></div>.</div>
 
 <div><p>በ Daisy / <a href="/am/why-is-it-safer-to-wear-a-mask-in" title="ልጥፉን ይመልከቱ">እይታ</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=eac3163d-0524-4f82-ae84-cfa68ea20887" title="ይግዙ Lotte Harper">ግዛ</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=eac3163d-0524-4f82-ae84-cfa68ea20887&crypto=USDC" title="በ Cryptocupercement ላይ ይግዙ Lotte Harper">ከ Cryptocuycupery ጋር ይግዙ</a></p><hr>
+</div>
+
+<div id="12" style="white-space: pre-wrap;"><p>is sugar really unhealthy?</p><p><br></p><p>excessive consumption of sugar can lead to various health issues, such as weight gain, obesity, diabetes, heart disease, and dental problems. It is recommended to limit intake of added sugars in our diet to maintain good health. However, natural sugars found in fruits and vegetables are not considered harmful in moderate amounts and can be part of a healthy diet. Moderation is key when it comes to sugar consumption. </p><div><br></div>.</div>
+
+<div><p>በ Daisy / <a href="/am/is-sugar-really-unhealth" title="ልጥፉን ይመልከቱ">እይታ</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=6d9e9b96-31a2-4ba7-96c7-5e4f29dc3eb5" title="ይግዙ Lotte Harper">ግዛ</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=6d9e9b96-31a2-4ba7-96c7-5e4f29dc3eb5&crypto=USDC" title="በ Cryptocupercement ላይ ይግዙ Lotte Harper">ከ Cryptocuycupery ጋር ይግዙ</a></p><hr>
 </div>
 
 <div id="13" style="white-space: pre-wrap;"><p>How do i build a full stack web app with django?</p><p><br></p><p>Building a full stack web app with Django involves several steps. Here is a general outline of the process:</p><p><br></p><p>1. Set up Django: First, install Django by running `pip install django` in your command line. Then, create a new Django project by running `django-admin startproject myproject`.</p><p><br></p><p>2. Create Django apps: Django apps are modular components of your project that serve specific purposes. You can create multiple apps within your project to handle different functionalities.</p><p><br></p><p>3. Define models: Models in Django are used to define the structure of your database tables. Create your models by defining classes in the models.py file of each app.</p><p><br></p><p>4. Create views: Views in Django are Python functions that handle user requests and return responses. Define views for your app by creating functions in the views.py file of each app.</p><p><br></p><p>5. Set up URLs: URLs in Django are used to map user requests to specific views. Define URL patterns for your app by creating a urls.py file in each app and including them in the main urls.py file of your project.</p><p><br></p><p>6. Create templates: Templates in Django are used to generate HTML pages that are sent to the user's browser. Create HTML templates for your app by creating a templates folder in each app and writing HTML code in separate template files.</p><p><br></p><p>7. Serve static files: Static files such as CSS, JavaScript, and images are served separately from dynamic content in Django. Configure the static files settings in your project's settings.py file to serve static files from the static folder in each app.</p><p><br></p><p>8. Configure the database: Set up your database settings in the settings.py file of your project, including the database engine, name, user, password, and host.</p><p><br></p><p>9. Migrate the database: Run `python manage.py makemigrations` followed by `python manage.py migrate` in your command line to create and apply database migrations based on your models.</p><p><br></p><p>10. Run the server: Start the Django development server by running `python manage.py runserver` in your command line. You should now be able to access your web app at `http://127.0.0.1:8000/` in your browser.</p><p><br></p><p>These are the basic steps to build a full stack web app with Django. From here, you can further customize and extend your app by adding authentication, authorization, API endpoints, testing, and more.</p><div><br></div></div>
@@ -2195,9 +2195,9 @@ Play three thirteen online for free.
 <div><img width="100%" height="auto" src="https://glamgirlx.com/media/images/99bc963a-f2f4-4d42-b090-66a07a7d41b8.png" id="img20" alt="አሪፍ"/><p>በ Daisy / <a href="/am/why-do-people-implant-nfc-implants-in" title="ልጥፉን ይመልከቱ">እይታ</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=99bc963a-f2f4-4d42-b090-66a07a7d41b8" title="ይግዙ Lotte Harper">ግዛ</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=99bc963a-f2f4-4d42-b090-66a07a7d41b8&crypto=USDC" title="በ Cryptocupercement ላይ ይግዙ Lotte Harper">ከ Cryptocuycupery ጋር ይግዙ</a></p><hr>
 </div>
 
-<div id="21" style="white-space: pre-wrap;"><p>How do i find customers for my web development small business?</p><p><br></p><p>Here are some strategies you can use to attract customers for your web development business:</p><p><br></p><p>1. Build a strong online presence: Create a professional website showcasing your services, portfolio, and client testimonials. Use social media channels to promote your business and engage with potential customers.</p><p><br></p><p>2. Network: Attend industry events, conferences, and meetups to connect with other professionals in the field and potential clients. Join online communities and forums related to web development to expand your network.</p><p><br></p><p>3. Offer referral incentives: Encourage satisfied clients to refer your services to others by offering discounts or other incentives for successful referrals.</p><p><br></p><p>4. Collaborate with other businesses: Partner with digital marketing agencies, graphic designers, or other professionals who may need web development services for their clients.</p><p><br></p><p>5. Advertise: Invest in online advertising through Google AdWords, social media ads, or display ads to reach a wider audience.</p><p><br></p><p>6. Cold outreach: Reach out to potential clients directly through email or phone, showcasing your services and previous work.</p><p><br></p><p>7. Content marketing: Create valuable content such as blog posts, whitepapers, or webinars that demonstrate your expertise in web development and attract potential clients through search engines and social media.</p><p><br></p><p>8. Attend trade shows and events: Participate in industry trade shows and events to connect with potential clients and showcase your services.</p><p><br></p><p>9. Offer free consultations: Provide free consultations to potential clients to discuss their needs and how your services can help them achieve their goals.</p><p><br></p><p>10. Ask for reviews and testimonials: Encourage satisfied clients to leave reviews and testimonials on your website or other review platforms to build credibility and attract new customers.</p><div><br></div></div>
+<div id="21" style="white-space: pre-wrap;"><p>How is the crypto market growing so quickly?</p><p><br></p><p>There are several factors contributing to the rapid growth of the cryptocurrency market.&nbsp;</p><p><br></p><p>1. Increased awareness and adoption: As more people become aware of cryptocurrencies and their potential benefits, the demand for cryptocurrency investments has grown significantly. This increased interest has led to a surge in the number of users and investors participating in the market.</p><p><br></p><p>2. Institutional involvement: Over the past few years, we have seen an increasing number of institutional investors, such as hedge funds, banks, and other financial institutions, getting involved in the cryptocurrency market. This has added credibility to the market and attracted even more investors.</p><p><br></p><p>3. Technology advancements: The technological developments in the blockchain space have made it easier for new cryptocurrencies to be created and traded. Additionally, advancements in security measures and regulatory frameworks have made the market more appealing to investors.</p><p><br></p><p>4. Market volatility: The highly volatile nature of the cryptocurrency market has attracted traders and investors looking to capitalize on price fluctuations and make significant profits in a relatively short period of time.</p><p><br></p><p>5. Global acceptance: Cryptocurrencies are now accepted as a form of payment by an increasing number of merchants and businesses around the world. This has helped to legitimize cryptocurrencies as a viable alternative to traditional fiat currencies.</p><p><br></p><p>Overall, these factors have contributed to the rapid growth of the cryptocurrency market and are likely to continue driving its expansion in the future.</p><div><br></div></div>
 
-<div><p>በ Daisy / <a href="/am/how-do-i-find-customers-for-my-web" title="ልጥፉን ይመልከቱ">እይታ</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=f3f75834-0f4e-476f-8ee4-9969838426a4" title="ይግዙ Lotte Harper">ግዛ</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=f3f75834-0f4e-476f-8ee4-9969838426a4&crypto=USDC" title="በ Cryptocupercement ላይ ይግዙ Lotte Harper">ከ Cryptocuycupery ጋር ይግዙ</a></p><hr>
+<div><p>በ Daisy / <a href="/am/how-is-the-crypto-market-growing-so" title="ልጥፉን ይመልከቱ">እይታ</a> | <a href="https://lotteh.com/pay/item/Daisy/?id=1aaa0f98-077a-4947-99dd-e44d31779be2" title="ይግዙ Lotte Harper">ግዛ</a> | <a href="https://lotteh.com/pay/item/crypto/Daisy/?id=1aaa0f98-077a-4947-99dd-e44d31779be2&crypto=USDC" title="በ Cryptocupercement ላይ ይግዙ Lotte Harper">ከ Cryptocuycupery ጋር ይግዙ</a></p><hr>
 </div>
 
 
@@ -2270,7 +2270,7 @@ Play three thirteen online for free.
         
         <a class="dropdown-item" href="/bg/news" title="ጣቢያውን ያንብቡ Български">Български</a>
         
-        <a class="dropdown-item" href="/ca/news" title="ጣቢያውን ያንብቡ calalan">calalan</a>
+        <a class="dropdown-item" href="/ca/news" title="ጣቢያውን ያንብቡ calalana">calalana</a>
         
         <a class="dropdown-item" href="/ceb/news" title="ጣቢያውን ያንብቡ Cebuano">Cebuano</a>
         
