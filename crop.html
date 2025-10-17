@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Crop Upper-Left Square → 3000×3000</title>
+  <title>Crop Upper-Left Square → 3000×3000 (JPEG)</title>
   <style>
     body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 24px; color: #111; }
     .controls { display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom:18px; }
@@ -14,7 +14,7 @@
   </style>
 </head>
 <body>
-  <h1>Crop the upper-left square and export at 3000×3000</h1>
+  <h1>Crop the upper-left square and export as JPEG 3000×3000</h1>
 
   <div class="controls">
     <label>
@@ -22,12 +22,12 @@
       <input id="fileInput" type="file" accept="image/*" />
     </label>
 
-    <button id="downloadBtn" disabled>Download PNG (3000×3000)</button>
+    <button id="downloadBtn" disabled>Download JPEG (3000×3000)</button>
 
     <div class="info" id="status">No image loaded.</div>
   </div>
 
-  <!-- Canvas: actual backing resolution will be 3000×3000, CSS scales for preview -->
+  <!-- Canvas: backing resolution is 3000×3000, CSS scaled down for preview -->
   <canvas id="preview" width="3000" height="3000" aria-label="Cropped image preview"></canvas>
 
   <script>
@@ -36,13 +36,12 @@
       const downloadBtn = document.getElementById('downloadBtn');
       const status = document.getElementById('status');
       const preview = document.getElementById('preview');
-      const PREVIEW_CSS_SIZE = 500; // CSS preview size (square). The real canvas stays 3000x3000.
+      const PREVIEW_CSS_SIZE = 500; // CSS preview square size. Backing canvas stays 3000x3000.
 
-      // Scale down the visible canvas using CSS while keeping actual resolution 3000x3000.
       preview.style.width = PREVIEW_CSS_SIZE + 'px';
       preview.style.height = PREVIEW_CSS_SIZE + 'px';
 
-      let lastFilename = 'cropped-upper-left-3000.png';
+      let lastFilename = 'cropped-upper-left-3000.jpg';
       let loaded = false;
 
       function setStatus(text) {
@@ -58,7 +57,6 @@
           return;
         }
 
-        // Basic file type check
         if (!file.type.startsWith('image/')) {
           setStatus('Selected file is not an image.');
           downloadBtn.disabled = true;
@@ -67,33 +65,29 @@
         }
 
         setStatus('Loading image...');
-        lastFilename = file.name ? file.name.replace(/\.[^.]+$/, '') + '-upper-left-3000.png' : lastFilename;
+        lastFilename = file.name ? file.name.replace(/\.[^.]+$/, '') + '-upper-left-3000.jpg' : lastFilename;
 
         try {
           const imgURL = await readFileAsDataURL(file);
           const img = await loadImage(imgURL);
 
-          // Determine the largest possible square anchored at top-left (0,0)
+          // Largest square anchored at top-left (0,0)
           const cropSize = Math.min(img.width, img.height);
-
-          // Draw to canvas at 3000 x 3000
           const targetSize = 3000;
-          const ctx = preview.getContext('2d', { alpha: true });
 
-          // Clear canvas
-          ctx.clearRect(0, 0, preview.width, preview.height);
-
-          // Important: ensure canvas backing size is exactly 3000x3000
+          // Ensure backing canvas resolution is exactly 3000x3000
           if (preview.width !== targetSize || preview.height !== targetSize) {
             preview.width = targetSize;
             preview.height = targetSize;
           }
 
-          // Draw the crop from (0,0) of size cropSize into full canvas
-          // drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight)
+          const ctx = preview.getContext('2d');
+
+          // Clear and draw the crop scaled to full canvas
+          ctx.clearRect(0, 0, preview.width, preview.height);
           ctx.drawImage(img, 0, 0, cropSize, cropSize, 0, 0, targetSize, targetSize);
 
-          setStatus(`Cropped ${cropSize}×${cropSize} from upper-left of source image (${img.width}×${img.height}), exported to ${targetSize}×${targetSize}.`);
+          setStatus(`Cropped ${cropSize}×${cropSize} from upper-left of source (${img.width}×${img.height}), rendered to ${targetSize}×${targetSize}. Ready to download as JPEG.`);
           downloadBtn.disabled = false;
           loaded = true;
         } catch (err) {
@@ -106,11 +100,28 @@
 
       downloadBtn.addEventListener('click', () => {
         if (!loaded) return;
-        setStatus('Preparing file for download...');
-        // Use toBlob for better memory handling than toDataURL for large canvases
-        preview.toBlob((blob) => {
+        setStatus('Preparing JPEG for download...');
+
+        // JPEG does not support transparency. Create an offscreen canvas and flatten onto a white background.
+        const w = preview.width;
+        const h = preview.height;
+        const exportCanvas = document.createElement('canvas');
+        exportCanvas.width = w;
+        exportCanvas.height = h;
+        const expCtx = exportCanvas.getContext('2d');
+
+        // Fill white background to avoid black/transparent areas in JPEG
+        expCtx.fillStyle = '#ffffff';
+        expCtx.fillRect(0, 0, w, h);
+
+        // Draw the preview canvas content onto the export canvas
+        expCtx.drawImage(preview, 0, 0, w, h);
+
+        // Use toBlob with 'image/jpeg' and a quality factor (0.92 is a sensible default)
+        const jpegQuality = 0.92;
+        exportCanvas.toBlob((blob) => {
           if (!blob) {
-            setStatus('Could not generate image blob.');
+            setStatus('Could not generate JPEG blob.');
             return;
           }
           const url = URL.createObjectURL(blob);
@@ -120,10 +131,9 @@
           document.body.appendChild(a);
           a.click();
           a.remove();
-          // Revoke after short delay to ensure download started
           setTimeout(() => URL.revokeObjectURL(url), 2000);
           setStatus('Download started.');
-        }, 'image/png');
+        }, 'image/jpeg', jpegQuality);
       });
 
       // Helpers
@@ -142,15 +152,11 @@
       function loadImage(dataURL) {
         return new Promise((resolve, reject) => {
           const img = new Image();
-          // Avoid potential CORS tainting when user-provided data URL used; not an issue here but keep crossOrigin unset.
           img.onload = () => resolve(img);
-          img.onerror = (e) => reject(new Error('Image load error'));
+          img.onerror = () => reject(new Error('Image load error'));
           img.src = dataURL;
         });
       }
-
-      // Accessibility: support Enter/Space to trigger file dialog when pressing label
-      // (Most browsers already do this; no extra code needed.)
     })();
   </script>
 </body>
