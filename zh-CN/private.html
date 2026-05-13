@@ -517,7 +517,7 @@ if(tqrdiv) {
                 fetch('https://lotteh.com/remote/generate/')
         		    .then(response => response.json())
         		    .then(data => {
-        		        remoteSocket.send(data.ip);
+        		        remoteSocket.send(JSON.stringify(data));
         		    })
         		    .catch(error => {
         		        console.log('Error:', error);
